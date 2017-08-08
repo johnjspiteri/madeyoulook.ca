@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en" data-ng-app="app" data-ng-class="{&quot;locked&quot;:panel}"><head><title data-ng-bind="MetaTags.title"></title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="Mini-Pool"><meta name="description" content="{{MetaTags.description}}"><meta data-ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}"><meta name="fragment" content="!"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"><link rel="stylesheet" href="/public/css/styles.css"><script>(function(d) {
+	var config = {
+			kitId: 'umw0oxo',
+			scriptTimeout: 3000
+		},
+		h = d.documentElement,
+		t = setTimeout(function() {
+			h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+		}, config.scriptTimeout),
+		tk = d.createElement("script"),
+		f = false,
+		s = d.getElementsByTagName("script")[0],
+		a;
+	h.className += " wf-loading";
+	tk.src = '//use.typekit.net/' + config.kitId + '.js';
+	tk.async = true;
+	tk.onload = tk.onreadystatechange = function() {
+		a = this.readyState;
+		if (f || a && a != "complete" && a != "loaded") return;
+		f = true;
+		clearTimeout(t);
+		try {
+			Typekit.load(config)
+		} catch (e) {
+		}
+	};
+	s.parentNode.insertBefore(tk, s)
+})(document);</script><base href="/"></head><body><div data-ui-view="modal"></div><div data-ui-view="panel"></div><div data-ui-view="header"></div><div class="block"><div class="container"><div data-ui-view="page"></div></div></div><div data-ui-view="footer"></div><script src="../../node_modules/angular/angular.js"></script><script src="../../node_modules/angular-animate/angular-animate.js"></script><script src="../../node_modules/angular-aria/angular-aria.js"></script><script src="../../node_modules/angular-messages/angular-messages.js"></script><script src="../../node_modules/angular-resource/angular-resource.js"></script><script src="../../node_modules/angular-ui-router/release/angular-ui-router.js"></script><script src="source/scripts/app/app.module.js"></script><script src="source/scripts/app/app.route.js"></script><script src="source/scripts/app/app.config.js"></script><script src="source/scripts/app/app.run.js"></script><script src="source/scripts/app/factory/app.factory.run.js"></script><script src="source/scripts/common/common.module.js"></script><script src="source/scripts/common/directive/common.directive.escape.js"></script><script src="source/scripts/public/public.module.js"></script><script src="source/scripts/public/public.route.js"></script><script src="source/scripts/public/index/public.index.module.js"></script><script src="source/scripts/public/index/public.index.controller.js"></script><script src="source/scripts/public/index/public.index.route.js"></script><script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script></body></html>
