@@ -9,6 +9,7 @@
 			'app.public.exchange',
 			'app.public.index',
 			'app.public.privacy',
+			'app.public.return',
 			'app.public.studio',
 			'app.public.terms'
 		]);
