@@ -8,6 +8,7 @@
 			'app.public.contact',
 			'app.public.exchange',
 			'app.public.index',
+			'app.public.jewellery',
 			'app.public.privacy',
 			'app.public.return',
 			'app.public.studio',
