@@ -17,10 +17,10 @@
 						// controller: "PublicHeaderController",
 						// controllerAs: "vm"
 					},
-					"footer": {
+					"footer@": {
 						templateUrl: "public/html/public/footer/public.footer.html",
 						controller: "FooterController",
-					 controllerAs: "vm"
+					    controllerAs: "vm"
 					}
 				}
 			});
