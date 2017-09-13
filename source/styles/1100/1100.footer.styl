@@ -17,36 +17,61 @@ footer
 		position relative
 		clear both
 		overflow: auto
-		width 396px
+		width 1024px
 		dislay inline-block
 		padding 10px 0
 		margin 0 auto
 		z-index: 1
 		text-align center
+		background #f2f
 
-	&__logo
+	&__map
 		float left
-		width 175px
-		padding 25px 0
-		margin 0 35px 0 0
-		background $background
+		width 250px
+		height 196px
+		margin 0
 		border-radius 4px
-		text-align center
-
-	&__button
-		float left
-		//width 50px
-		height 100%
-		padding 10px 0
-		margin 0 10px 0 10px
-		text-align center
+		background #ff9
 
 		h1
-			float left
-			//width 100%
-			padding 0
-			margin 0
+			width 100%
+			line-height 160px
+
+	&__column
+		float right
+		width 160px
+		height 100%
+		padding 0 0 0 10px
+		margin 0 0 0 20px
+		text-align center
+		background $white
+
+	.column__title
+		float left
+		width 100%
+		text-align left
+
+		h1
+			width 100%
 			font-family 'usual', sans-serif
 			font-size 18px
 			line-height 28px
-			color $paragraph
+
+	.column__list
+		float right
+		width 100%
+		text-align left
+
+	.column__item
+		float left
+		width 100%
+		padding 5px 0
+		margin 0 0 10px 0
+
+		p
+			float left
+			width 100%
+			padding 0
+			margin 0
+			font-size 16px
+			line-height 16px
