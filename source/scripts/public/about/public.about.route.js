@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.about', {
-				url: 'about/',
+				url: 'about',
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/about/public.about.html',

@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.privacy', {
-				url: 'privacy/',
+				url: 'privacy',
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/privacy/public.privacy.html',
