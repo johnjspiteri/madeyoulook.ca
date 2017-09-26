@@ -3,12 +3,12 @@
 	function internal($stateProvider) {
 
 		$stateProvider
-			.state('app.public.jewellery.wedding', {
+			.state('app.public.product.wedding', {
 				url: 'wedding/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/public/jewellery/wedding/public.jewellery.wedding.html',
-						controller: 'JewelleryWeddingController',
+						templateUrl: 'public/html/public/product/wedding/public.product.wedding.html',
+						controller: 'ProductWeddingController',
 						controllerAs: 'vm'
 					}
 				}
@@ -16,7 +16,7 @@
 	}
 
 	angular
-		.module('app.public.jewellery.wedding')
+		.module('app.public.product.wedding')
 		.config(internal);
 
 	internal.$inject = ['$stateProvider'];
