@@ -1,0 +1,103 @@
+script.
+	(function(d) {
+		var config = {
+				kitId: 'umw0oxo',
+				scriptTimeout: 3000
+			},
+			h = d.documentElement,
+			t = setTimeout(function() {
+				h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+			}, config.scriptTimeout),
+			tk = d.createElement("script"),
+			f = false,
+			s = d.getElementsByTagName("script")[0],
+			a;
+		h.className += " wf-loading";
+		tk.src = '//use.typekit.net/' + config.kitId + '.js';
+		tk.async = true;
+		tk.onload = tk.onreadystatechange = function() {
+			a = this.readyState;
+			if (f || a && a != "complete" && a != "loaded") return;
+			f = true;
+			clearTimeout(t);
+			try {
+				Typekit.load(config)
+			} catch (e) {
+			}
+		};
+		s.parentNode.insertBefore(tk, s)
+	})(document);
+
+script(src='../../node_modules/angular/angular.js')
+script(src='../../node_modules/angular-animate/angular-animate.js')
+script(src='../../node_modules/angular-aria/angular-aria.js')
+script(src='../../node_modules/angular-messages/angular-messages.js')
+script(src='../../node_modules/angular-resource/angular-resource.js')
+script(src='../../node_modules/angular-ui-router/release/angular-ui-router.js')
+
+script(src='source/scripts/app/app.module.js')
+script(src='source/scripts/app/app.route.js')
+script(src='source/scripts/app/app.config.js')
+script(src='source/scripts/app/app.run.js')
+script(src='source/scripts/app/factory/app.factory.run.js')
+
+script(src='source/scripts/common/common.module.js')
+script(src='source/scripts/common/directive/common.directive.escape.js')
+
+script(src='source/scripts/public/public.module.js')
+script(src='source/scripts/public/public.route.js')
+
+script(src='source/scripts/public/footer/public.footer.controller.js')
+
+script(src='source/scripts/public/index/public.index.module.js')
+script(src='source/scripts/public/index/public.index.controller.js')
+script(src='source/scripts/public/index/public.index.route.js')
+
+script(src='source/scripts/public/about/public.about.module.js')
+script(src='source/scripts/public/about/public.about.controller.js')
+script(src='source/scripts/public/about/public.about.route.js')
+
+script(src='source/scripts/public/borrowing/public.borrowing.module.js')
+script(src='source/scripts/public/borrowing/public.borrowing.controller.js')
+script(src='source/scripts/public/borrowing/public.borrowing.route.js')
+
+script(src='source/scripts/public/certificates/public.certificates.module.js')
+script(src='source/scripts/public/certificates/public.certificates.controller.js')
+script(src='source/scripts/public/certificates/public.certificates.route.js')
+
+script(src='source/scripts/public/contact/public.contact.module.js')
+script(src='source/scripts/public/contact/public.contact.controller.js')
+script(src='source/scripts/public/contact/public.contact.route.js')
+
+script(src='source/scripts/public/exchange/public.exchange.module.js')
+script(src='source/scripts/public/exchange/public.exchange.controller.js')
+script(src='source/scripts/public/exchange/public.exchange.route.js')
+
+script(src='source/scripts/public/jewellery/public.jewellery.module.js')
+script(src='source/scripts/public/jewellery/public.jewellery.controller.js')
+script(src='source/scripts/public/jewellery/public.jewellery.route.js')
+script(src='source/scripts/public/jewellery/wedding/public.jewellery.wedding.module.js')
+script(src='source/scripts/public/jewellery/wedding/public.jewellery.wedding.controller.js')
+script(src='source/scripts/public/jewellery/wedding/public.jewellery.wedding.route.js')
+
+script(src='source/scripts/public/privacy/public.privacy.module.js')
+script(src='source/scripts/public/privacy/public.privacy.controller.js')
+script(src='source/scripts/public/privacy/public.privacy.route.js')
+
+script(src='source/scripts/public/studio/public.studio.module.js')
+script(src='source/scripts/public/studio/public.studio.controller.js')
+script(src='source/scripts/public/studio/public.studio.route.js')
+script(src='source/scripts/public/studio/bench/public.studio.bench.module.js')
+script(src='source/scripts/public/studio/bench/public.studio.bench.controller.js')
+script(src='source/scripts/public/studio/bench/public.studio.bench.route.js')
+script(src='source/scripts/public/studio/equipment/public.studio.equipment.module.js')
+script(src='source/scripts/public/studio/equipment/public.studio.equipment.controller.js')
+script(src='source/scripts/public/studio/equipment/public.studio.equipment.route.js')
+
+script(src='source/scripts/public/terms/public.terms.module.js')
+script(src='source/scripts/public/terms/public.terms.controller.js')
+script(src='source/scripts/public/terms/public.terms.route.js')
+
+script(src='source/scripts/public/return/public.return.module.js')
+script(src='source/scripts/public/return/public.return.controller.js')
+script(src='source/scripts/public/return/public.return.route.js')
