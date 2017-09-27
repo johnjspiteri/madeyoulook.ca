@@ -8,7 +8,7 @@
 			'app.public.contact',
 			'app.public.exchange',
 			'app.public.index',
-			'app.public.jeweler',
+			'app.public.jeweller',
 			'app.public.privacy',
 			'app.public.product',
 			'app.public.return',

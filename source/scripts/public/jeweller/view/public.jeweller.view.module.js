@@ -2,7 +2,7 @@
 	"use strict";
 
 	angular
-		.module('app.public.jeweler.view', [
+		.module('app.public.jeweller.view', [
 		]);
 
 })();

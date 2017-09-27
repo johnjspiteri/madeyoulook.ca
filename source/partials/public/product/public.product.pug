@@ -1,45 +1,73 @@
-.search
-	.search__square
-		.search__select
-			.search__title
-				h5 Type
+.block
+	.block__container
+		.container
+			.filter
+				.filter__square
+					.filter__select
+						.filter__title
+							h5 Type
 
-			.search__value
-				select
-				.search__mask
-					h4 #[span.fa.fa-caret-down]
+						.filter__value
+							select
+							.filter__mask
+								h4 #[span.fa.fa-caret-down]
 
-		.search__select
-			.search__title
-				h5 Make
+					.filter__select
+						.filter__title
+							h5 Make
 
-			.search__value
-				select
-				.search__mask
-					h4 #[span.fa.fa-caret-down]
+						.filter__value
+							select
+							.filter__mask
+								h4 #[span.fa.fa-caret-down]
 
-		.search__select
-			.search__title
-				h5 Stone
+					.filter__select
+						.filter__title
+							h5 Stone
 
-			.search__value
-				select
-				.search__mask
-					h4 #[span.fa.fa-caret-down]
+						.filter__value
+							select
+							.filter__mask
+								h4 #[span.fa.fa-caret-down]
 
-		.search__filter
-			.search__title
-				h5 Filter
-			input(placeholder='Enter Search')
+					.filter__filter
+						.filter__title
+							h5 Filter
+						input(placeholder='Enter Search')
 
-	//.search__tags
-		.search__tag(data-ng-show='!vm.state' data-ng-click='vm.changeState()')
+	//.filter__tags
+		.filter__tag(data-ng-show='!vm.state' data-ng-click='vm.changeState()')
 			h5 More Options
 			//.fa.fa-plus
 
-		.search__tag(data-ng-show='vm.state' data-ng-click='vm.changeState()')
+		.filter__tag(data-ng-show='vm.state' data-ng-click='vm.changeState()')
 			h5 Less Options
 			//.fa.fa-minus
 
-	//.search__reset(data-ng-click='vm.reset()')
+	//.filter__reset(data-ng-click='vm.reset()')
 		h5 #[span Reset] #[.fa.fa-close]
+
+.block
+	.block__container
+		.container
+			.products
+				.product(data-ng-repeat='product in vm.products')
+					.product__picture
+						img
+
+					.product__detail
+						.product__left
+							.product__title
+								h6(data-ng-bind='product.title')
+
+							.product__tags
+								.product__tag(data-ng-repeat='tag in product.tags')
+									h5(data-ng-bind='tag')
+
+							.product__jeweller
+								h6 Jeweller
+
+						.product__right
+							.product__price
+								h6 Price
+							.product__specs
