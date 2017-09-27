@@ -2,4 +2,17 @@
 	.block__container
 		.container
 			.jewellers
-				.jeweller
+				.jeweller(data-ng-repeat='jeweller in vm.jewellers')
+					.jeweller__picture
+						img
+
+					.jeweller__information
+						.jeweller__name
+							h6(data-ng-bind='jeweller.name')
+						.jeweller__certifications
+							.jeweller__certificate
+								h5 Testing
+							.jeweller__certificate
+								h5 Testing
+					.jeweller__description
+						p This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description.
