@@ -3,6 +3,7 @@
 
 	angular
 		.module('app.public.product', [
+				'app.public.product.view',
 				'app.public.product.wedding'
 		]);
 
