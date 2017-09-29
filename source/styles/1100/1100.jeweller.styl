@@ -6,17 +6,30 @@
 
 .jeweller
 	float left
-	width 306px
-	padding 20px 0 20px 20px
-	margin 0 20px 0 0
+	width 500px
+	height 300px
+	padding 0
+	margin 0 20px 20px 0
 	background #ffff99
 	border $black-border
 	border-radius 4px
 
+	&__left
+		float left
+		width 125px
+		height 300px
+		display inline-block
+		background #f2f2f2
+
+	&__profile
+		float left
+		width 95px
+		padding 10px 15px
+
 	&__picture
 		float left
-		width 98px
-		height 98px
+		width 93px
+		height 93px
 		padding 0
 		margin 0
 		background $white
@@ -26,75 +39,146 @@
 		img
 			width 100%
 
-	&__information
+	&__contact
 		float left
-		width 206px
-		padding 10px 0 0 0
-		margin 0 0 20px 0
+		width 95px
+		padding 5px 15px
 
-	&__name
-		float left
-		width 100%
-		padding 5px 0
-		margin 0 0 10px 0
-		text-align center
-
-		h6
-			float left
-			width 100%
-			font-size 27px
-			line-height 27px
-			font-weight 400
-
-	//&__experience
-	//	float left
-	//	width 100%
-	//	padding 5px 0
-	//	margin 0 0 10px 0
-	//	text-align center
-	//
-	//&__specialty
-	//	float left
-	//	width 100%
-	//	padding 5px 0
-	//	margin 0 0 10px 0
-	//	text-align center
-
-	&__certifications
-		float left
-		width 186px
-		padding 0
-		margin 0 0 0 16px
-
-	&__certificate
+	&__phone
 		float left
 		width 78px
-		padding 10px 0
+		height 38px
+		padding 0
 		margin 0 10px 0 0
-		background $white
 		border $black-border
-		border-radius 4px
+		background $white
 		text-align center
 
 		h5
 			float left
 			width 100%
-			font-size 18px
-			line-height 18px
-			font-weight 400
+			font-size 14px
+			line-height 38px
 
-	&__description
+	&__email
 		float left
-		width 288px
+		width 93px
+		height 38px
 		padding 0
 		margin 0
+		background $white
+		border $black-border
 		text-align center
 
-		p
+	h5
+		float left
+		width 100%
+		font-size 20px
+		line-height 38px
+
+	&__certificates
+		float left
+		width 105px
+		padding 15px 10px 0 10px
+
+	&__certificate
+		float left
+		width 103px
+		height 48px
+		margin 0 0 15px 0
+		background $white
+		border $black-border
+		text-align center
+
+		h2
 			float left
 			width 100%
-			padding 0
-			margin 0
+			font-size 18px
+			line-height 48px
+
+	&__middle
+		float left
+		width 375px
+		height 150px
+		display inline-block
+
+	&__top
+		float left
+		width 375px
+		height 150px
+		display inline-block
+		background $white
+
+	&__title
+		float left
+		width 325px
+		padding 10px 25px
+
+	&__name
+		float left
+		width 323px
+		height 38px
+		text-align left
+
+		h2
+			float left
+			width 100%
+			font-size 20px
+			line-height 38px
+
+	&__specialties
+		float left
+		width 350px
+		padding 5px 0 5px 25px
+
+	&__specialty
+		float left
+		width 155px
+		height 28px
+		margin 0 10px 10px 0
+		border $black-border
+		text-align center
+
+		h4
+			float left
+			width 100%
+			font-size 14px
+			line-height 28px
+
+	&__bottom
+		float left
+		width 375px
+		height 150px
+		display inline-block
+
+	&__intro
+		float left
+		width 345px
+		padding 10px 15px
+
+	&__brief
+		float left
+		width 345px
+		height 108px
+		text-align left
+
+		p
+			font-size 15px
+			line-height 25px
+
+	&__signature
+		position absolute
+		width 110px
+		height 30px
+		margin -24px 0 0 244px
+		background $black
+		border-radius 4px
+		text-align center
+
+		h3
+			float left
+			width 100%
 			font-size 16px
-			line-height 26px
+			line-height 28px
 			font-weight 400
+			color $white

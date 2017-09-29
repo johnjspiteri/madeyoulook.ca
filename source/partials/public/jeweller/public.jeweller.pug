@@ -3,16 +3,42 @@
 		.container
 			.jewellers
 				.jeweller(data-ng-repeat='jeweller in vm.jewellers')
-					.jeweller__picture
-						img
+					.jeweller__left
+						.jeweller__profile
+							.jeweller__picture
+								img
+						.jeweller__contact
+							//.jeweller__phone
+								h5 Phone
+							.jeweller__email
+								h5 Email
+								//.fa.fa-at
 
-					.jeweller__information
-						.jeweller__name
-							h6(data-ng-bind='jeweller.name')
-						.jeweller__certifications
+						.jeweller__certificates
 							.jeweller__certificate
-								h5 Testing
-							.jeweller__certificate
-								h5 Testing
-					.jeweller__description
-						p This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description.
+								h2 Certificate
+							//.jeweller__certificate
+								h2 Certificate
+							//.jeweller__certificate
+								h2 Certificate
+
+					.jeweller__middle
+						.jeweller__top
+							.jeweller__title
+								.jeweller__name
+									h2 Justin Test
+							.jeweller__specialties
+								.jeweller__specialty
+									h4 Specialty
+								.jeweller__specialty
+									h4 Specialty
+								.jeweller__specialty
+									h4 Specialty
+								.jeweller__specialty
+									h4 Specialty
+						.jeweller__bottom
+							.jeweller__intro
+								.jeweller__brief
+									p This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description. This is a description.
+									.jeweller__signature
+										h3 Signature
