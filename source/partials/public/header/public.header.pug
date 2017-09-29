@@ -3,15 +3,35 @@ header
 		.header
 			.header__logo
 				p Logo
-			.header__gap
-			.header__navigation
-				.header__tile
-					p Tile
-				.header__tile
-					p Tile
-				.header__tile
-					p Tile
-				.header__tile
-					p Tile
-				.header__tile
-					p Tile
+
+			.header__rows
+				.header__row.top
+					.header__location
+						p 1338 Queen Street West, Toronto
+					.header__contact
+						p Contact Us
+
+				.header__row.bottom
+					.header__search
+						.header__input
+							input(placeholder="Search...")
+
+						.header__submit
+							button
+								//span.fa.fa-search
+
+					.header__navigation
+						.header__tile
+							p Link 1
+
+						.header__tile
+							p Link 2
+
+						.header__tile
+							p Link 3
+
+						.header__tile
+							p Link 4
+
+						.header__tile.last
+							p Link 5
