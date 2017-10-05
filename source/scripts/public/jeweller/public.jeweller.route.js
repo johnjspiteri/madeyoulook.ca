@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.jeweller', {
-				url: 'jeweller',
+				url: 'jewellers',
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/jeweller/public.jeweller.html',
