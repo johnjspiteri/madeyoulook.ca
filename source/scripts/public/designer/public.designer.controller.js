@@ -4,7 +4,7 @@
 
 		var vm = this;
 
-		vm.jewellers = [{
+		vm.designers = [{
 			name: ['Justin Test'],
 			experience: 2000,
 			specialty: ['Engagement Rings']
@@ -21,8 +21,8 @@
 	}
 
 	angular
-		.module('app.public.jeweller')
-		.controller('JewellerController', Internal);
+		.module('app.public.designer')
+		.controller('DesignerController', Internal);
 
 	Internal.$inject = [];
 

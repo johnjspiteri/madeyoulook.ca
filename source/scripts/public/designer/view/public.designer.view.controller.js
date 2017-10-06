@@ -7,8 +7,8 @@
 	}
 
 	angular
-		.module('app.public.jeweller.view')
-		.controller('JewellerViewController', Internal);
+		.module('app.public.designer.view')
+		.controller('DesignerViewController', Internal);
 
 	Internal.$inject = [];
 
