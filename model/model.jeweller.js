@@ -4,17 +4,25 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var JewellerSchema = new Schema({
-	awards: String,
-	background: String,
-	certification: Array,
-	collection: String,
-	experience: String,
-	name: String,
+	awards: Array,
+	contact: {
+		phone: Number,
+		email: String
+	},
+	certificates: Array,
+	description: String,
+	images: Array,
+	name: {
+		first: String,
+		last: String
+	},
 	school: String,
-	specialty: String,
-	style: String,
-	sub_type: String,
-	type: String
+	social: {
+		facebook: String,
+		instagram: String,
+		linkedin: String
+	},
+	style: Array
 
 });
 
