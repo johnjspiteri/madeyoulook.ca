@@ -21,13 +21,13 @@
 							.filter__mask
 								h4 #[span.fa.fa-caret-down]
 
-					.filter__select
+					.filter__select.stone
 						.filter__title
 							h5 Stone
 
 						.filter__value
-							select
-							.filter__mask
+							select.stone
+							.filter__mask.stone
 								h4 #[span.fa.fa-caret-down]
 
 					.filter__filter
@@ -47,26 +47,22 @@
 	//.filter__reset(data-ng-click='vm.reset()')
 		h5 #[span Reset] #[.fa.fa-close]
 
-.block
-	.block__container
-		.container
-			.products
-				.product(data-ng-repeat='product in vm.products')
-					.product__picture
-						img(src='public/images/product.jpg')
+.products
+	.products__holder
+		.product(data-ng-repeat='product in vm.products | limitTo: 4')
+			.product__picture
+				img(src='public/images/product.jpg')
 
-					.product__detail
-						.product__left
-							.product__title
-								h6(data-ng-bind='product.title')
+			.product__detail
+				.product__title
+					h6(data-ng-bind='product.title')
 
-							//.product__jeweller
+					//.product__jeweller
 
-						.product__right
-							.product__price
-								h6 $10,999
-							//.product__specs
+				.product__price
+					h6 $10,999
+					//.product__specs
 
-						.product__tags
-							.product__tag(data-ng-repeat='tag in product.tags')
-								h5(data-ng-bind='tag')
+				.product__tags
+					.product__tag(data-ng-repeat='tag in product.tags')
+						h5(data-ng-bind='tag')
