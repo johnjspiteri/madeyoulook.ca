@@ -7,8 +7,8 @@
 	}
 
 	angular
-		.module('app.public.studio')
-		.controller('StudioController', Internal);
+		.module('app.public.studio.about')
+		.controller('StudioAboutController', Internal);
 
 	Internal.$inject = [];
 
