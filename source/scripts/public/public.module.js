@@ -11,7 +11,6 @@
 			'app.public.index',
 			'app.public.privacy',
 			'app.public.product',
-			'app.public.return',
 			'app.public.studio',
 			'app.public.terms'
 		]);
