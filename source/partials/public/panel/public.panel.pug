@@ -1,24 +1,23 @@
 md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 	.mobile
-		.mobile__tile(data-ui-sref='app.private.pool' data-ui-sref-active='active' data-ng-click='vm.close()')
-			h4 POOLS
+		.mobile__tile(data-ui-sref-active='active' data-ng-click='vm.close()')
+			h4 Link 1
 
-		.mobile__tile(data-ng-click='vm.createPool()' data-ng-class="{active: $state.includes('app.private.create')}")
-			h4 CREATE POOL
-		.require__panel(data-ng-show='vm.disabled')
-			h6 You need at least 1 friend!
-			.pointer
-				.fa.fa-caret-down
-				//(data-ng-show='vm.disabled')
+		.mobile__tile
+			//(data-ng-click='vm.createPool()' data-ng-class="{active: $state.includes('app.private.create')}")
+			h4 Link 2
 
-		.mobile__tile(data-ui-sref='app.private.setting.profile' data-ui-sref-active='active' data-ng-click='vm.close()')
-			h4 SETTINGS
+		.mobile__tile
+			//(data-ui-sref='app.private.setting.profile' data-ui-sref-active='active' data-ng-click='vm.close()')
+			h4 Link 3
 
-		.mobile__tile(data-ui-sref='app.private.friend' data-ui-sref-active='active' data-ng-click='vm.close()')
-			h4 FRIENDS
+		.mobile__tile
+			//(data-ui-sref='app.private.friend' data-ui-sref-active='active' data-ng-click='vm.close()')
+			h4 Link 4
 
-		.mobile__tile(data-ng-click='vm.logout()')
-			h4 LOGOUT
+		.mobile__tile
+			//(data-ng-click='vm.logout()')
+			h4 Link 5
 
 	.mobile__close(data-ng-click='vm.close()')
 		.fa.fa-close
