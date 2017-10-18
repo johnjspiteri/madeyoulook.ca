@@ -9,10 +9,10 @@
 
 						.filter__value
 							select
-							.filter__mask
+							//.filter__mask
 								h4 #[span.fa.fa-caret-down]
 
-					.filter__select
+					//.filter__select
 						.filter__title
 							h5 Make
 
@@ -21,7 +21,7 @@
 							.filter__mask
 								h4 #[span.fa.fa-caret-down]
 
-					.filter__select.stone
+					//.filter__select.stone
 						.filter__title
 							h5 Stone
 
@@ -51,7 +51,7 @@
 	.products__holder
 		.product(data-ng-repeat='product in vm.products | limitTo: 4')
 			.product__picture
-				img(src='public/images/product.jpg')
+				//img(src='public/images/product.jpg')
 
 			.product__detail
 				.product__title
@@ -59,10 +59,10 @@
 
 					//.product__jeweller
 
-				.product__price
+				//.product__price
 					h6 $10,999
 					//.product__specs
 
-				.product__tags
+				//.product__tags
 					.product__tag(data-ng-repeat='tag in product.tags')
 						h5(data-ng-bind='tag')

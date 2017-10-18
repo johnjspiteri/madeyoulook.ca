@@ -5,7 +5,7 @@
 		var vm = this;
 
 		vm.products = [{
-			tags: ['Ring', 'Metal', 'Fake Gold'],
+			tags: ['Wedding'],
 			title: 'Purchase of The Year',
 			price: 12.99
 		},{

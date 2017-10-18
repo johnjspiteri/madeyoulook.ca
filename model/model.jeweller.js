@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var JewellerSchema = new Schema({
+var DesignerSchema = new Schema({
 	awards: Array,
 	contact: {
 		phone: Number,
@@ -23,7 +23,6 @@ var JewellerSchema = new Schema({
 		linkedin: String
 	},
 	style: Array
-
 });
 
-module.exports = mongoose.model('Jeweller', JewellerSchema);
+module.exports = mongoose.model('Designer', DesignerSchema);
