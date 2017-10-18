@@ -4,6 +4,7 @@
 		.module('app.common', [
 			'ngAnimate',
 			'ngAria',
+			'ngMaterial',
 			'ngMessages',
 			'ngResource',
 			'ui.router'

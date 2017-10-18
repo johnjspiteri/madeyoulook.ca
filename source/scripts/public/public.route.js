@@ -7,15 +7,15 @@
 				abstract: true,
 				url: "/",
 				views: {
-					// "panel": {
-					// 	templateUrl: "public/html/public/panel/public.panel.html",
-					// 	controller: "PanelController",
-					//     controllerAs: "vm"
-					// },
+					"panel@": {
+						templateUrl: "public/html/public/panel/public.panel.html",
+						controller: "PanelController",
+					    controllerAs: "vm"
+					},
 					"header@": {
 						templateUrl: "/public/html/public/header/public.header.html",
-						// controller: "PublicHeaderController",
-						// controllerAs: "vm"
+						controller: "HeaderController",
+						controllerAs: "vm"
 					},
 					"footer@": {
 						templateUrl: "public/html/public/footer/public.footer.html",
