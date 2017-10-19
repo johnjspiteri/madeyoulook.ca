@@ -1,24 +1,93 @@
 header
-	position relative
-	width 100%
-	padding 0
-	margin 0 auto
-	z-index 8888
-
-.header
 	float left
 	width 100%
 	padding 0
 	margin 0
-	background $primary
+	z-index 2
 
-	&__container
-		position relative
-		display inline-block
+.header
+	position relative
+	float none
+	width 320px
+	padding 0 0 8px 0
+	margin 0 auto 0 auto
+	border-top none
+	background #2E3A44
+	z-index 900
+
+	&__socials-bar
+		float left
+		width 100%
+		padding 2px 0 0 0
+		height 22px
+		background #fffefa
+
+	&__icons
+		float right
+		padding 0 0 0 0
+
+	&__icon
+		float right
+		margin 0 14px 0 0
+
+		.fa-pinterest
+			width 100%
+			font-size 20px
+			color $black
+
+		.fa-facebook
+			width 100%
+			margin 0 0 0 0
+			font-size 17px
+			color $black
+
+		.fa-instagram
+			width 100%
+			font-size 20px
+			color $black
+
+		.fa-twitter
+			width 100%
+			margin 1px 0 0 0
+			font-size 18px
+			color $black
+
+		.fa-phone
+			width 100%
+			margin 1px 0 0 0
+			font-size 17px
+			color $black
+
+		.fa-map-marker
+			width 100%
+			margin 1px 0 0 0
+			font-size 17px
+			color $black
+
+	&__phone
+		float right
+		margin 0 20px 0 0
+
+		h6
+			float right
+			margin 0 0 0 -5px
+			display inline-block
+			font-family "halyard-micro",sans-serif
+			font-weight 600
+			font-size 15px
+			line-height 20px
+
+	&__hours
+		display none
+
+	&__address
+		display none
+
+	&__nav
+		float left
 		width 300px
 		padding 10px 10px 8px 10px
-		margin 0
-		border-top none
+		background #2E3A44
 
 	&__logo
 		float left
@@ -33,24 +102,6 @@ header
 			width 100%
 			font-size 20px
 			line-height 46px
-
-	&__hours
-		float left
-		width 130px
-		height 46px
-		margin 0 0 10px 0
-		text-align left
-
-		p
-			float left
-			width 100%
-			padding: 0
-			margin: 0
-			font-family: "le-monde-livre-classic-byol",serif;
-			font-weight 700
-			font-size 13px
-			line-height 19px
-			text-align: center
 
 	&__empty
 		float left
