@@ -1,15 +1,37 @@
 header
 	.header
-		.header__container
+		.header__socials-bar
+			.header__icons
+				.header__icon
+					a(href="https://www.pinterest.ca/myljewellery/" target="_blank") #[span.fa.fa-pinterest]
+
+				.header__icon
+					a(href="https://www.instagram.com/madeyoulookjewellery/" target="_blank") #[span.fa.fa-instagram]
+
+				.header__icon
+					a(href="https://www.facebook.com/madeyoulookjewellery" target="_blank") #[span.fa.fa-facebook]
+
+				.header__icon
+					a(href="https://twitter.com/myljewellery" target="_blank") #[span.fa.fa-twitter]
+
+			.header__phone
+				h6 416-463-2136
+
+				.header__icon
+					span.fa.fa-phone
+
+			.header__hours
+				h6 M - F: 10-8PM | Sat: 10-6PM | Sun: 12-5PM
+
+			.header__address
+				h6 1338 Queen Street West, Toronto
+
+				.header__icon
+					span.fa.fa-map-marker
+
+		.header__nav
+
 			.header__logo
-
-			//.header__hours
-				p M-F: 10-8PM
-				p S: 10-6PM
-				p S: 12-5PM
-
-			//.header__empty
-				p 1338 Queen Street West, Toronto
 
 			.header__navigation-icon(data-ng-click='vm.open()')
 				span.fa.fa-bars
@@ -18,12 +40,6 @@ header
 				span.fa.fa-search
 
 			.header__rows
-				.header__row.top
-					.header__location
-						p 1338 Queen Street West, Toronto
-					.header__contact
-						p Contact Us
-
 				.header__row.bottom
 					.header__search
 						.header__input

@@ -6,6 +6,11 @@
 			.state('app.public.index', {
 				url: '',
 				views: {
+					'video@': {
+						templateUrl: 'public/html/public/index/video/public.index.video.html',
+						controller: 'IndexController',
+						controllerAs: 'vm'
+					},
 					'page@': {
 						templateUrl: 'public/html/public/index/public.index.html',
 						controller: 'IndexController',
