@@ -5,19 +5,19 @@
 		var vm = this;
 
 		vm.products = [{
-			tags: ['Wedding'],
+			tags: ['WEDDING'],
 			title: 'Purchase of The Year',
 			price: 12.99
 		},{
-			tags: ['Ring', 'Metal', 'Fake Gold'],
+			tags: ['RING', 'METAL', 'FAKE GOLD'],
 			title: 'Purchase of The Year',
 			price: 12.99
 		},{
-			tags: ['Ring', 'Metal', 'Fake Gold'],
+			tags: ['RING', 'METAL', 'FAKE GOLD'],
 			title: 'Purchase of The Year',
 			price: 12.99
 		},{
-			tags: ['Ring', 'Metal', 'Fake Gold'],
+			tags: ['RING', 'METAL', 'FAKE GOLD'],
 			title: 'Purchase of The Year',
 			price: 12.99
 		}]

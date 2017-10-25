@@ -9,7 +9,4 @@ input(placeholder='Enter Search')
 	h5 Less Options
 	//.fa.fa-minus
 --><!--.filter__reset(data-ng-click='vm.reset()')h5 <span>Reset</span> <div class="fa fa-close"></div>
---></div><div class="products"><div class="products__holder"><div class="product" data-ng-repeat="product in vm.products | limitTo: 4"><div class="product__picture"><!--img(src='public/images/product.jpg')--></div><div class="product__detail"><div class="product__title"><h6 data-ng-bind="product.title"></h6><!--.product__jeweller--></div><!--.product__priceh6 $10,999
-//.product__specs
---><!--.product__tags.product__tag(data-ng-repeat='tag in product.tags')
-	h5(data-ng-bind='tag')--></div></div></div></div>
+--></div><div class="products"><div class="products__holder"><div class="product" data-ng-repeat="product in vm.products | limitTo: 4"><div class="product__picture"><img src="public/images/product.jpg"/></div><div class="product__detail"><div class="product__title"><h6 data-ng-bind="product.title"></h6><!--.product__jeweller--></div><div class="product__collection"><h6>COLLECTION</h6></div><div class="product__price"><h6>$10,999</h6><!--.product__specs--></div><div class="product__tags"><div class="product__tag" data-ng-repeat="tag in product.tags"><h5 data-ng-bind="tag"></h5></div></div></div></div></div></div>

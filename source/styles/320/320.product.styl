@@ -1,4 +1,5 @@
 .products
+	position relative
 	width 100%
 	padding 0
 	margin 0 auto
@@ -15,8 +16,9 @@
 	width 268px
 	padding 0
 	margin 0 0 15px 0
-	//background $white
+	background $white
 	border $black-border
+	border-radius 2px
 
 	&__picture
 		float left
@@ -32,10 +34,10 @@
 
 	&__detail
 		float left
-		width 263px
-		padding 10px 0 7px 5px
+		width 238px
+		padding 10px 15px 8px 15px
 		margin 0
-		background #580
+		background #e0e0e0e0
 
 		h6
 			float left
@@ -46,29 +48,48 @@
 
 	&__title
 		float left
-		width 171px
+		width 100%
 		padding 0
-		margin 0 0 10px 0
+		margin 0 0 14px 0
 		text-align center
 
-	&__price
+		h6
+			width 222px
+			padding 0 8px 4px 8px
+			font-size 18px
+
+	&__collection
 		float left
-		width 92px
+		width 100px
 		padding 0
 		margin 0 0 12px 0
-		text-align center
+		text-align left
+
+		h6
+			font-size 14px
+			line-height 20px
+
+	&__price
+		float right
+		width 55px
+		padding 0
+		margin 0 0 12px 0
+		text-align right
+
+		h6
+			line-height 20px
 
 	&__tags
 		float left
-		width 258px
+		width 100%
 		padding 0
 		margin 0
 
 	&__tag
 		float left
-		padding 4px
-		margin 0 10px 5px 0
-		background $white
+		padding 3px 4px
+		margin 0 3px
+		background $black
 		border $black-border
 		border-radius 4px
 		text-align center
@@ -76,6 +97,7 @@
 		h5
 			float left
 			width 100%
-			font-size 14px
-			line-height 14px
+			font-size 12px
+			line-height 12px
 			font-weight 400
+			color $white

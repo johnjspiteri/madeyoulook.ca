@@ -68,18 +68,20 @@
 	.products__holder
 		.product(data-ng-repeat='product in vm.products | limitTo: 4')
 			.product__picture
-				//img(src='public/images/product.jpg')
+				img(src='public/images/product.jpg')
 
 			.product__detail
 				.product__title
 					h6(data-ng-bind='product.title')
 
 					//.product__jeweller
+				.product__collection
+					h6 COLLECTION
 
-				//.product__price
+				.product__price
 					h6 $10,999
 					//.product__specs
 
-				//.product__tags
+				.product__tags
 					.product__tag(data-ng-repeat='tag in product.tags')
 						h5(data-ng-bind='tag')
