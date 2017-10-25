@@ -7,8 +7,8 @@
 	}
 
 	angular
-		.module('app.public.product.view')
-		.controller('ProductViewController', Internal);
+		.module('app.public.jewellery.wedding')
+		.controller('JewelleryWeddingController', Internal);
 
 	Internal.$inject = [];
 

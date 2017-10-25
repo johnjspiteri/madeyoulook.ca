@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.product.wedding', []);
+		.module('app.public.jewellery.view', []);
 
 })();
