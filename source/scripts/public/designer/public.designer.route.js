@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.designer', {
-				url: 'designers',
+				url: 'designers/',
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/designer/public.designer.html',
