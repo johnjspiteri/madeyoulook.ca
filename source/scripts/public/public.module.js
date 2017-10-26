@@ -3,6 +3,7 @@
 	angular
 		.module('app.public', [
 			'app.public.about',
+			'app.public.answer',
 			'app.public.borrowing',
 			'app.public.certificates',
 			'app.public.contact',
@@ -12,6 +13,8 @@
 			'app.public.jewellery',
 			// 'app.public.panel',
 			'app.public.privacy',
+			'app.public.repair',
+			'app.public.service',
 			'app.public.studio',
 			'app.public.terms'
 		]);

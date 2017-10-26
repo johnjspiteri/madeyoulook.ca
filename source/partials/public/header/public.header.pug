@@ -32,6 +32,7 @@ header
 		.header__nav
 
 			.header__logo
+				img(src='public/images/logo.png')
 
 			.header__navigation-icon(data-ng-click='vm.open()')
 				span.fa.fa-bars
@@ -53,20 +54,20 @@ header
 				.header__tile.nav
 					p Nav
 
-				.header__tile
-					p Products
+				.header__tile(ui-sref='app.public.jewellery' ui-sref-active='active')
+					p Jewellery
 
-				.header__tile
+				.header__tile(ui-sref='app.public.designer' ui-sref-active='active')
 					p Designers
 
-				.header__tile
+				.header__tile(ui-sref='app.public.service' ui-sref-active='active')
+					p Services
+
+				.header__tile(ui-sref='app.public.repair' ui-sref-active='active')
 					p Repairs
 
-				.header__tile
-					p Answers
-
-				.header__tile
+				.header__tile(ui-sref='app.public.studio.about' ui-sref-active='active')
 					p Studio
 
-				.header__tile.last
+				.header__tile.last(ui-sref='app.public.contact' ui-sref-active='active')
 					p Contact

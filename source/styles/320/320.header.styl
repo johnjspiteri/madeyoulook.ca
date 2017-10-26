@@ -87,21 +87,18 @@ header
 		float left
 		width 300px
 		padding 10px 10px 8px 10px
-		background #2E3A44
+		background #f0efeb
 
 	&__logo
 		float left
-		width 170px
-		height 46px
+		width 161px
+		height 62px
 		margin 0
-		background #9D9599
 		border-radius 4px
 
-		p
-			float left
+		img
 			width 100%
-			font-size 20px
-			line-height 46px
+			height 100%
 
 	&__empty
 		float left
@@ -117,7 +114,7 @@ header
 		float right
 		width 36px
 		height 36px
-		margin 5px 0 0 10px
+		margin 13px 0 0 10px
 		background $accent
 		border-radius 4px
 		text-align center
@@ -130,7 +127,7 @@ header
 		float right
 		width 36px
 		height 36px
-		margin 5px 0 0 0
+		margin 13px 0 0 0
 		background $accent
 		border-radius 4px
 		text-align center
@@ -214,9 +211,11 @@ header
 		width 30px
 		height 41px
 		padding 0 5px
-		background #443E49
+		background $accent
+		text-align center
 
 		.fa-search
+			margin 8px 0 0 0
 			font-size 20px
 			line-height 20px
 			color $white
@@ -240,6 +239,9 @@ header
 			width 100%
 			font-size 17px
 			line-height 43px
+
+	&__tile.active
+		background #DC9D41
 
 	&__tile.last
 		margin 0
