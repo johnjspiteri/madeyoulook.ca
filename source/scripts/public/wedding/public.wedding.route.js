@@ -3,12 +3,12 @@
 	function internal($stateProvider) {
 
 		$stateProvider
-			.state('app.public.studio.bench', {
-				url: 'bench-rental/',
+			.state('app.public.wedding', {
+				url: 'weddings/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/public/studio/bench/public.studio.bench.html',
-						controller: 'StudioBenchController',
+						templateUrl: 'public/html/public/wedding/public.wedding.html',
+						controller: 'WeddingController',
 						controllerAs: 'vm'
 					}
 				}
@@ -16,7 +16,7 @@
 	}
 
 	angular
-		.module('app.public.studio.bench')
+		.module('app.public.wedding')
 		.config(internal);
 
 	internal.$inject = ['$stateProvider'];

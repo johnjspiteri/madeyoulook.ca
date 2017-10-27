@@ -7,8 +7,8 @@
 	}
 
 	angular
-		.module('app.public.studio.bench')
-		.controller('StudioBenchController', Internal);
+		.module('app.public.service.engraving')
+		.controller('ServiceEngravingController', Internal);
 
 	Internal.$inject = [];
 

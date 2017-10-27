@@ -16,7 +16,8 @@
 			'app.public.repair',
 			'app.public.service',
 			'app.public.studio',
-			'app.public.terms'
+			'app.public.terms',
+			'app.public.wedding'
 		]);
 
 })();

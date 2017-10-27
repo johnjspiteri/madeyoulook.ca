@@ -2,6 +2,6 @@
     "use strict";
 
     angular
-        .module('app.public.studio.bench', []);
+        .module('app.public.studio.press', []);
 
 })();

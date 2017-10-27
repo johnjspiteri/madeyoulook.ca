@@ -3,8 +3,7 @@
 
 	angular
 		.module('app.public.jewellery', [
-				'app.public.jewellery.view',
-				'app.public.jewellery.wedding'
+				'app.public.jewellery.view'
 		]);
 
 })();
