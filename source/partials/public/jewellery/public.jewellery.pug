@@ -67,8 +67,11 @@
 .products
 	.products__holder
 		.product(data-ng-repeat='product in vm.products | limitTo: 4')
-			.product__picture
+			.product__image
 				img(src='public/images/product.jpg')
+
+			.product__unnamed
+				h6 ?
 
 			.product__detail
 				.product__title
@@ -85,3 +88,13 @@
 				.product__tags
 					.product__tag(data-ng-repeat='tag in product.tags')
 						h5(data-ng-bind='tag')
+
+				.product__designer
+					.product__picture
+						img(src='public/images/jeweller.jpg')
+
+					.product__name
+						h5 Designer Name
+
+					.product__view
+						h6 View
