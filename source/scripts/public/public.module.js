@@ -7,6 +7,7 @@
 			'app.public.borrowing',
 			'app.public.certificates',
 			'app.public.contact',
+			'app.public.custom',
 			'app.public.designer',
 			'app.public.exchange',
 			'app.public.index',
