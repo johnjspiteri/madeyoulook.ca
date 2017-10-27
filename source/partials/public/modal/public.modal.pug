@@ -1,0 +1,25 @@
+.backdrop(data-ng-show='vm.backdrop' data-ng-click='vm.close()')
+
+.modal
+	.modal__holder
+		.modal__square(data-ng-show='vm.backdrop')
+			.modal__close(data-ng-click='vm.close()')
+				span.fa.fa-close
+
+			.modal__row
+				h1 Modal Title
+
+			.modal__row
+				p Some text that belongs in the modal. Some text that belongs in the modal. Some text that belongs in the modal. Some text that belongs in the modal.
+			.modal__row
+				input(placeholder='Input')
+
+			.modal__row
+				select
+				.modal__mask
+					h4 Select
+					span.fa.fa-caret-down
+
+			.modal__row
+				button.submit
+					h5 Submit

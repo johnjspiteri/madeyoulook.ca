@@ -6,6 +6,11 @@
 			.state('app.public.index', {
 				url: '',
 				views: {
+					'modal@': {
+						templateUrl: 'public/html/public/modal/public.modal.html',
+						controller: 'IndexController',
+						controllerAs: 'vm'
+					},
 					'video@': {
 						templateUrl: 'public/html/public/index/video/public.index.video.html',
 						controller: 'IndexController',
