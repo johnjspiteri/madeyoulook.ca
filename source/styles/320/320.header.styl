@@ -10,72 +10,69 @@ header
 	float none
 	width 320px
 	padding 0 0 8px 0
-	margin 0 auto 0 auto
+	margin 0 auto
 	border-top none
-	background #2E3A44
 	z-index 900
 
 	&__socials-bar
 		float left
-		width 100%
-		padding 2px 0 0 0
-		height 22px
-		background #fffefa
+		width 300px
+		height: 32px
+		padding 0 10px 0 10px
+		background #585858
 
 	&__icons
 		float right
-		padding 0 0 0 0
+		padding 0
 
 	&__icon
 		float right
-		margin 0 14px 0 0
+		margin 0 0 0 14px
 
 		.fa-pinterest
+		.fa-facebook
+		.fa-instagram
+		.fa-twitter
+			float: left
 			width 100%
 			font-size 20px
-			color $black
+			line-height: 32px
+			color $white
 
 		.fa-facebook
-			width 100%
-			margin 0 0 0 0
 			font-size 17px
-			color $black
 
 		.fa-instagram
-			width 100%
 			font-size 20px
-			color $black
 
 		.fa-twitter
-			width 100%
-			margin 1px 0 0 0
 			font-size 18px
-			color $black
-
-		.fa-phone
-			width 100%
-			margin 1px 0 0 0
-			font-size 17px
-			color $black
 
 		.fa-map-marker
 			width 100%
 			margin 1px 0 0 0
 			font-size 17px
-			color $black
+			color $white
 
 	&__phone
-		float right
+		float left
 		margin 0 20px 0 0
 
-		h6
-			float right
-			margin 0 0 0 -5px
-			display inline-block
-			font-family "halyard-micro",sans-serif
-			font-weight 600
+		h5
+			float left
+			padding: 0
+			margin 0
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 16px
+			line-height 29px
+			color $white
+			//text-shadow $white-shadow
+
+		.fa-phone
+			margin 1px 8px 0 0
 			font-size 15px
-			line-height 20px
+			color $white
 
 	&__hours
 		display none
@@ -87,14 +84,14 @@ header
 		float left
 		width 300px
 		padding 10px 10px 8px 10px
-		background #f0efeb
+		background #2E3A44
+		//background $white
 
 	&__logo
 		float left
-		width 161px
-		height 62px
+		width 200px
+		padding: 0
 		margin 0
-		border-radius 4px
 
 		img
 			width 100%
@@ -119,9 +116,11 @@ header
 		border-radius 4px
 		text-align center
 
-		span
+		.fa-bars
+			margin 0
+			font-size 19px
+			line-height 35px
 			color $white
-			line-height 36px
 
 	&__search-icon
 		float right
@@ -132,9 +131,15 @@ header
 		border-radius 4px
 		text-align center
 
-		span
+		.fa-search
+			margin 0
+			font-size 18px
+			line-height 35px
 			color $white
-			line-height 36px
+
+		//span
+		//	color $white
+		//	line-height 36px
 
 	&__rows
 		display none

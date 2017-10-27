@@ -5,7 +5,7 @@ module.exports = {
 			logConcurrentOutput: true
 		},
 		tasks: [
-			'build-data',
+			// 'build-data',
 			'build-partials',
 			'build-styles'
 		]
