@@ -1,0 +1,15 @@
+{
+	"name": "Emily Gill",
+	"email": "emily.gill@madeyoulook.com",
+	"password": "",
+	"facebook": "https://facebook.com/",
+	"linkedin": "https://ca.linkedin.com/",
+	"twitter": "https://twitter.com/",
+	"bio": "Emily Gill grew up in Montreal, Quebec. A lover of jewellery from a very young age, she started assembling her professional collection in 2009. With an eye for mixing coloured gemstones and diamonds, and expertise in the craft of vitreous glass enamelling, she combines traditional goldsmithing techniques and computer design to create unique collections and one-of-a-kind pieces. Emily attended the Nova Scotia College of Art and Design, gained additional work experience and training in Toronto, Ontario, and has won numerous awards for her outside-the-box jewellery designs. She is inspired by nature, biology, architecture, retro and contemporary industrial design. She works passionately with her clients on customized projects to create the perfect piece every time that will still match their lifestyle and everyday needs.",
+	"picture": {
+		"base64": "",
+		"filename": "",
+		"filesize": 0,
+		"filetype": "image/jpeg"
+	}
+}

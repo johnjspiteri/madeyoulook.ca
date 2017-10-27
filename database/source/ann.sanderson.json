@@ -1,0 +1,15 @@
+{
+	"name": "Ann Sanderson",
+	"email": "an.sanderson@madeyoulook.com",
+	"password": "",
+	"facebook": "https://facebook.com/",
+	"linkedin": "https://ca.linkedin.com/",
+	"twitter": "https://twitter.com/",
+	"bio": "Bio coming soon...",
+	"picture": {
+		"base64": "",
+		"filename": "",
+		"filesize": 0,
+		"filetype": "image/jpeg"
+	}
+}
