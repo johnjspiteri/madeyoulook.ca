@@ -4,6 +4,12 @@
 
 		var vm = this;
 
+		vm.backdrop = false;
+
+		vm.close = function() {
+			vm.backdrop = false;
+		};
+
 	}
 
 	angular
