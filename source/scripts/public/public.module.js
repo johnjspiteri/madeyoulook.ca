@@ -11,7 +11,7 @@
 			'app.public.designer',
 			'app.public.exchange',
 			'app.public.index',
-			'app.public.jewellery',
+			'app.public.product',
 			// 'app.public.panel',
 			'app.public.privacy',
 			'app.public.repair',

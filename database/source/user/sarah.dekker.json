@@ -1,0 +1,28 @@
+{
+	"awards": [],
+	"bio": "Sarah Dekker is a bead embroidery artist living in Niagara on the Lake, On. Completely self taught, she creates truly unique pieces of wearable art using a combination of silk ribbon and beads. Each design is inspired by the colour and texture of the ribbon, resulting in a stunning statement piece.",
+	"contact": {
+		"phone": 0,
+		"email": "sarah.dekker@madeyoulook.com"
+	},
+	"certificates": [],
+	"description": "",
+	"images": [],
+	"name": {
+		"first": "Sarah",
+		"last": "Dekker"
+	},
+	"picture": {
+		"base64": "",
+		"filename": "",
+		"filesize": 0,
+		"filetype": "image/jpeg"
+	},
+	"school": "",
+	"social": {
+		"facebook": "https://facebook.com/",
+		"linkedin": "https://ca.linkedin.com/",
+		"twitter": "https://twitter.com/"
+	},
+	"style": []
+}
