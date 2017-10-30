@@ -1,26 +1,11 @@
 (function() { "use strict";
 
-	function Internal() {
+	function Internal(productsResolve) {
 
 		var vm = this;
 
-		vm.products = [{
-			tags: ['WEDDING'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		},{
-			tags: ['RING', 'METAL', 'FAKE GOLD'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		},{
-			tags: ['RING', 'METAL', 'FAKE GOLD'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		},{
-			tags: ['RING', 'METAL', 'FAKE GOLD'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		}]
+		vm.products = productsResolve;
+		console.log('products', vm.products);
 
 	}
 
@@ -28,6 +13,6 @@
 		.module('app.public.product')
 		.controller('ProductController', Internal);
 
-	Internal.$inject = [];
+	Internal.$inject = ['productsResolve'];
 
 })();

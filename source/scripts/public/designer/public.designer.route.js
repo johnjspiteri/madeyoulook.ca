@@ -14,7 +14,7 @@
 				},
 				resolve:  {
 					designersResolve: ['designersList', function(designersList) {
-						return designersList.query({}).$promise;
+						return designersList.query().$promise;
 					}]
 				}
 			});

@@ -23,7 +23,6 @@ var express = require('express'),
 	server = require('http').createServer(app),
 	env = app.get('env');
 
-app.use(morgan('tiny'));
 app.use(compression());
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
@@ -41,6 +40,11 @@ if (process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
 mongoose.connect(connection);
 
 app.use(express.static('./'));
+
+app.use('/api/designer-list', require('./api/designer-list/api.designer.list.index'));
+app.use('/api/product-list', require('./api/product-list/api.product.list.index'));
+
+app.use(morgan('tiny'));
 
 if ('production' === env) {
 	app.get('/*', function(req, res) {

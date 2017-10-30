@@ -9,14 +9,14 @@
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/product/public.product.html',
-						resolve: {
-							productsResolve: ['productList', function(productList) {
-								return productList.query({}).$promise;
-							}]
-						},
 						controller: 'ProductController',
 						controllerAs: 'vm'
 					}
+				},
+				resolve: {
+					productsResolve: ['productsList', function(productsList) {
+						return productsList.query().$promise;
+					}]
 				}
 			});
 	}

@@ -1,22 +1,11 @@
 (function() { "use strict";
 
-	function Internal() {
+	function Internal(designersResolve) {
 
 		var vm = this;
 
-		vm.designers = [{
-			name: ['Justin Test'],
-			experience: 2000,
-			specialty: ['Engagement Rings']
-		},{
-			name: ['Mark Test'],
-			experience: 2010,
-			specialty: ['Necklaces']
-		},{
-			name: ['John Test'],
-			experience: 1990,
-			specialty: ['Earrings']
-		}]
+		vm.designers = designersResolve;
+		console.log('designers', vm.designers);
 
 	}
 
@@ -24,6 +13,6 @@
 		.module('app.public.designer')
 		.controller('DesignerController', Internal);
 
-	Internal.$inject = [];
+	Internal.$inject = ['designersResolve'];
 
 })();

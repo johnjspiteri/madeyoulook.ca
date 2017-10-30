@@ -65,7 +65,7 @@ var ProductSchema = new Schema({
 		length: Number,
 		shape: String
 	},
-	collection: String
+	group: String
 });
 
 module.exports = mongoose.model('Product', ProductSchema);
