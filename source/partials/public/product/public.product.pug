@@ -66,7 +66,7 @@
 
 .products
 	.products__holder
-		.product(data-ng-repeat='product in vm.products | limitTo: 4')
+		.product(data-ng-repeat='product in vm.products')
 			.product__image
 				img(src='public/images/product.jpg')
 
@@ -75,18 +75,18 @@
 
 			.product__detail
 				.product__title
-					h6(data-ng-bind='product.title')
+					h6(data-ng-bind='product.detail.title')
 
 					//.product__jeweller
 				.product__collection
-					h6 COLLECTION
+					h6(data-ng-bind='product.detail.category')
 
 				.product__price
-					h6 $10,999
+					h6(data-ng-bind='product.detail.price')
 					//.product__specs
 
 				.product__tags
-					.product__tag(data-ng-repeat='tag in product.tags')
+					.product__tag(data-ng-repeat='tag in product.detail.sub_category')
 						h5(data-ng-bind='tag')
 
 				.product__designer
@@ -94,7 +94,7 @@
 						img(src='public/images/jeweller.jpg')
 
 					.product__name
-						h5 Designer Name
+						h5(data-ng-bind='product.detail.designer')
 
 					.product__view
 						h6 View

@@ -5,7 +5,6 @@
 		var vm = this;
 
 		vm.products = productsResolve;
-		console.log('products', vm.products);
 
 	}
 
