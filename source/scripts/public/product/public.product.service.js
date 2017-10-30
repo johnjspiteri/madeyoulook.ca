@@ -12,7 +12,7 @@
 
     angular
         .module('app.public.product')
-        .factory('productList', internal);
+        .factory('productsList', internal);
 
     internal.$inject = ['$resource'];
 

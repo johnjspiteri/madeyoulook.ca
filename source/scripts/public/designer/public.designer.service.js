@@ -2,7 +2,7 @@
 
     function internal($resource) {
 
-        return $resource("/api/designers-list/:_id", { _id: "@_id" }, {
+        return $resource("/api/designer-list/:_id", { _id: "@_id" }, {
             'query': {
 				method: 'GET',
 				isArray: true
@@ -12,7 +12,7 @@
 
     angular
         .module('app.public.designer')
-        .factory('designerList', internal);
+        .factory('designersList', internal);
 
     internal.$inject = ['$resource'];
 
