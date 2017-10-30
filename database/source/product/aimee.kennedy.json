@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Rough Diamond Necklace",
+		"designer": "Aimee Kennedy",
+		"description": "Rough Diamond Beads, on 14k yellow gold filled chain.",
+		"category": "Necklace",
+		"price": 295,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": false,
+		"earring": false,
+		"necklace": true,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": ["14 karat"],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": false
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 0,
+		"shape": ""
+	},
+	"collection": ""
+}

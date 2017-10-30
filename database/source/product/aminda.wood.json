@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Watch Part Cufflinks",
+		"designer": "Aminda Wood",
+		"description": "Found watch parts set in resin. Different colours available.",
+		"category": "Cufflink",
+		"price": 75,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": false,
+		"earring": false,
+		"necklace": true,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": [],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": false
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 0,
+		"shape": ""
+	},
+	"collection": ""
+}

@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Antikythera Artifact Necklace",
+		"designer": "Arsaeus Designs",
+		"description": "The Antikythera mechanism is an ancient analogue computer. It was used to predict astronomical positions, eclipses, as well as the ancient Olympic Game cycles. This artifact was discovered in a shipwreck, off the Greek island of Antikythera and is dated to about 150-100 BC.",
+		"category": "Necklace",
+		"price": 295,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": false,
+		"earring": false,
+		"necklace": true,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": [],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": false
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 24,
+		"shape": ""
+	},
+	"collection": ""
+}

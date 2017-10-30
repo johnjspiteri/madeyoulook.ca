@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Breakfast Charm Bracelet",
+		"designer": "Ann Sanderson",
+		"description": "Handmade breakfast charm bracelet. Polymer clay, antiqued copper chain.",
+		"category": "Bracelet",
+		"price": 82,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": true,
+		"earring": false,
+		"necklace": false,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": [],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": false
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 0,
+		"shape": ""
+	},
+	"collection": ""
+}

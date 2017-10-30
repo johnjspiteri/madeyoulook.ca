@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Steel & Concrete Pendant",
+		"designer": "Colleen Poitras",
+		"description": "This stainless steel pendant has been 3D printed with 420 Stainless Steel infused with bronze. Concrete has been added to finalize this industrial inspired pendant. Shown with a grey concrete. Approx 1.5\" in length and 1/4\" wide, each piece is one of a kind.",
+		"category": "Necklace",
+		"price": 129,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": false,
+		"earring": false,
+		"necklace": true,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": [],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": false
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 24,
+		"shape": ""
+	},
+	"collection": ""
+}

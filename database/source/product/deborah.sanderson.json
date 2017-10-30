@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Reticulated Gold & Silver Cuff Bracelet",
+		"designer": "Deborah Sanderson",
+		"description": "Wide reticulated cuff bracelet in sterling silver and yellow gold.",
+		"category": "Bracelet",
+		"price": 1000,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": true,
+		"earring": false,
+		"necklace": false,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": [],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": false
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 0,
+		"shape": ""
+	},
+	"collection": ""
+}

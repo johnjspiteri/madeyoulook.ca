@@ -1,0 +1,63 @@
+{
+	"detail": {
+		"title": "Gold & Pearl Cluster Necklace",
+		"designer": "Annie Tung",
+		"description": "Caviar fresh water pearl cluster necklace in 18k yellow gold.",
+		"category": "Necklace",
+		"price": 965,
+		"style": "",
+		"sub_category": []
+	},
+	"type": {
+		"bracelet": false,
+		"earring": false,
+		"necklace": true,
+		"ring": false
+	},
+	"material": {
+		"metals": {
+			"gold": {
+				"quality": ["18k"],
+				"size": 0
+			},
+			"meteorite": {
+
+			},
+			"platinum": {
+
+			},
+			"palladium": {
+
+			},
+			"silver": {
+
+			},
+			"glass": {
+
+			},
+			"other": {
+
+			}
+		}
+	},
+	"gemstones": {
+		"birthstone": "",
+		"pearl": true
+
+	},
+	"diamonds": {
+		"carat": {
+			"weight": 0
+		},
+		"cut": "",
+		"clarity": "",
+		"colour": "",
+		"synthetic": ""
+	},
+	"size": {
+		"bandwidth": 0,
+		"length": 0,
+		"shape": ""
+	},
+	"collection": ""
+}
