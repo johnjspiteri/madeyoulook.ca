@@ -11,6 +11,11 @@
 						controller: 'DesignerViewController',
 						controllerAs: 'vm'
 					}
+				},
+				resolve:  {
+					designerResolve: ['designerList', function(designerList) {
+						return designerList.query({}).$promise;
+					}]
 				}
 			});
 	}
