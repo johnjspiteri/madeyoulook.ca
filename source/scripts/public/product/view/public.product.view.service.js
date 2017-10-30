@@ -3,10 +3,9 @@
     function internal($resource) {
 
         return $resource("/api/product-view/:_id", { _id: "@_id" }, {
-
-            'view': {
-                method: 'GET',
-                isArray: false,
+            'query': {
+				method: 'GET',
+				isArray: true
             }
         });
     }

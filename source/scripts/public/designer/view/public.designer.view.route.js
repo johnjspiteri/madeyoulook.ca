@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.designer.view', {
-				url: 'view/',
+				url: '/:_id',
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/designer/view/public.designer.view.html',
@@ -13,8 +13,8 @@
 					}
 				},
 				resolve:  {
-					designerResolve: ['designerList', function(designerList) {
-						return designerList.query({}).$promise;
+					designerResolve: ['designerView', function(designerView) {
+						return designerView.query({}).$promise;
 					}]
 				}
 			});

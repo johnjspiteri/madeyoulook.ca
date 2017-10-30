@@ -8,13 +8,13 @@
 				views: {
 					'page@': {
 						templateUrl: 'public/html/public/product/view/public.product.view.html',
-						resolve:{
-							productResolve:['$stateParams','productView', function($stateParams,productView){
-								return productView.view({_id: $stateParams._id }).$promise
-							}]
-						},
-						controller: 'ProductViewController',
-						controllerAs: 'vm'
+							controller: 'ProductViewController',
+							controllerAs: 'vm'
+					},
+					resolve: {
+						productResolve: ['productView', function (productView) {
+							return productView.view().$promise
+						}]
 					}
 				}
 			});

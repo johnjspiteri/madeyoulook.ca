@@ -1,25 +1,9 @@
 (function() { "use strict";
 
-	function Internal() {
+	function Internal(designerResolve) {
 
 		var vm = this;
-		vm.products = [{
-			tags: ['WEDDING'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		},{
-			tags: ['RING', 'METAL', 'FAKE GOLD'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		},{
-			tags: ['RING', 'METAL', 'FAKE GOLD'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		},{
-			tags: ['RING', 'METAL', 'FAKE GOLD'],
-			title: 'Purchase of The Year',
-			price: 12.99
-		}];
+		vm.designer = designerResolve;
 
 	}
 
@@ -27,6 +11,6 @@
 		.module('app.public.designer.view')
 		.controller('DesignerViewController', Internal);
 
-	Internal.$inject = [];
+	Internal.$inject = ['designerResolve'];
 
 })();

@@ -3,10 +3,10 @@
 var Designer = require('./../../model/model.designer');
 
 exports.index = function(req, res) {
-	console.log('here!');
+	// console.log('here!');
 	Designer.find({}, function(err, designers) {
 		if(err) return;
-		console.log('designers', designers);
+		// console.log('designers', designers);
 		return res.status(200).json(designers);
 	});
 };
