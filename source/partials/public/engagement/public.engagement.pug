@@ -1,3 +1,83 @@
 .block
 	.block__container
-		h1 Engagements
+		.container
+			.filter
+				.filter__title
+					h5 REFINE
+				.filter__square
+					.filter__title
+						h6 REFINE
+					.filter__value
+						select(placeholder='Brand')
+						.filter__mask
+							h4 #[.fa.fa-caret-down]
+				.filter__square
+					.filter__title
+						h6 REFINE
+					.filter__value
+						select(placeholder='Collection')
+						.filter__mask
+							h4 #[.fa.fa-caret-down]
+				.filter__square
+					.filter__title
+						h6 REFINE
+					.filter__value
+						select(placeholder='Necklace Style')
+						.filter__mask
+							h4 #[.fa.fa-caret-down]
+				.filter__square
+					.filter__title
+						h6 REFINE
+					.filter__value
+						select(placeholder='Metal/Material')
+						.filter__mask
+							h4 #[.fa.fa-caret-down]
+				.filter__square
+					.filter__title
+						h6 REFINE
+					.filter__value
+						select(placeholder='Primary Stone')
+						.filter__mask
+							h4 #[.fa.fa-caret-down]
+				.filter__square
+					.filter__title
+						h6 REFINE
+					.filter__value
+						select(placeholder='Chain Length')
+						.filter__mask
+							h4 #[.fa.fa-caret-down]
+
+.products
+	.products__holder
+		.product(data-ng-repeat='product in [{}, {}, {}, {}]')
+			.product__image
+				img(src='public/images/product.jpg')
+
+			.product__unnamed
+				h6 ?
+
+			.product__detail
+				.product__title
+					h6 Title
+
+					//.product__jeweller
+				.product__collection
+					h6 Category
+
+				.product__price
+					h6 Price
+					//.product__specs
+
+				.product__tags
+					.product__tag(data-ng-repeat='tag in [{}, {}, {}]')
+						h5 Tag
+
+				.product__designer
+					.product__picture
+						img(src='public/images/jeweller.jpg')
+
+					.product__name
+						h5 Designer Name
+
+					.product__view
+						h6 View
