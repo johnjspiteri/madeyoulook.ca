@@ -9,6 +9,7 @@
 			'app.public.contact',
 			'app.public.custom',
 			'app.public.designer',
+			'app.public.engagement',
 			'app.public.exchange',
 			'app.public.index',
 			'app.public.product',
