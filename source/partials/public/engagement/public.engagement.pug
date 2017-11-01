@@ -3,49 +3,67 @@
 		.container
 			.filter
 				.filter__title
-					h5 REFINE
+					h5 SEARCH
 				.filter__square
 					.filter__title
-						h6 REFINE
+						h6 CATEGORY
+
 					.filter__value
-						select(placeholder='Brand')
+						select(data-ng-model='vm.category' data-ng-options='category for category in vm.search.category')
+
 						.filter__mask
-							h4 #[.fa.fa-caret-down]
+							h4 {{ vm.category }}
+							span.fa.fa-caret-down
+
 				.filter__square
 					.filter__title
-						h6 REFINE
+						h6 TYPE
+
 					.filter__value
-						select(placeholder='Collection')
+						select(data-ng-model='vm.type' data-ng-options='type for type in vm.search.type')
+
 						.filter__mask
-							h4 #[.fa.fa-caret-down]
+							h4 {{ vm.type }}
+							span.fa.fa-caret-down
+
 				.filter__square
 					.filter__title
-						h6 REFINE
+						h6 MATERIAL
+
 					.filter__value
-						select(placeholder='Necklace Style')
+						select(data-ng-model='vm.material' data-ng-options='material for material in vm.search.material')
+
 						.filter__mask
-							h4 #[.fa.fa-caret-down]
+							h4 {{ vm.material }}
+							span.fa.fa-caret-down
+
 				.filter__square
 					.filter__title
-						h6 REFINE
+						h6 COLOR
+
 					.filter__value
-						select(placeholder='Metal/Material')
+						select(data-ng-model='vm.color' data-ng-options='color for color in vm.search.color')
+
 						.filter__mask
-							h4 #[.fa.fa-caret-down]
+							h4 {{ vm.color }}
+							span.fa.fa-caret-down
+
 				.filter__square
 					.filter__title
-						h6 REFINE
+						h6 INPUT
 					.filter__value
-						select(placeholder='Primary Stone')
-						.filter__mask
-							h4 #[.fa.fa-caret-down]
+						input(data-ng-model='vm.input')
+
 				.filter__square
 					.filter__title
 						h6 REFINE
+
 					.filter__value
 						select(placeholder='Chain Length')
+
 						.filter__mask
-							h4 #[.fa.fa-caret-down]
+							h4
+							span.fa.fa-caret-down
 
 .products
 	.products__holder
