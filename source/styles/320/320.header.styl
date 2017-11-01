@@ -14,78 +14,11 @@ header
 	border-top none
 	z-index 900
 
-	&__socials-bar
-		float left
-		width 300px
-		height: 32px
-		padding 0 10px 0 10px
-		background #585858
-
-	&__icons
-		float right
-		padding 0
-
-	&__icon
-		float right
-		margin 0 0 0 14px
-
-		.fa-pinterest
-		.fa-facebook
-		.fa-instagram
-		.fa-twitter
-			float: left
-			width 100%
-			font-size 20px
-			line-height: 32px
-			color $white
-
-		.fa-facebook
-			font-size 17px
-
-		.fa-instagram
-			font-size 20px
-
-		.fa-twitter
-			font-size 18px
-
-		.fa-map-marker
-			width 100%
-			margin 1px 0 0 0
-			font-size 17px
-			color $white
-
-	&__phone
-		float left
-		margin 0 20px 0 0
-
-		h5
-			float left
-			padding: 0
-			margin 0
-			font-family "le-monde-livre-classic-byol", sans-serif
-			font-weight 400
-			font-size 16px
-			line-height 29px
-			color $white
-			//text-shadow $white-shadow
-
-		.fa-phone
-			margin 1px 8px 0 0
-			font-size 15px
-			color $white
-
-	&__hours
-		display none
-
-	&__address
-		display none
-
 	&__nav
 		float left
 		width 300px
 		padding 10px 10px 8px 10px
 		background #2E3A44
-		//background $white
 
 	&__logo
 		float left
@@ -96,16 +29,6 @@ header
 		img
 			width 100%
 			height 100%
-
-	&__empty
-		float left
-		width 160px
-		height 30px
-		background #B8B6B3
-
-		p
-			font-size 14px
-			line-height 15px
 
 	&__navigation-icon
 		float right
@@ -137,93 +60,14 @@ header
 			line-height 35px
 			color $white
 
-		//span
-		//	color $white
-		//	line-height 36px
-
-	&__rows
-		display none
-		float left
-		width 133px
-		height 87px
-		margin 0 0 0 10px
-
-	&__row.top
-		float left
-		width 100%
-		height 35px
-		margin 0 0 9px 0
-
-	&__location
-		float left
-		width 290px
-		height 35px
-		margin 0 0 0 0
-		background #71E29E
-		text-align center
-
-		p
-			float left
-			width 100%
-			font-size 16px
-			line-height 35px
-
-	&__contact
-		float left
-		width 210px
-		height 35px
-		margin 0 0 0 15px
-		background #90A9F1
-		text-align center
-
-		p
-			float left
-			width 100%
-			font-size 16px
-			line-height 35px
-
-	&__row.bottom
-		float left
-		width 100%
-		height 43px
-		margin 0 0 0 0
-
-	&__search
-		float left
-		margin 0
-		background #E98A61
-		border $black-border
-		border-radius 4px
+	&__information
 		display none
 
-	&__input
-		float left
-		width 310px
-		height 41px
+	&__secondary
+		display none
 
-		input
-			background $white
-			outline none
-			border none
-			border-radius 4px
-			width 260px
-			height 100%
-			padding 0 0 0 50px
-
-	&__submit
-		position absolute
-		float none
-		width 30px
-		height 41px
-		padding 0 5px
-		background $accent
-		text-align center
-
-		.fa-search
-			margin 8px 0 0 0
-			font-size 20px
-			line-height 20px
-			color $white
+	&__tertiary
+		display none
 
 	&__navigation
 		float right
@@ -233,20 +77,54 @@ header
 
 	&__tile
 		float left
-		height 43px
 		padding 0 16px
 		margin 0 12px 0 0
-		background #E82C4D
+		background $black
+		border-radius 4px
 		text-align center
 
 		p
 			float left
 			width 100%
-			font-size 17px
-			line-height 43px
+			font-size 16px
+			color $white
 
 	&__tile.active
-		background #DC9D41
+		background
 
-	&__tile.last
-		margin 0
+	//&__search
+	//	float left
+	//	margin 0
+	//	background #E98A61
+	//	border $black-border
+	//	border-radius 4px
+	//	display none
+	//
+	//&__input
+	//	float left
+	//	width 310px
+	//	height 41px
+	//
+	//	input
+	//		background $white
+	//		outline none
+	//		border none
+	//		border-radius 4px
+	//		width 260px
+	//		height 100%
+	//		padding 0 0 0 50px
+	//
+	//&__submit
+	//	position absolute
+	//	float none
+	//	width 30px
+	//	height 41px
+	//	padding 0 5px
+	//	background $accent
+	//	text-align center
+	//
+	//	.fa-search
+	//		margin 8px 0 0 0
+	//		font-size 20px
+	//		line-height 20px
+	//		color $white

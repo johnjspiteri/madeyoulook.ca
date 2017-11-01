@@ -10,6 +10,7 @@
 			'app.public.custom',
 			'app.public.designer',
 			'app.public.engagement',
+			'app.public.error',
 			'app.public.exchange',
 			'app.public.index',
 			'app.public.product',

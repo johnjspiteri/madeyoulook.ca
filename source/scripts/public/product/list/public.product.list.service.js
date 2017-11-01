@@ -11,7 +11,7 @@
     }
 
     angular
-        .module('app.public.product')
+        .module('app.public.product.list')
         .factory('productsList', internal);
 
     internal.$inject = ['$resource'];

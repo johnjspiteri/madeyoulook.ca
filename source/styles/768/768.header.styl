@@ -5,94 +5,168 @@ header
 	width 768px
 	margin 0 auto 0 auto
 
-	&__nav
-		width 738px
-		padding 10px 15px
-
-	&__logo
-		width 207px
-		height 80px
-		margin 0 10px 0 0
-
-	&__hours
-		display none
-
-	&__empty
-		display none
-
 	&__navigation-icon
 		display none
 
 	&__search-icon
 		display none
 
-	&__navigation
-		display block
-		float right
-		width 450px
-		height none
+	&__nav
+		width 738px
+		padding 10px 15px
 
-	&__rows
+	&__logo
+		width 217px
+		height 80px
+		margin 0 10px 15px 0
+
+	&__information
 		display block
-		width 521px
-		height 87px
+		float left
+		width 511px
+		height 80px
+		margin 0 0 15px 0
+
+	&__column
+		float left
+		width 180px
+		height 80px
+		padding 0 10px
+		text-align center
+		//border 1px solid black
+
+	&__phone
+		float left
+		width 150px
 		margin 0
+		text-align center
 
-	&__row.top
+		h5
+			padding: 0
+			margin 0
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 15px
+			line-height 26px
+			color $white
+
+		.fa-phone
+			margin 1px 8px 0 0
+			font-size 15px
+			color $white
+
+	&__address
+		float left
 		width 100%
-		height 35px
-		margin 0 0 9px 0
+		margin 0
+		text-align center
 
-	&__location
-		width 290px
-		height 35px
+		h6
+			padding: 0
+			margin 0
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 15px
+			line-height 26px
+			color $white
 
-		p
+	&__hours
+		float left
+		width 110px
+		height 80px
+		padding 0 10px
+		margin 0 10px 0 0
+		text-align center
+
+		h6
+			float left
 			width 100%
-			font-size 16px
-			line-height 35px
+			padding: 0
+			margin 0
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 15px
+			line-height 26px
+			color $white
 
 	&__contact
-		width 210px
-		height 35px
-		margin 0 0 0 15px
+		float left
+		width 171px
+		height 80px
+		background cornsilk
 
-		p
-			width 100%
-			font-size 16px
-			line-height 35px
-
-	&__row.bottom
-		width 100%
-		height 43px
-
-	&__search
+	&__navigation
 		display block
-
-	&__input
-		width 310px
-		height 41px
-
-		input
-			width 260px
-			height 100%
-			padding 0 0 0 50px
-
-	&__submit
-		width 30px
-		height 41px
-		padding 0 5px
-
-		.fa-search
-			font-size 20px
-			line-height 20px
+		float left
+		width 753px
+		height none
 
 	&__tile
-		height 43px
-		padding 0 16px
-		margin 0 14px 14px 0
+		padding 10px 7px
+		margin 0 10px 0 0
 
 		p
 			width 100%
-			font-size 17px
-			line-height 43px
+			font-size 15px
+
+	&__secondary
+		display block
+		float left
+		width 100%
+		height 36px
+		background #BBBBBB
+		border-top 1px solid #d7d7d7
+		text-align center
+
+	&__links
+		position relative
+		display inline-block
+		float none
+		padding 0 0 0 10px
+		margin 8px 0 0 0
+
+	&__link
+		float left
+		width auto
+		height 20px
+		margin 0 10px 0 0
+		text-align center
+
+		p
+			float left
+			padding 0 15px
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 16px
+			line-height 20px
+			color $black
+
+	&__tertiary
+		display block
+		float left
+		width 100%
+		height 36px
+		background #cfcfcf
+		border-top 1px solid #d7d7d7
+		text-align center
+
+	//&__search
+	//	display block
+	//
+	//&__input
+	//	width 310px
+	//	height 41px
+	//
+	//	input
+	//		width 260px
+	//		height 100%
+	//		padding 0 0 0 50px
+	//
+	//&__submit
+	//	width 30px
+	//	height 41px
+	//	padding 0 5px
+	//
+	//	.fa-search
+	//		font-size 20px
+	//		line-height 20px

@@ -1,112 +1,12 @@
-.block
-	.block__container
-		.container
-			.filter
-				.filter__title
-					h5 SEARCH
-				.filter__square
-					.filter__title
-						h6 CATEGORY
+header
+	.header
+		.header__secondary
+			.header__links
+				.header__link
+					p sub-link
+				.header__link
+					p sub-link
+				.header__link
+					p sub-link
 
-					.filter__value
-						select(data-ng-model='vm.category' data-ng-options='category.title as category.title for category in vm.search.category')
-
-						.filter__mask
-							h4 {{ vm.category }}
-							span.fa.fa-caret-down
-
-				.filter__square
-					.filter__title
-						h6 TYPE
-					.filter__value
-						select(data-ng-model='vm.type' data-ng-options='type for type in vm.category.types')
-						.filter__mask
-							h4 {{ vm.type }}
-							span.fa.fa-caret-down
-
-				.filter__square
-					.filter__title
-						h6 MATERIAL
-
-					.filter__value
-						select(data-ng-model='vm.material' data-ng-options='material for material in vm.search.material')
-
-						.filter__mask
-							h4 {{ vm.material }}
-							span.fa.fa-caret-down
-
-				.filter__square
-					.filter__title
-						h6 INPUT
-					.filter__value
-						input(data-ng-model='vm.input')
-
-				.filter__square
-					.filter__title
-						h6 REFINE
-					.filter__value
-						select(placeholder='Primary Stone')
-						.filter__mask
-							h4
-							span.fa.fa-caret-down
-
-				.filter__square
-					.filter__title
-						h6 REFINE
-					.filter__value
-						select(placeholder='Chain Length')
-						.filter__mask
-							h4
-							span.fa.fa-caret-down
-
-					//.filter__filter
-						.filter__title
-							h5 Filter
-						input(placeholder='Enter Search')
-
-	//.filter__tags
-		.filter__tag(data-ng-show='!vm.state' data-ng-click='vm.changeState()')
-			h5 More Options
-			//.fa.fa-plus
-
-		.filter__tag(data-ng-show='vm.state' data-ng-click='vm.changeState()')
-			h5 Less Options
-			//.fa.fa-minus
-
-	//.filter__reset(data-ng-click='vm.reset()')
-		h5 #[span Reset] #[.fa.fa-close]
-
-.products
-	.products__holder
-		.product(data-ng-repeat='product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}')
-			.product__image
-				img(src='public/images/product.jpg')
-
-			.product__unnamed
-				h6 ?
-
-			.product__detail
-				.product__title
-					h6(data-ng-bind='product.detail.title')
-
-					//.product__jeweller
-				.product__collection
-					h6(data-ng-bind='product.detail.category')
-
-				.product__price
-					h6(data-ng-bind='product.detail.price')
-					//.product__specs
-
-				.product__tags
-					.product__tag(data-ng-repeat='tag in product.detail.sub_category')
-						h5(data-ng-bind='tag')
-
-				.product__designer
-					.product__picture
-						img(src='public/images/jeweller.jpg')
-
-					.product__name
-						h5(data-ng-bind='product.detail.designer')
-
-					.product__view
-						h6 View
+div(data-ui-view='content')

@@ -2,6 +2,8 @@
 	"use strict";
 
 	angular
-		.module('app.public.engagement', []);
+		.module('app.public.engagement', [
+			'app.public.engagement.list'
+		]);
 
 })();
