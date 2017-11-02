@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.studio.press')
+		.module('app.public.studio.land.press')
 		.controller('StudioPressController', Internal);
 
 	Internal.$inject = [];

@@ -4,6 +4,7 @@
 
 		$stateProvider
 			.state('app.public.service', {
+				abstract: true,
 				url: 'services/',
 				views: {
 					'page@': {

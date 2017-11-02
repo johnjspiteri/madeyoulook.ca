@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.service.antique')
+		.module('app.public.service.land.antique')
 		.controller('ServiceAntiqueController', Internal);
 
 	Internal.$inject = [];

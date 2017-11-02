@@ -2,6 +2,6 @@
     "use strict";
 
     angular
-        .module('app.public.studio.environment', []);
+        .module('app.public.studio.land.environment', []);
 
 })();

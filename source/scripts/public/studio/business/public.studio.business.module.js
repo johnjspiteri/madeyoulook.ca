@@ -2,6 +2,6 @@
     "use strict";
 
     angular
-        .module('app.public.studio.business', []);
+        .module('app.public.studio.land.business', []);
 
 })();

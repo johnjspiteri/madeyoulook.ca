@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.service.custom')
+		.module('app.public.service.land.custom')
 		.controller('ServiceCustomController', Internal);
 
 	Internal.$inject = [];

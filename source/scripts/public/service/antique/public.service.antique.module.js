@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.service.antique', []);
+		.module('app.public.service.land.antique', []);
 
 })();

@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.studio', {
-				// abstract: true,
+				abstract: true,
 				url: 'studio/',
 				views: {
 					'page@': {
