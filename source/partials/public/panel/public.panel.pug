@@ -1,32 +1,126 @@
 md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 	.mobile
-		.mobile__tile(ui-sref='app.public.product.list' ui-sref-active='active' data-ng-click='vm.close()')
-			h4 Jewellery
+		.mobile__tile(ui-sref='app.public.index' ui-sref-active='active' data-ng-click='vm.close()')
+			h4 Home
 
 		.mobile__tile(ui-sref='app.public.wedding.list' ui-sref-active='active' data-ng-click='vm.close()')
 			h4 Weddings
 
+		.mobile__secondary
+			.mobile__link
+				p sub-link
+
+			.mobile__link
+				p sub-link
+
+			.mobile__link
+				p sub-link
+
 		.mobile__tile(ui-sref='app.public.engagement.list' ui-sref-active='active' data-ng-click='vm.close()')
 			h4 Engagement
 
+		.mobile__secondary
+			.mobile__link
+				p sub-link
+
+			.mobile__link
+				p sub-link
+
+			.mobile__link
+				p sub-link
+
+		.mobile__tile(ui-sref='app.public.product.list' ui-sref-active='active' data-ng-click='vm.close()')
+			h4 Jewellery
+
+		.mobile__secondary
+			.mobile__link
+				p sub-link
+
+			.mobile__link
+				p sub-link
+
+			.mobile__link
+				p sub-link
+
+		.mobile__tile(ui-sref='app.public.custom' ui-sref-active='active' data-ng-click='vm.close()')
+			h4 Custom
+
 		.mobile__tile(ui-sref='app.public.designer' ui-sref-active='active')
-			//(data-ng-click='vm.createPool()' data-ng-class="{active: $state.includes('app.private.create')}")
 			h4 Designers
 
 		.mobile__tile(ui-sref='app.public.service.land' ui-sref-active='active')
-			//(data-ui-sref='app.private.setting.profile' data-ui-sref-active='active' data-ng-click='vm.close()')
 			h4 Services
 
-		.mobile__tile(ui-sref='app.public.repair' ui-sref-active='active')
-			//(data-ui-sref='app.private.friend' data-ui-sref-active='active' data-ng-click='vm.close()')
+		.mobile__secondary
+			.mobile__link(ui-sref='app.public.service.land' ui-sref-active='active')
+				p Alteration
+
+			.mobile__link(ui-sref='app.public.service.land.antique' ui-sref-active='active')
+				p Antique & Vintage
+
+			.mobile__link(ui-sref='app.public.service.land.appraisal' ui-sref-active='active')
+				p Appraisal
+
+			.mobile__link(ui-sref='app.public.service.land.costume' ui-sref-active='active')
+				p Costume
+
+			.mobile__link(ui-sref='app.public.service.land.custom' ui-sref-active='active')
+				p Custom
+
+			.mobile__link(ui-sref='app.public.service.land.engraving' ui-sref-active='active')
+				p Engraving
+
+		.mobile__tile(ui-sref='app.public.repair.land' ui-sref-active='active')
 			h4 Repairs
 
+		.mobile__secondary
+			.mobile__link(ui-sref='app.public.repair.land' ui-sref-active='active')
+				p Checking
+
+			.mobile__link(ui-sref='app.public.repair.land.cleaning' ui-sref-active='active')
+				p Cleaning
+
+			//.mobile__link(ui-sref='app.public.repair.land.gluing' ui-sref-active='active')
+				p Gluing
+
+			.mobile__link(ui-sref='app.public.repair.land.refinishing' ui-sref-active='active')
+				p Refinishing
+
+			.mobile__link(ui-sref='app.public.repair.land.repolishing' ui-sref-active='active')
+				p Repolishing
+
+			.mobile__link(ui-sref='app.public.repair.land.sizing' ui-sref-active='active')
+				p Ring Sizing
+
+			.mobile__link(ui-sref='app.public.repair.land.soldering' ui-sref-active='active')
+				p Soldering
+
 		.mobile__tile(ui-sref='app.public.studio.land' ui-sref-active='active')
-			//(data-ng-click='vm.logout()')
 			h4 Studio
 
+		.mobile__secondary
+			.mobile__link(ui-sref='app.public.studio.land' ui-sref-active='active')
+				p About
+
+			.mobile__link(ui-sref='app.public.studio.land.business' ui-sref-active='active')
+				p Business
+
+			.mobile__link(ui-sref='app.public.studio.land.career' ui-sref-active='active')
+				p Career
+
+			.mobile__link(ui-sref='app.public.studio.land.environment' ui-sref-active='active')
+				p Environment
+
+			.mobile__link(ui-sref='app.public.studio.land.equipment' ui-sref-active='active')
+				p Equipment
+
+			.mobile__link(ui-sref='app.public.studio.land.facility' ui-sref-active='active')
+				p Facility
+
+			.mobile__link(ui-sref='app.public.studio.land.press' ui-sref-active='active')
+				p Press
+
 		.mobile__tile(ui-sref='app.public.contact' ui-sref-active='active')
-			//(data-ng-click='vm.logout()')
 			h4 Contact
 
 	.mobile__close(data-ng-click='vm.close()')

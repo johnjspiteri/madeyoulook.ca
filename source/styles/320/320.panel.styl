@@ -45,13 +45,15 @@ md-sidenav.md-locked-open-remove
 	transform: translate3d(0, 0, 0);
 
 .mobile
+	display block
 	float left
 	width 179px
 	height 100%
-	padding 18px 27px 0 23px
+	padding 18px 27px 20px 23px
 	margin 0
 	background #2E3A44
 	border-right $black-border
+	overflow: scroll
 
 	&__tile
 		float left
@@ -59,7 +61,7 @@ md-sidenav.md-locked-open-remove
 		height 50px
 		padding 0
 		margin 0 0 15px 0
-		background $accent
+		background $black
 		//border $tile-border
 		border-radius 4px
 		cursor pointer
@@ -74,17 +76,35 @@ md-sidenav.md-locked-open-remove
 			font-family 'factoria', sans-serif
 			font-weight 700
 			color $white
-			text-shadow $white-shadow
 			outline none
 			text-align center
 
 	&__tile.active
-		background #DC9D41
+		background $accent
 		border-bottom none
 
-		h4
-			color $black
-			text-shadow $black-shadow
+	&__secondary
+		float left
+		width 178px
+		margin 0 0 5px 0
+
+	&__link
+		float left
+		width 178px
+		margin 0 0 10px 0
+		background #BBBBBB
+		border-radius 4px
+		text-align center
+
+		p
+			font-weight 600
+			padding 8px 0
+
+	&__link.active
+		background $accent
+
+		p
+			color $white
 
 	&__close
 		float left
