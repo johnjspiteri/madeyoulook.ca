@@ -16,6 +16,7 @@
 			'app.public.product',
 			// 'app.public.panel',
 			'app.public.privacy',
+			'app.public.questions',
 			'app.public.repair',
 			'app.public.service',
 			'app.public.studio',
