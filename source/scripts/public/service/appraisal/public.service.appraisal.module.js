@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.service.appraisal', []);
+		.module('app.public.service.land.appraisal', []);
 
 })();

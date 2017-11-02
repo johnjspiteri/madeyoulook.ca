@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.service.engraving', []);
+		.module('app.public.service.land.engraving', []);
 
 })();

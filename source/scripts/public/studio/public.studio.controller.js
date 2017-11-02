@@ -1,9 +1,8 @@
 (function() { "use strict";
 
-	function Internal($state) {
+	function Internal() {
 
 		var vm = this;
-		$state.go('app.public.studio.about');
 
 	}
 
@@ -11,6 +10,6 @@
 		.module('app.public.studio')
 		.controller('StudioController', Internal);
 
-	Internal.$inject = ['$state'];
+	Internal.$inject = [];
 
 })();
