@@ -6,7 +6,7 @@
 			.state('app.public.service.engraving', {
 				url: 'engravings/',
 				views: {
-					'page@': {
+					'content@app.public.service': {
 						templateUrl: 'public/html/public/service/engraving/public.service.engraving.html',
 						controller: 'ServiceEngravingController',
 						controllerAs: 'vm'

@@ -1,3 +1,12 @@
-.service
-	.service__holder
-		h1 Services
+header
+	.header
+		.header__secondary
+			.header__links
+				.header__link(ui-sref='app.public.service.alteration' ui-sref-active='active')
+					p Alteration
+				.header__link(ui-sref='app.public.service.appraisal' ui-sref-active='active')
+					p Appraisal
+				.header__link(ui-sref='app.public.service.engraving' ui-sref-active='active')
+					p Engraving
+
+div(data-ui-view='content')
