@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.repair.refinishing', []);
+		.module('app.public.repair.land.refinishing', []);
 
 })();

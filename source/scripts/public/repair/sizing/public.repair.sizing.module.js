@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.repair.sizing', []);
+		.module('app.public.repair.land.sizing', []);
 
 })();

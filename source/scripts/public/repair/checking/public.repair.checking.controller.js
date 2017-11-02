@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.repair.checking')
+		.module('app.public.repair.land')
 		.controller('RepairCheckingController', Internal);
 
 	Internal.$inject = [];

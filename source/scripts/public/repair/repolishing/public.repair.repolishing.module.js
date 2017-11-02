@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.repair.repolishing', []);
+		.module('app.public.repair.land.repolishing', []);
 
 })();
