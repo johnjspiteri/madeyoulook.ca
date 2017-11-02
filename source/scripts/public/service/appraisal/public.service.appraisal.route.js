@@ -6,7 +6,7 @@
 			.state('app.public.service.appraisal', {
 				url: 'appraisals/',
 				views: {
-					'page@': {
+					'content@app.public.service': {
 						templateUrl: 'public/html/public/service/appraisal/public.service.appraisal.html',
 						controller: 'ServiceAppraisalController',
 						controllerAs: 'vm'

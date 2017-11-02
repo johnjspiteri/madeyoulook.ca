@@ -1,8 +1,9 @@
 (function() { "use strict";
 
-	function Internal() {
+	function Internal($state) {
 
 		var vm = this;
+		$state.go('app.public.service.alteration');
 
 	}
 
@@ -10,6 +11,6 @@
 		.module('app.public.service.alteration')
 		.controller('ServiceAlterationController', Internal);
 
-	Internal.$inject = [];
+	Internal.$inject = ['$state'];
 
 })();
