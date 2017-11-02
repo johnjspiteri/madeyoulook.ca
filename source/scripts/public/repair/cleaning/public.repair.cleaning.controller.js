@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.repair.cleaning')
+		.module('app.public.repair.land.cleaning')
 		.controller('RepairCleaningController', Internal);
 
 	Internal.$inject = [];

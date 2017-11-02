@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.repair.cleaning', []);
+		.module('app.public.repair.land.cleaning', []);
 
 })();

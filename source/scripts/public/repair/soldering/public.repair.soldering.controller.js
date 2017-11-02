@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.repair.soldering')
+		.module('app.public.repair.land.soldering')
 		.controller('RepairSolderingController', Internal);
 
 	Internal.$inject = [];

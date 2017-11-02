@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.repair.sizing')
+		.module('app.public.repair.land.sizing')
 		.controller('RepairSizingController', Internal);
 
 	Internal.$inject = [];

@@ -4,6 +4,7 @@
 
 		$stateProvider
 			.state('app.public.repair', {
+				abstract: true,
 				url: 'repairs/',
 				views: {
 					'page@': {
