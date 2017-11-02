@@ -7,7 +7,7 @@
 				// abstract: true,
 				url: 'facilities/',
 				views: {
-					'page@': {
+					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/facility/public.studio.facility.html',
 						controller: 'StudioFacilityController',
 						controllerAs: 'vm'

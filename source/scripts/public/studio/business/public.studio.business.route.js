@@ -7,7 +7,7 @@
 				// abstract: true,
 				url: 'business/',
 				views: {
-					'page@': {
+					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/business/public.studio.business.html',
 						controller: 'StudioBusinessController',
 						controllerAs: 'vm'

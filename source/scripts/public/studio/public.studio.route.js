@@ -4,9 +4,15 @@
 
 		$stateProvider
 			.state('app.public.studio', {
-				abstract: true,
+				// abstract: true,
 				url: 'studio/',
-				views: null
+				views: {
+					'page@': {
+						templateUrl: 'public/html/public/studio/public.studio.html',
+						controller: 'StudioController',
+						controllerAs: 'vm'
+			}
+		}
 			});
 	}
 

@@ -7,7 +7,7 @@
 				// abstract: true,
 				url: 'about/',
 				views: {
-					'page@': {
+					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/about/public.studio.about.html',
 						controller: 'StudioAboutController',
 						controllerAs: 'vm'

@@ -7,7 +7,7 @@
 				// abstract: true,
 				url: 'environment/',
 				views: {
-					'page@': {
+					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/environment/public.studio.environment.html',
 						controller: 'StudioEnvironmentController',
 						controllerAs: 'vm'

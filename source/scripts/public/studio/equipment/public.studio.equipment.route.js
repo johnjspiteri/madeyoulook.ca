@@ -6,7 +6,7 @@
 			.state('app.public.studio.equipment', {
 				url: 'equipment/',
 				views: {
-					'page@': {
+					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/equipment/public.studio.equipment.html',
 						controller: 'StudioEquipmentController',
 						controllerAs: 'vm'

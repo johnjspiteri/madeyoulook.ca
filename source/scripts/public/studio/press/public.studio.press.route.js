@@ -7,7 +7,7 @@
 				// abstract: true,
 				url: 'press/',
 				views: {
-					'page@': {
+					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/press/public.studio.press.html',
 						controller: 'StudioPressController',
 						controllerAs: 'vm'

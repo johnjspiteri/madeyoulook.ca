@@ -62,6 +62,9 @@ header
 						span.fa.fa-search
 
 			.header__navigation
+				.header__tile(ui-sref='app.public.index' ui-sref-active='active')
+					p Home
+
 				.header__tile(ui-sref='app.public.wedding.list' ui-sref-active='active')
 					p Wedding
 
@@ -83,7 +86,7 @@ header
 				.header__tile(ui-sref='app.public.repair' ui-sref-active='active')
 					p Repairs
 
-				.header__tile(ui-sref='app.public.studio.about' ui-sref-active='active')
+				.header__tile(ui-sref='app.public.studio' ui-sref-active='active')
 					p Studio
 
 				.header__tile(ui-sref='app.public.contact' ui-sref-active='active')
