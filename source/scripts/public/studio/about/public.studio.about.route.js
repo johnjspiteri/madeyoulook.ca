@@ -5,7 +5,7 @@
 		$stateProvider
 			.state('app.public.studio.land', {
 				// abstract: true,
-				url: 'about/',
+				url: '',
 				views: {
 					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/about/public.studio.about.html',
