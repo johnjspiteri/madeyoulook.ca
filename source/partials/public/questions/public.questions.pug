@@ -1,44 +1,60 @@
-.block
-	.container
-		.questions
-			.questions__filter
-				.questions__search
-					.questions__title
-						h1 Topic
-					.questions__value
-						select
-						.fa.fa-caret-down
-				.questions__search
-					.questions__title
-						h1 Search
-					.questions__value
-						input(placeholder='Questions search...')
-						.fa.fa-search
-			.questions__squares
-				.questions__square
-					.questions__question
-						.questions__q
-							h5 Q.
-						h6 Where do you get your materials?
-					.questions__answer
-						.questions__a
-							h5 A.
-						h6 We acquire our materials through sustainable resources, and contacts.
-				.questions__square
-					.questions__question
-						.questions__q
-							h5 Q.
-						h6 Are your diamonds conflict free?
-					.questions__answer
-						.questions__a
-							h5 A.
-						h6 They are and come with certification stating so.
-				.questions__square
-					.questions__question
-						.questions__q
-							h5 Q.
-						h6 What are your rates for borrowing?
-					.questions__answer
-						.questions__a
-							h5 A.
-						h6 If used for non-profit it's a flat rate. If for profit, its a percentage of commission made using our product.
+.questions
+	.questions__holder
+		.questions__select
+			.questions__container
+				.questions__center
+					h5 Category
+			select
+			.questions__mask
+				h4 #[.fa.fa-caret-down]
+
+		.questions__select
+			.questions__container
+				.questions__center
+					h5 Topic
+			.questions__value
+				select
+			.questions__mask
+				h4 #[.fa.fa-caret-down]
+
+		.questions__select.filter
+			.questions__container
+				.questions__center
+					h5 Filter
+			input
+
+		.questions__select.last
+			.questions__container
+				.questions__center
+					h5 Reset
+			.questions__reset
+				.fa.fa-close
+
+		.questions__squares
+			.questions__square
+				.questions__question
+					.questions__q
+						h5 Q.
+					h6 Where do you get your materials?
+				.questions__answer
+					.questions__a
+						h5 A.
+					h6 We acquire our materials through sustainable resources, and contacts.
+			.questions__square
+				.questions__question
+					.questions__q
+						h5 Q.
+					h6 Are your diamonds conflict free?
+				.questions__answer
+					.questions__a
+						h5 A.
+					h6 They are and come with certification stating so.
+			.questions__square
+				.questions__question
+					.questions__q
+						h5 Q.
+					h6 What are your rates for borrowing?
+				.questions__answer
+					.questions__a
+						h5 A.
+					h6 If used for non-profit it's a flat rate. If for profit, its a percentage of commission made using our product.
