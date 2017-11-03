@@ -3,6 +3,7 @@
 	function internal($stateProvider) {
 
 		$stateProvider
+
 			.state('app.public.about', {
 				url: 'about/',
 				views: {
