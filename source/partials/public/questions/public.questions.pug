@@ -1,12 +1,19 @@
 .block
 	.container
 		.questions
-			.questions__search
-				.questions__title
-					h1 Search
-				.questions__value
-					input(placeholder='Questions search...')
-					.fa.fa-search
+			.questions__filter
+				.questions__search
+					.questions__title
+						h1 Topic
+					.questions__value
+						select
+						.fa.fa-caret-down
+				.questions__search
+					.questions__title
+						h1 Search
+					.questions__value
+						input(placeholder='Questions search...')
+						.fa.fa-search
 			.questions__squares
 				.questions__square
 					.questions__question
