@@ -2,8 +2,17 @@ header
 	width 100%
 
 .header
+	float left
 	width 768px
-	margin 0 auto 0 auto
+	padding 0
+	margin: 0
+	background: $primary
+	border-bottom 2px solid #222
+	//background: #e4e4e4
+
+	&__container
+		width 768px
+		margin 0 auto
 
 	&__navigation-icon
 		display none
@@ -12,8 +21,9 @@ header
 		display none
 
 	&__nav
-		width 738px
-		padding 10px 15px
+		width 768px
+		margin: 0 0 10px 0
+		padding 0
 
 	&__logo
 		width 217px
@@ -98,53 +108,72 @@ header
 	&__navigation
 		display block
 		float left
-		width 753px
+		margin 40px 0 0 0
+		padding: 0
+		width 768px
 		height none
 
 	&__tile
-		padding 10px 5px
-		margin 0 7px 0 0
+		height: 40px
+		padding 0 16px
+		margin 0 8px 0 0
+		background: #444
+		border-bottom 2px solid #000
+		border-radius 4px
 
 		p
-			width 100%
-			font-size 15px
+			//width 100%
+			font-size 18px
+			line-height 42px
+			font-family 'halyard-display', sans-serif
+			font-family 'le-monde-livre-classic-byol', sans-serif
+			color: $white
+			text-shadow $white-shadow
+
+	&__tile.active
+		background $accent
+		border-bottom $accent-border-bottom
+
+		//p
+		//	font-size 19px
+		//	font-style italic
 
 	&__secondary
 		display block
 		float left
 		width 100%
-		height 36px
-		background #BBBBBB
-		border-top 1px solid #d7d7d7
+		height 44px
+		padding: 0
+		margin: 0
+		background #686868
+		border-bottom 2px solid #585858
+		//border-top 1px solid #d7d7d7
 		text-align center
 
 	&__links
 		position relative
 		display inline-block
-		float none
-		padding 0 0 0 10px
-		margin 8px 0 0 0
+		padding 0
+		margin 0
 
 	&__link
 		float left
-		width auto
-		height 20px
-		margin 0 10px 0 0
-		text-align center
+		margin 0 28px 0 0
 
 		p
 			float left
-			padding 0 15px
+			padding 0
+			margin: 0
 			font-family "le-monde-livre-classic-byol", sans-serif
-			font-weight 400
-			font-size 16px
-			line-height 20px
-			color $black
+			font-weight 500
+			font-size 18px
+			line-height 46px
+			color #d2d2d2
+			color $white
+			text-shadow $white-shadow
 
-	&__link.active
-		background none
-		p
-			color $accent
+		p.active
+			color $white
 
 	&__tertiary
 		display block
