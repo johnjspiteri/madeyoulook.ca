@@ -1,37 +1,174 @@
 .contact
 	float left
-	width 1004px
-	padding 20px
-	margin 0
+	width 100%
+	padding 0
 
-	&__option
+	&__holder
+		position relative
+		float none
+		width 1060px
+		margin 0 auto
+		padding 0 0 0 40px
+		background cornflowerblue
+
+	&__head
 		float left
-		width 312px
-		padding 10px 0
-		margin 0 20px 20px 0
-		background #ff9
-		border $black-border
-		border-radius 4px
+		width 1020px
+		margin 20px 0 25px 0
 		text-align center
 
+		p
+			float left
+			width 100%
+
+	&__title
+		float left
+		width 100%
+
+		h1
+			padding 0
+			margin 0 0 10px 0
+
+	&__details
+		float left
+		width 460px
+		padding 15px 15px 0 15px
+		margin 0 20px 0 0
+		background white
+
 		h2
-			width 100%
-			margin 0 0 20px 0
+			float left
+			font-size 18px
 
-		h3
-			width 100%
-			margin 0 0 20px 0
+		.fa
+			float left
+			margin 0 15px 0 0
+			font-size 20px
 
-		.fa-envelope-square
-		.fa-phone-square
-			position absolute
-			margin -41px 0 0 -145px
+	&__info
+		float left
+		width 100%
+		margin 0 0 10px 0
+
+	&__hours
+		float left
+		width 100%
+
+		h5
+			float left
+			width 100%
+			margin 0 0 5px 0
+			font-size 24px
+
+		h6
+			float left
+			width 100%
+			margin 0 0 7px 10px
+			font-size 18px
+
+	&__form
+		float left
+		width 480px
+		padding 15px 15px 15px 15px
+		background darkgray
+		text-align center
+
+
+	&__square
+		float left
+		width 480px
+		margin 15px 0 0 0
+
+	&__square.input
+		width 240px
+
+	&__label
+		float left
+		width 100%
+		margin 0 0 7px 0
+		text-align center
+
+		h6
+			padding 0
+			margin 0
+			font-size 20px
+
+	&__value
+		float left
+		width 100%
+
+		textarea
+			width 456px
+			height 150px
+
+		input
+			padding 0 10px
+			width 197px
+			height 42px
+			border-radius 4px
+			border none
+			outline none
+
+		select
+			width 458px
+			height 42px
+			border-radius 4px
+			border none
+			outline none
+
+	&__mask
+		position absolute
+		display flex
+		align-items center
+		width 458px
+		height 42px
+		padding 0
+		margin -42px 0 0 11px
+		background: $white
+		border-radius 4px
+		cursor: pointer
+		outline none
+		pointer-events none
+		z-index 888
+		text-align center
+
+		h4
+			float left
+			width 428px
+			padding 0 5px 0 15px
+			margin 0
+			font-weight 400
+			color $black
+			font-size 16px
+			line-height 18px
+			text-align center
+
+		.fa-caret-down
+			float right
+			width 10px
+			margin 0 10px 0 0
+			font-size 17px
+			line-height 17px
+
+	&__submit
+		background mediumseagreen
+		width 240px
+		height 42px
+		margin 15px 0 0 0
+		border none
+		border-radius 4px
+		outline none
+
+		h6
+			padding 0
+			margin 0
 			font-size 20px
 
 	&__map
 		float left
-		width 982px
+		width 1018px
 		height 200px
+		margin 25px 0 0 0
 		background #ebdcd5
 		border $black-border
 		border-radius 4px
