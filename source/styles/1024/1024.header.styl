@@ -3,21 +3,29 @@ header
 
 .header
 	width 1024px
-	margin 0 auto 0 auto
+	margin 0 auto
+
+	&__holder
+		float left
+		width 100%
+		margin 0
+		background $primary
+		border-bottom 2px solid #222
 
 	&__nav
-		width 994px
-		padding 10px 15px
+		width 1024px
+		margin 0 0 10px 0
+		padding 0
 
 	&__logo
-		width 207px
-		height 80px
-		margin 3px 20px 15px 0
+		width 309px
+		height 109px
+		margin 10px 20px 0 7px
 
 	&__information
-		width 767px
+		width 688px
 		height 80px
-		margin 0 0 15px 0
+		margin 0
 
 	&__column
 		float left
@@ -53,20 +61,22 @@ header
 			line-height 26px
 
 	&__contact
-		width 407px
+		width 308px
 		height 80px
 
-	&__navigation
-		width 1009px
-		height none
+	&__tiles
+		float left
+		display inline-block
+		margin 20px 0 0 0
+		width 688px
 
 	&__tile
-		padding 10px 12px
-		margin 0 12px 0 0
+		padding 0 11px
+		margin 0 14px 0 0
 
 		p
 			width 100%
-			font-size 17px
+			font-size 16px
 
 	&__secondary
 		height 36px

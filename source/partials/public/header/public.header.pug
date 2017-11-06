@@ -1,35 +1,9 @@
 header
-	.header__container
-		.header
-			//.header__socials-bar
-				.header__icons
-					.header__icon
-						a(href="https://www.instagram.com/madeyoulookjewellery/" target="_blank") #[span.fa.fa-instagram]
-
-					.header__icon
-						a(href="https://www.pinterest.ca/myljewellery/" target="_blank") #[span.fa.fa-pinterest]
-
-					.header__icon
-						a(href="https://www.facebook.com/madeyoulookjewellery" target="_blank") #[span.fa.fa-facebook]
-
-					.header__icon
-						a(href="https://twitter.com/myljewellery" target="_blank") #[span.fa.fa-twitter]
-
-				.header__phone
-					h5 #[span.fa.fa-phone] 416-463-2136
-
-				.header__hours
-					h6 M - F: 10-8PM | Sat: 10-6PM | Sun: 12-5PM
-
-				.header__address
-					h6 1338 Queen Street West, Toronto
-
-					.header__icon
-						span.fa.fa-map-marker
-
+	.header
+		.header__holder
 			.header__nav
 
-				//.header__logo(ui-sref='app.public.index')
+				.header__logo(ui-sref='app.public.index')
 					img(src='public/images/logo.png')
 
 				//.header__navigation-icon(data-ng-click='vm.open()')
@@ -38,7 +12,7 @@ header
 				//.header__search-icon
 					span.fa.fa-search
 
-				//.header__information
+				.header__information
 					.header__column
 						.header__phone
 							h5 #[span.fa.fa-phone] 416-463-2136
@@ -62,7 +36,7 @@ header
 						button
 							span.fa.fa-search
 
-				.header__navigation
+				.header__tiles
 					.header__tile(ui-sref='app.public.index' ui-sref-active='active')
 						p Home
 

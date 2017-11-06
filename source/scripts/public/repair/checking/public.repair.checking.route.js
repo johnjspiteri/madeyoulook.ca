@@ -7,7 +7,7 @@
 				url: 'land/',
 				views: {
 					'content@app.public.repair': {
-						templateUrl: 'public/html/public/repair/land/public.repair.land.html',
+						templateUrl: 'public/html/public/repair/checking/public.repair.checking.html',
 						controller: 'RepairCheckingController',
 						controllerAs: 'vm'
 					}
