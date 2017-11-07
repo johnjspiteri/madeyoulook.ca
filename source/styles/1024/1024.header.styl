@@ -3,19 +3,10 @@ header
 
 .header
 	width 1024px
-	margin 0 auto
 
-	&__holder
-		float left
-		width 100%
-		margin 0
-		background $primary
-		border-bottom 2px solid #222
-
-	&__nav
+	&__container
 		width 1024px
-		margin 0 0 10px 0
-		padding 0
+		margin 0 auto
 
 	&__logo
 		width 309px
@@ -29,16 +20,15 @@ header
 
 	&__column
 		float left
-		width 185px
+		width 205px
 		height 80px
-		padding 0 10px
+
+		h4
+			font-size 15px
+			line-height 26px
 
 	&__phone
 		width 100%
-
-		h5
-			font-size 16px
-			line-height 26px
 
 		.fa-phone
 			margin 1px 8px 0 0
@@ -47,34 +37,29 @@ header
 	&__address
 		width 100%
 
-		h6
-			font-size 15px
-			line-height 26px
-
 	&__hours
-		width 125px
+		width 145px
 		height 80px
-		padding 0 10px
-
-		h6
-			font-size 15px
-			line-height 26px
 
 	&__contact
 		width 308px
 		height 80px
 
-	&__tiles
+	nav
 		float left
 		display inline-block
-		margin 20px 0 0 0
+		margin 20px 0 10px 0
 		width 688px
+
+	&__tiles
+		width 685px
+		margin 0 auto
 
 	&__tile
 		padding 0 11px
 		margin 0 14px 0 0
 
-		p
+		h6
 			width 100%
 			font-size 16px
 
@@ -82,18 +67,15 @@ header
 		height 36px
 
 	&__links
-		padding 0 0 0 10px
-		margin 8px 0 0 0
+		padding 0 0 0 30px
 
 	&__link
 		width auto
-		height 20px
-		margin 0 10px 0 0
+		margin 0 30px 0 0
 
-		p
-			padding 0 15px
+		h6
 			font-size 16px
-			line-height 20px
+			line-height 36px
 
 	&__tertiary
 		height 36px

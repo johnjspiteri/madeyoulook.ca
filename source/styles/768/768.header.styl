@@ -2,28 +2,17 @@ header
 	width 100%
 
 .header
-	position relative
-	float none
 	width 768px
-	margin 0 auto
 
-	&__holder
-		float left
-		width 100%
-		margin 0
-		background $primary
-		border-bottom 2px solid #222
+	&__container
+		width 768px
+		margin 0 auto
 
 	&__navigation-icon
 		display none
 
 	&__search-icon
 		display none
-
-	&__nav
-		width 768px
-		margin 0 0 10px 0
-		padding 0
 
 	&__logo
 		width 217px
@@ -35,61 +24,8 @@ header
 		float left
 		width 511px
 		height 80px
-		margin 0
 
-	&__column
-		float left
-		width 180px
-		height 80px
-		padding 0 10px
-		margin 10px 0 0 0
-		text-align center
-		//border 1px solid black
-
-	&__phone
-		float left
-		width 150px
-		margin 0
-		text-align center
-
-		h5
-			padding: 0
-			margin 0
-			font-family "le-monde-livre-classic-byol", sans-serif
-			font-weight 400
-			font-size 14px
-			line-height 26px
-			color $white
-
-		.fa-phone
-			margin 1px 8px 0 0
-			font-size 15px
-			color $white
-
-	&__address
-		float left
-		width 100%
-		margin 0
-		text-align center
-
-		h6
-			padding: 0
-			margin 0
-			font-family "le-monde-livre-classic-byol", sans-serif
-			font-weight 400
-			font-size 14px
-			line-height 26px
-			color $white
-
-	&__hours
-		float left
-		width 110px
-		height 80px
-		padding 0 10px
-		margin 10px 10px 0 0
-		text-align center
-
-		h6
+		h4
 			float left
 			width 100%
 			padding: 0
@@ -100,23 +36,60 @@ header
 			line-height 26px
 			color $white
 
+	&__column
+		float left
+		width 200px
+		height 80px
+		margin 10px 0 0 0
+		text-align center
+
+	&__phone
+		float left
+		width 100%
+
+		.fa-phone
+			margin 1px 8px 0 0
+			font-size 15px
+			color $white
+
+	&__address
+		float left
+		width 100%
+
+		.fa-map-marker
+			margin 1px 8px 0 0
+			font-size 15px
+			color $white
+
+	&__hours
+		float left
+		width 130px
+		height 80px
+		margin 10px 10px 0 0
+		text-align center
+
 	&__contact
 		float left
 		width 171px
 		height 80px
-		background cornsilk
+		background $white
 
-	&__tiles
+		h4
+			color $black
+
+	nav
 		display block
 		float left
 		width 100%
-		margin 20px 0 0 0
-		padding: 0
-		height none
-		text-align center
+		margin 20px 0 10px 0
+
+	&__tiles
+		float none
+		position relative
+		width 685px
+		margin 0 auto
 
 	&__tile
-		display inline-block
 		float left
 		height: 40px
 		padding 0 12px
@@ -125,11 +98,12 @@ header
 		border-bottom 2px solid #000
 		border-radius 4px
 
-		p
+		h6
 			//width 100%
 			font-size 16px
 			line-height 42px
 			font-family 'le-monde-livre-classic-byol', sans-serif
+			font-weight 400
 			color: $white
 			text-shadow $white-shadow
 
@@ -142,49 +116,44 @@ header
 		//	font-style italic
 
 	&__secondary
-		display none
+		display block
 		float left
 		width 100%
 		height 44px
-		padding: 0
-		margin: 0
 		background #686868
 		border-bottom 2px solid #585858
-		//border-top 1px solid #d7d7d7
 		text-align center
 
 	&__links
-		position relative
 		display inline-block
-		padding 0
-		margin 0
+		padding 0 0 0 28px
+		height 100%
 
 	&__link
 		float left
+		height 100%
 		margin 0 28px 0 0
 
-		p
+		h6
 			float left
-			padding 0
-			margin: 0
+			width 100%
 			font-family "le-monde-livre-classic-byol", sans-serif
-			font-weight 500
-			font-size 18px
-			line-height 46px
-			color #d2d2d2
+			font-weight 400
+			font-size 16px
+			line-height 44px
 			color $white
 			text-shadow $white-shadow
 
-		p.active
+		h6.active
 			color $white
 
 	&__tertiary
 		display block
 		float left
 		width 100%
-		height 36px
-		background #cfcfcf
-		border-top 1px solid #d7d7d7
+		height 44px
+		background #828282
+		border-top $black-border
 		text-align center
 
 	//&__search
