@@ -41,6 +41,7 @@ mongoose.connect(connection);
 
 app.use(express.static('./'));
 
+app.use('/api/article-list', require('./api/article-list/api.article.list.index'));
 app.use('/api/designer-list', require('./api/designer-list/api.designer.list.index'));
 app.use('/api/designer-view', require('./api/designer-view/api.designer.view.index'));
 app.use('/api/product-list', require('./api/product-list/api.product.list.index'));
