@@ -10,11 +10,12 @@
 
 	&__grid
 		float left
-		width 320px
+		width 300px
+		margin 0 0 0 10px
 
 	&__square
 		float left
-		width 318px
+		width 298px
 		margin 0 0 20px 0
 		background $white
 		border $black-border
@@ -29,74 +30,77 @@
 
 	&__detail
 		float left
-		width 308px
-		padding 10px 0 10px 10px
+		width 278px
+		padding 15px 10px 0 10px
 		border-radius 0 0 4px 4px
 
-	&__title
+	&__heading
 		float left
-		width 298px
-		margin 0 0 7px 0
+		width 100%
+		margin 0 0 15px 0
 		text-align center
 
 		h2
 			width 100%
 			font-size 20px
-
-	&__date
+	&__row
 		float left
-		width 298px
-		margin 0 0 10px 0
+		width 100%
+		margin 0 0 15px 0
+
+	&__field
+		float left
+		width 50%
+
+	&__title
+		width 100%
 		text-align center
 
-		h5
-			width 100%
-			font-size 14px
-
-	&__publication
-		float left
-		width 149px
-		margin 0
-		text-align center
-
-		h3
-			width 100%
-			font-size 18px
-
-		h5
-			width 100%
-			font-style italic
-			font-weight 400
-			font-size 14px
-
-	&__link
+	&__center
 		display inline-block
-		background $accent
-		border-radius 1000px
-		width 27px
-		height 27px
-		margin 0 0 2px 0
+		margin 0 0 4px 0
+		text-align center
 
-		.fa-link
-			color $white
-			font-size 17px
-			line-height 28px
+		h5
+			float left
+			padding 0 8px 6px 8px
+			margin 0
+			font-size 14px
+			line-height 14px
+			color $black
+			border-bottom 2px solid $black
+
+	&__value
+		float left
+		width 100%
+		margin 0 0 5px 0
+		text-align center
+
+		h4
+			width 100%
+			font-size 16px
+			line-height 16px
 
 	&__icons
-		float left
-		width 149px
-		height 55px
-		display flex
-		align-items center
+		float none
+		display inline-block
 		text-align center
 
 	&__icon
-		display inline-block
-		margin 0 10px
+		float left
+		margin 0 3px
+		padding 0 7px
+		height 24px
+		background #444
+		border-bottom 2px solid #000
+		border-radius 4px
+		text-align center
 
 		.fa-twitter
 		.fa-google-plus
 		.fa-pinterest-p
 		.fa-envelope
-			font-size 17px
+			font-size 15px
+			color $white
+			line-height 24px
 

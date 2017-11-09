@@ -5,6 +5,7 @@
 
 	&__container
 		position relative
+		float none
 		width 320px
 		margin 0 auto
 
@@ -63,35 +64,31 @@
 		width 100%
 
 	&__square
-		float left1
-		display inline-block
-
-	&__square.right
-		float right
+		float left
+		width 50%
 
 	&__square-large
-		float none
-		position relative
 		display none
-		margin 0 7px
-		vertical-align top
 
 	&__title
-		position relative
-		text-align center
 		width 100%
+		text-align center
+
+	&__center
+		display inline-block
+		margin 0 0 4px 0
 
 		h6
-			margin 0 0 4px 0
 			float left
-			width auto
-			padding 0 8pxpx
+			padding 0 8px 6px 8px
+			margin 0
 			font-size 16px
-			border-bottom $black-border
-
+			line-height 16px
+			color $black
+			border-bottom 2px solid $black
 
 	&__value
-		float left
+		display inline-block
 		padding 0 16px
 		margin 0 0 5px 0
 		height 40px
@@ -106,71 +103,15 @@
 			font-size 16px
 			line-height 40px
 			color $white
-
-	&__value.right
-		float right
 
 	&__value.icon
 		float right
 		margin 0 0 0 4px
 		padding 0 4px
 
-	&__value-mobile
-		float left
-		position relative
-		display inline-block
-		padding 0 16px
-		margin 0 0 5px 0
-		height 40px
-		background #444
-		border-bottom 2px solid #000
-		border-radius 4px
-		text-align center
-
-		h6
-			float left
-			width 100%
-			font-size 16px
-			line-height 40px
-			color $white
-
-	&__value-mobile.right
-		float right
-
-	&__value-large
-		position relative
-		display none
-		padding 0 16px
-		margin 0
-		height 40px
-		background #444
-		border-bottom 2px solid #000
-		border-radius 4px
-		text-align center
-
-		h6
-			float left
-			width 100%
-			font-size 16px
-			line-height 40px
-			color $white
-
 	&__icons
 		position relative
 		display inline-block
-		.fa-twitter
-		.fa-google-plus
-		.fa-pinterest-p
-		.fa-envelope
-			margin 0 4px
-			color $white
-			font-size 18px
-			line-height 40px
-
-	&__icons-large
-		position relative
-		display none
-		height 40px
 
 		.fa-twitter
 		.fa-google-plus
@@ -178,5 +119,5 @@
 		.fa-envelope
 			margin 0 4px
 			color $white
-			font-size 18px
+			font-size 17px
 			line-height 40px
