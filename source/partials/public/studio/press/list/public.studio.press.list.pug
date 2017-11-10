@@ -1,12 +1,12 @@
 .press__container
 	.press
 		.press__grid
-			.press__square
+			.press__square(data-ng-repeat='article in vm.articlesResolve')
 				.press__image
 
 				.press__detail
 					.press__heading
-						h2 Made You Look in Now this Week!
+						h2(data-ng-bind='article.title')
 
 					.press__row
 						.press__field
@@ -15,7 +15,7 @@
 									h5 Publication
 
 							.press__value
-								h4 Now Magazine
+								h4(data-ng-bind='article.publisher')
 
 						.press__field
 							.press__title
@@ -23,7 +23,7 @@
 									h5 Author
 
 							.press__value
-								h4 John Doe
+								h4(data-ng-bind='article.author')
 
 					.press__row
 						.press__field
@@ -33,6 +33,7 @@
 
 							.press__value
 								h4 Nov. 7th, 2017
+								//(data-ng-bind='article.date')
 
 						.press__field
 							.press__title
@@ -52,112 +53,7 @@
 
 									.press__icon
 										span.fa.fa-envelope
-
-			.press__square
-				.press__image
-
-				.press__detail
-					.press__heading
-						h2 Made You Look in Now this Week!
-
-					.press__row
-						.press__field
-							.press__title
-								.press__center
-									h5 Publication
-
-							.press__value
-								h4 Now Magazine
-
-						.press__field
-							.press__title
-								.press__center
-									h5 Author
-
-							.press__value
-								h4 John Doe
-
-					.press__row
-						.press__field
-							.press__title
-								.press__center
-									h5 Date
-
-							.press__value
-								h4 Nov. 7th, 2017
-
-						.press__field
-							.press__title
-								.press__center
-									h5 Share
-
-							.press__value
-								.press__icons
-									.press__icon
-										span.fa.fa-twitter
-
-									.press__icon
-										span.fa.fa-google-plus
-
-									.press__icon
-										span.fa.fa-pinterest-p
-
-									.press__icon
-										span.fa.fa-envelope
-
-			.press__square
-				.press__image
-
-				.press__detail
-					.press__heading
-						h2 Made You Look in Now this Week!
-
-					.press__row
-						.press__field
-							.press__title
-								.press__center
-									h5 Publication
-
-							.press__value
-								h4 Now Magazine
-
-						.press__field
-							.press__title
-								.press__center
-									h5 Author
-
-							.press__value
-								h4 John Doe
-
-					.press__row
-						.press__field
-							.press__title
-								.press__center
-									h5 Date
-
-							.press__value
-								h4 Nov. 7th, 2017
-
-						.press__field
-							.press__title
-								.press__center
-									h5 Share
-
-							.press__value
-								.press__icons
-									.press__icon
-										span.fa.fa-twitter
-
-									.press__icon
-										span.fa.fa-google-plus
-
-									.press__icon
-										span.fa.fa-pinterest-p
-
-									.press__icon
-										span.fa.fa-envelope
-
-			.press__square.large
+			//.press__square.large
 				.press__image.large
 
 				.press__detail.large
@@ -209,59 +105,7 @@
 									.press__icon
 										span.fa.fa-envelope
 
-			.press__square.medium
-				.press__image.medium
-
-				.press__detail.medium
-					.press__heading
-						h2 Made You Look in Now this Week!
-
-					.press__row
-						.press__field
-							.press__title
-								.press__center
-									h5 Publication
-
-							.press__value
-								h4 Now Magazine
-
-						.press__field
-							.press__title
-								.press__center
-									h5 Author
-
-							.press__value
-								h4 John Doe
-
-					.press__row
-						.press__field
-							.press__title
-								.press__center
-									h5 Date
-
-							.press__value
-								h4 Nov. 7th, 2017
-
-						.press__field
-							.press__title
-								.press__center
-									h5 Share
-
-							.press__value
-								.press__icons
-									.press__icon
-										span.fa.fa-twitter
-
-									.press__icon
-										span.fa.fa-google-plus
-
-									.press__icon
-										span.fa.fa-pinterest-p
-
-									.press__icon
-										span.fa.fa-envelope
-
-			.press__square.medium
+			//.press__square.medium
 				.press__image.medium
 
 				.press__detail.medium

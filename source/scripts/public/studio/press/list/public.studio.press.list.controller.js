@@ -4,8 +4,6 @@
 
 		var vm = this;
 		vm.articlesResolve = articlesResolve;
-		console.log('articles', vm.articlesResolve);
-
 	}
 
 	angular
