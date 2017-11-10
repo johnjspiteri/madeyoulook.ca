@@ -1,7 +1,5 @@
 .contact
-	float left
 	width 100%
-	padding 0
 
 	&__holder
 		position relative
@@ -9,7 +7,6 @@
 		width 1060px
 		margin 0 auto
 		padding 0 0 0 40px
-		background cornflowerblue
 
 	&__head
 		float left
@@ -29,12 +26,18 @@
 			padding 0
 			margin 0 0 10px 0
 
+	&__heading
+		width 450px
+
+		h1
+			margin 0 0 10px 0
+
 	&__details
 		float left
 		width 460px
 		padding 15px 15px 0 15px
 		margin 0 20px 0 0
-		background white
+		background $white
 
 		h2
 			float left
@@ -42,7 +45,7 @@
 
 		.fa
 			float left
-			margin 0 15px 0 0
+			margin 0 10px 0 0
 			font-size 20px
 
 	&__info
@@ -69,18 +72,17 @@
 	&__form
 		float left
 		width 480px
-		padding 15px 15px 15px 15px
-		background darkgray
+		padding 15px 0 15px 30px
 		text-align center
-
 
 	&__square
 		float left
-		width 480px
+		width 450px
 		margin 15px 0 0 0
 
 	&__square.input
-		width 240px
+		width 220px
+		margin 0 10px 0 0
 
 	&__label
 		float left
@@ -98,19 +100,19 @@
 		width 100%
 
 		textarea
-			width 456px
+			width 448px
 			height 150px
 
 		input
 			padding 0 10px
-			width 197px
+			width 200px
 			height 42px
 			border-radius 4px
 			border none
 			outline none
 
 		select
-			width 458px
+			width 450px
 			height 42px
 			border-radius 4px
 			border none
@@ -120,10 +122,10 @@
 		position absolute
 		display flex
 		align-items center
-		width 458px
+		width 450px
 		height 42px
 		padding 0
-		margin -42px 0 0 11px
+		margin -42px 0 0 0
 		background: $white
 		border-radius 4px
 		cursor: pointer
@@ -134,7 +136,7 @@
 
 		h4
 			float left
-			width 428px
+			width 420px
 			padding 0 5px 0 15px
 			margin 0
 			font-weight 400
@@ -151,7 +153,7 @@
 			line-height 17px
 
 	&__submit
-		background mediumseagreen
+		background $accent
 		width 240px
 		height 42px
 		margin 15px 0 0 0
@@ -160,19 +162,15 @@
 		outline none
 
 		h6
+			color $white
 			padding 0
 			margin 0
 			font-size 20px
 
 	&__map
-		float left
 		width 1018px
 		height 200px
 		margin 25px 0 0 0
-		background #ebdcd5
-		border $black-border
-		border-radius 4px
-		text-align center
 
 		h1
 			width 100%

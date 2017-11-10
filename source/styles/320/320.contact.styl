@@ -1,40 +1,182 @@
 .contact
 	float left
-	width 300px
-	padding 20px 0 20px 10px
-	margin 0
+	width 100%
 
-	&__option
+	&__holder
+		position relative
+		float none
+		width 310px
+		padding 0 0 0 10px
+		margin 0 auto
+
+	&__head
 		float left
 		width 300px
-		padding 10px 0
-		margin 0 20px 20px 0
-		background #ff9
-		border $black-border
-		border-radius 4px
+		margin 20px 0 25px 0
 		text-align center
 
-		h2
+		p
+			float left
 			width 100%
-			margin 0 0 20px 0
+
+	&__title
+		float left
+		width 100%
+
+		h1
+			padding 0
+			margin 0 0 10px 0
+
+	&__heading
+		float left
+		width 100%
+
+		h1
+			padding 0
+			margin 0 0 10px 0
+
+	&__details
+		float left
+		width 270px
+		padding 15px 15px 0 15px
+		margin 0 0 15px 0
+		background $white
+
+		h2
+			float left
+			font-size 18px
+
+		.fa
+			float left
+			margin 0 10px 0 0
 			font-size 20px
 
-		h3
-			width 100%
-			margin 0 0 20px 0
-			font-size 16px
+	&__info
+		float left
+		width 100%
+		margin 0 0 10px 0
 
-		.fa-envelope-square
-		.fa-phone-square
-			position absolute
-			margin -37px 0 0 -140px
+	&__hours
+		float left
+		width 100%
+
+		h5
+			float left
+			width 100%
+			margin 0 0 5px 0
+			font-size 24px
+
+		h6
+			float left
+			width 100%
+			margin 0 0 7px 10px
+			font-size 18px
+
+	&__form
+		float left
+		width 270px
+		padding 15px 15px 15px 15px
+		background $primary
+		text-align center
+
+
+	&__square
+		float left
+		width 270px
+		margin 15px 0 0 0
+
+	&__square.input
+		width 270px
+
+	&__label
+		float left
+		width 100%
+		margin 0 0 7px 0
+		text-align center
+
+		h6
+			padding 0
+			margin 0
+			font-size 20px
+
+	&__value
+		float left
+		width 100%
+
+		textarea
+			width 268px
+			height 150px
+
+		input
+			float left
+			padding 0 10px
+			width 250px
+			height 42px
+			border-radius 4px
+			border none
+			outline none
+
+		select
+			width 270px
+			height 42px
+			border-radius 4px
+			border none
+			outline none
+
+	&__mask
+		position absolute
+		display flex
+		align-items center
+		width 270px
+		height 42px
+		padding 0
+		margin -42px 0 0 0
+		background: $white
+		border-radius 4px
+		cursor: pointer
+		outline none
+		pointer-events none
+		z-index 888
+		text-align center
+
+		h4
+			float left
+			width 259px
+			padding 0 5px 0 15px
+			margin 0
+			font-weight 400
+			color $black
+			font-size 16px
+			line-height 18px
+			text-align center
+
+		.fa-caret-down
+			float right
+			width 10px
+			margin 0 10px 0 0
+			font-size 17px
+			line-height 17px
+
+	&__submit
+		background $accent
+		width 240px
+		height 42px
+		margin 15px 0 0 0
+		border none
+		border-radius 4px
+		outline none
+
+		h6
+			color $white
+			padding 0
+			margin 0
 			font-size 20px
 
 	&__map
 		float left
-		width 300px
+		width 298px
 		height 200px
-		background #ebdcd5
+		background $white
 		border $black-border
 		border-radius 4px
 		text-align center

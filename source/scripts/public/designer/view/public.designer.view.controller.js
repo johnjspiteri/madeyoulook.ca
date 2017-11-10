@@ -1,9 +1,8 @@
 (function() { "use strict";
 
-	function Internal(designerResolve) {
+	function Internal() {
 
 		var vm = this;
-		vm.designer = designerResolve;
 
 	}
 
@@ -11,6 +10,6 @@
 		.module('app.public.designer.view')
 		.controller('DesignerViewController', Internal);
 
-	Internal.$inject = ['designerResolve'];
+	Internal.$inject = [];
 
 })();

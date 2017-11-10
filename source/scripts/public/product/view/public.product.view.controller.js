@@ -1,9 +1,8 @@
 (function() { "use strict";
 
-	function Internal(productResolve) {
+	function Internal() {
 
 		var vm = this;
-		vm.product = productResolve;
 
 	}
 
@@ -11,6 +10,6 @@
 		.module('app.public.product.view')
 		.controller('ProductViewController', Internal);
 
-	Internal.$inject = ['productResolve'];
+	Internal.$inject = [];
 
 })();
