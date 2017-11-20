@@ -1,0 +1,7 @@
+FROM mongo:latest
+
+MAINTAINER John Spiteri &lt;johnn@johnspiteri.io&gt;
+
+COPY source /source
+
+CMD mongoimport --host database --port 27017 --db gauge --collection users --drop --file source/user/john.test.json && mongoimport --host database --port 27017 --db gauge --collection users --file source/user/justin.test.json && mongoimport --host database --port 27017 --db gauge --collection users --file source/user/mark.test.json && mongoimport --host database --port 27017 --db gauge --collection users --file source/user/matt.test.json && mongoimport --host database --port 27017 --db gauge --collection users --file source/user/admin.test.json && mongoimport --host database --port 27017 --db gauge --collection questions --drop source/questions/questions.json

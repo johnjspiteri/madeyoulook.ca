@@ -1,0 +1,3 @@
+FROM mongo:latest
+
+MAINTAINER John Spiteri &lt;johnn@johnspiteri.io&gt;

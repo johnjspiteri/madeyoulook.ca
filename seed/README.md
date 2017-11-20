@@ -1,10 +1,5 @@
 # Made You Look
 
-FONTS: 
-Primary: 'le-monde-livre-classic-byol' 300/400/500/600/700
-Secondary: 'halyard-display' 400/700
-
-
 Load articles:
 mongoimport --host 127.0.0.1 --port 27017 --db madeyoulook --collection articles --drop --file source/article/article.one.json &&
 mongoimport --host 127.0.0.1 --port 27017 --db madeyoulook --collection articles --file source/article/article.two.json &&

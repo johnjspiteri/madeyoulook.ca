@@ -1,0 +1,32 @@
+version: '2.1'
+
+services:
+  database:
+    image: mongo:latest
+    container_name: madeyoulook_database
+    restart: always
+    network_mode: bridge
+    ports:
+      - 27017:27017
+    expose:
+      - 27027
+
+  seed:
+    build: seed
+    container_name: madeyoulook_seed
+    network_mode: bridge
+    links:
+      - database
+
+  application:
+    build: application
+    container_name: madeyoulook_application
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 80:80
+    expose:
+      - 80
+    links:
+      - database
+    network_mode: bridge
