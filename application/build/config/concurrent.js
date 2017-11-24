@@ -16,7 +16,7 @@ module.exports = {
 		},
 		tasks: [
 			// 'ngtemplates',
-			// 'postcss',
+			'postcss',
 			'uglify'
 		]
 	}

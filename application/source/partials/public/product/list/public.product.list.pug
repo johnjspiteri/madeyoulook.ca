@@ -35,13 +35,13 @@
 							h4 {{ vm.material }}
 							span.fa.fa-caret-down
 
-				//.filter__square
+				.filter__square
 					.filter__title
 						h6 Input
 					.filter__value
 						input(data-ng-model='vm.input')
 
-				//.filter__square
+				.filter__square
 					.filter__title
 						h6 Refine
 					.filter__value
@@ -50,7 +50,7 @@
 							h4
 							span.fa.fa-caret-down
 
-				//.filter__square
+				.filter__square
 					.filter__title
 						h6 Refine
 					.filter__value
@@ -82,13 +82,15 @@
 			.product__image
 				img(src='public/images/product.jpg')
 
-			.product__unnamed
+			//.product__unnamed
 				h6 ?
 
 			.product__detail
 				.product__title
 					h6(data-ng-bind='product.detail.title')
 
+				.product__description
+					p This is where a paragraph goes. This is where a paragraph goes.
 					//.product__jeweller
 				.product__collection
 					h6(data-ng-bind='product.detail.category')
@@ -101,12 +103,12 @@
 					.product__tag(data-ng-repeat='tag in product.detail.sub_category')
 						h5(data-ng-bind='tag')
 
-				.product__designer
-					.product__picture
-						img(src='public/images/jeweller.jpg')
+			.product__designer
+				.product__picture
+					img(src='public/images/jeweller.jpg')
 
-					.product__name
-						h5(data-ng-bind='product.detail.designer')
+				.product__name
+					h5(data-ng-bind='product.detail.designer')
 
-					.product__view
-						h6 View
+				.product__view
+					h6 $298

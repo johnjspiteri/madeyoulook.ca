@@ -1,103 +1,131 @@
-header
-	width 100%
+nav
+	margin 20px 0 0 0
 
 .header
-	width 1100px
+	width 1024px
 
 	&__container
-		width 1100px
-		margin 0 auto
-
-	&__logo
-		width 309px
-		height 109px
-		margin 10px 20px 0 7px
-
-	&__information
-		width 764px
-		height 80px
 		margin 0
 
-	&__column
+	&__content
+		padding 10px 0 6px 0
+
+	&__navigation
+		display none
+
+	&__logo
+		width 240px
+		height 60px
+		margin 0 0 0 40px
+
+	&__information
+		display block
 		float left
-		width 202px
+		width 511px
 		height 80px
 
 		h4
-			font-size 15px
+			float left
+			width 100%
+			padding: 0
+			margin 0
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 14px
 			line-height 26px
+			color $white
+
+	&__column
+		float left
+		width 200px
+		height 80px
+		margin 10px 0 0 0
+		text-align center
 
 	&__phone
+		float left
 		width 100%
 
 		.fa-phone
 			margin 1px 8px 0 0
 			font-size 15px
+			color $white
 
 	&__address
+		float left
 		width 100%
 
-	&__hours
-		width 167px
-		height 80px
-
-		h6
+		.fa-map-marker
+			margin 1px 8px 0 0
 			font-size 15px
-			line-height 26px
+			color $white
+
+	&__hours
+		float left
+		width 130px
+		height 80px
+		margin 10px 10px 0 0
+		text-align center
 
 	&__contact
-		width 372px
-		height 80px
-
-	nav
-		width 764px
-		margin 20px 0 10px 0
-
-	&__tiles
-		width 764px
-		margin 0 auto
-
-	&__tile
 		float left
-		padding 0 16px
-		margin 0 15px 0 0
+		width 171px
+		height 80px
+		background $white
 
-		h6
-			width 100%
-			font-size 16px
+		h4
+			color $black
+
+	&__buttons
+		text-align center
+		margin 0
+
+	&__button
+		height 32px
+		margin 0 5px
+
+		h2
+			padding 0 12px
+			font-size 17px
+			line-height 33px
 
 	&__secondary
-		height 36px
+		display block
+		float left
+		width 100%
+		height 44px
+		background $header-secondary
+		border-bottom $grey-border-bottom
+		text-align center
 
 	&__links
-		padding 0 0 0 30px
+		display inline-block
+		padding 0 0 0 28px
 		height 100%
 
 	&__link
+		float left
 		height 100%
-		margin 0 30px 0 0
+		margin 0 28px 0 0
 
 		h6
+			float left
+			width 100%
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
 			font-size 16px
-			line-height 36px
+			line-height 44px
+			color $white
+			text-shadow $white-shadow
+
+		h6.active
+			color $white
 
 	&__tertiary
-		height 36px
-
-	//&__input
-	//	width 310px
-	//	height 41px
-	//
-	//	input
-	//		width 260px
-	//		height 100%
-	//		padding 0 0 0 50px
-	//
-	//&__submit
-	//	width 30px
-	//	height 41px
-	//	padding 0 5px
-	//
-	//	.fa-search
-	//		font-size 20px
-	//		line-height 20px
+		display block
+		float left
+		width 100%
+		height 44px
+		background $header-tertiary
+		border-top $black-border
+		text-align center

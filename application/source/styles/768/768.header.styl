@@ -1,23 +1,29 @@
 header
+	position fixed
+
+nav
+	display block
+	float left
 	width 100%
+	padding 0
+	margin 20px 0 0 0
 
 .header
 	width 768px
 
 	&__container
-		width 768px
-		margin 0 auto
+		margin 0
 
-	&__navigation-icon
-		display none
+	&__content
+		padding 10px 0 6px 0
 
-	&__search-icon
+	&__navigation
 		display none
 
 	&__logo
-		width 317px
-		height 80px
-		margin 10px 10px 0 200px
+		width 240px
+		height 60px
+		margin 0 0 0 10px
 
 	&__information
 		display block
@@ -77,65 +83,85 @@ header
 		h4
 			color $black
 
-	nav
-		display block
-		float left
-		width 100%
-		margin 20px 0 10px 0
+	&__buttons
+		text-align center
+		margin 0
 
-	&__tiles
-		float none
-		position relative
-		width 735px
-		margin 0 auto
-
-	&__tile
-		float left
-		height: 36px
-		padding 0 14px
-		margin 0 5px
-		background: $icon
-		border-bottom $black-border-bottom
+	&__button
+		display inline-block;
+		height: 32px
+		padding 0
+		margin 0 4px
+		background: $button
+		border-bottom $button-border-bottom
 		border-radius 4px
+		z-index 99
 
-		h6
-			font-size 16px
-			line-height 37px
+		h2
+			float left
+			padding 0 11px
+			margin: 0
+			font-size 17px
+			line-height 33px
 			font-family 'le-monde-livre-classic-byol', sans-serif
 			font-weight 400
 			color: $white
 			text-shadow $white-shadow
 
-	&__tile.active
-		background $accent
-		border-bottom $accent-border-bottom
+	&__button.active
+		background $button-active
+		border-bottom $button-active-border-bottom
 
-	&__secondary
+	&__button.hide
+		display none
+
+	&__spacer
 		display block
+		position relative
+		width: 100%
+		height: 138px
+		z-index: 1
+
+.sub
+	display block
+	position relative
+	width 100%
+	padding 0
+	margin -2px 0 0 0
+	z-index: 100
+
+	&__container
 		float left
 		width 100%
-		height 44px
-		background $header-secondary
-		border-bottom $grey-border-bottom
-		text-align center
+		height: 40px
+		padding 0
+		margin 0
+		background #655558
+		background $button
+		border-bottom $button-border-bottom
+
+	&__content
+		position relative
+		width: 688px
+		padding: 10px 0 10px 0
+		margin: 0
 
 	&__links
 		display inline-block
-		padding 0 0 0 28px
-		height 100%
+		//width: 500px
+		padding 0 0 0 38px
 
 	&__link
 		float left
-		height 100%
 		margin 0 28px 0 0
 
 		h6
 			float left
 			width 100%
 			font-family "le-monde-livre-classic-byol", sans-serif
-			font-weight 400
-			font-size 16px
-			line-height 44px
+			font-weight 500
+			font-size 17px
+			line-height 22px
 			color $white
 			text-shadow $white-shadow
 

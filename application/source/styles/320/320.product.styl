@@ -1,31 +1,36 @@
 .products
-	position relative
-	width 100%
+	float left
+	width 300px
 	padding 0
-	margin 0 auto
-	text-align center
+	background none
+	margin 20px 0 0 10px
 
-	&__holder
-		position relative
-		display inline-block
-		width 295px
-		padding 0 0 0 25px
+	//&__holder
+	//	position relative
+	//	display inline-block
+	//	width 295px
+	//	padding 0 0 0 25px
 
 .product
 	float left
-	width 268px
+	width 298px
 	padding 0
-	margin 0 0 15px 0
-	background $white
-	border $black-border
-	border-radius 2px
+	margin 0 0 12px 0
+	background $secondary
+	border 1px solid #edb95a
+	border-bottom $secondary-border-bottom
+	border-radius 4px
 
 	&__image
 		float left
-		width 168px
-		padding 0
-		margin 0 0 0 50px
+		width 198px
+		padding 0 50px
+		margin 0 0 0
 		background $white
+		//border-bottom $secondary-border-bottom
+		border-bottom 1px solid #edb95a
+		//border-bottom 3px solid #000
+		border-radius 4px 4px 0 0
 
 		img
 			float left
@@ -34,14 +39,20 @@
 
 	&__detail
 		float left
-		width 238px
+		width 268px
 		padding 10px 15px 8px 15px
 		margin 0
-		background $white
+		//background $white
+		//background #edb95a
+		background #d8d8d8
+		//border-bottom: $secondary-border-bottom
+		//border-bottom 3px solid #81590e
 
 		h6
 			float left
 			width 100%
+			padding: 0
+			margin: 0
 			font-size 15px
 			line-height 15px
 			font-weight 400
@@ -50,13 +61,17 @@
 		float left
 		width 100%
 		padding 0
-		margin 0 0 14px 0
+		margin 8px 0 14px 0
 		text-align center
 
 		h6
-			width 222px
-			padding 0 8px 4px 8px
-			font-size 18px
+			float: left;
+			width 100%
+			padding 0 0 4px 0
+			font-family: "le-monde-livre-classic-byol", serif;
+			font-weight 600
+			font-size 19px
+			line-height 25px
 
 	&__collection
 		float left
@@ -113,17 +128,18 @@
 		h6
 			line-height 25px
 
-
 	&__designer
-		display flex
-		align-items center
 		float left
 		width 100%
+		width 268px
+		padding 10px 15px 8px 15px
+		margin: 0
+		background #d8d8d8
 
 	&__picture
 		float left
-		width 40px
-		height 40px
+		width 30px
+		height 30px
 		margin 0 10px 0 0
 		border none
 
@@ -145,16 +161,17 @@
 			font-size 14px
 			line-height 15px
 
-
 	&__view
 		float left
 		padding 0 5px
 		width 50px
 		height 30px
-		background $accent
+		background $button-active
+		border-bottom $button-active-border-bottom
 		border-radius 4px
 
 		h6
+			float: left
 			text-align center
 			color $white
 			font-weight 400

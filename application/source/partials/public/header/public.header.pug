@@ -1,22 +1,26 @@
 header
 	.header__container
 		.header
-			.header__logo(ui-sref='app.public.index')
-				img(src='public/images/logo.png')
+			.header__content
+				.header__logo(ui-sref='app.public.index')
+					//img(src='public/images/logo.png')
 
-			//.header__navigation-icon(data-ng-click='vm.open()')
-				span.fa.fa-bars
+				.header__navigation(data-ng-click='vm.open()')
+					span.fa.fa-bars
 
-			//.header__search-icon
-				span.fa.fa-search
+				.header__navigation
+					span.fa.fa-phone
 
-			.header__information
-				.header__column
-					.header__phone
-						//h4 #[span.fa.fa-phone] 416-463-2136
+				.header__navigation
+					span.fa.fa-search
 
-					.header__address
-						//h4 #[span.fa.fa-map-marker] 1338 Queen Street West, Toronto
+				//.header__information
+					.header__column
+						.header__phone
+							h4 #[span.fa.fa-phone] 416-463-2136
+
+						.header__address
+							h4 #[span.fa.fa-map-marker] 1338 Queen Street W
 
 				//.header__hours
 					//h4 M - F: 10 - 8PM
@@ -26,42 +30,44 @@ header
 				//.header__contact
 					h4 Contact
 
-			//.header__search
-				.header__input
-					input(placeholder="Search...")
+				//.header__search
+					.header__input
+						input(placeholder="Search...")
 
-				.header__submit
-					button
-						span.fa.fa-search
+					.header__submit
+						button
+							span.fa.fa-search
 
-			nav
-				.header__tiles
-					.header__tile(ui-sref='app.public.index' ui-sref-active='active')
-						h6 Home
+				nav
+					.header__buttons
+						.header__button(ui-sref='app.public.index' ui-sref-active='active')
+							h2 Home
 
-					.header__tile(ui-sref='app.public.wedding.list' ui-sref-active='active')
-						h6 Wedding
+						.header__button(ui-sref='app.public.wedding.list' ui-sref-active='active')
+							h2 Wedding
 
-					.header__tile(ui-sref='app.public.engagement.list' ui-sref-active='active')
-						h6 Engagement
+						.header__button(ui-sref='app.public.engagement.list' ui-sref-active='active')
+							h2 Engagement
 
-					.header__tile(ui-sref='app.public.product.list' ui-sref-active='active')
-						h6 Jewellery
+						.header__button(ui-sref='app.public.product.list' ui-sref-active='active')
+							h2 Jewellery
 
-					//.header__tile(ui-sref='app.public' ui-sref-active='active')
-						h6 Custom
+						.header__button(ui-sref='app.public.custom' ui-sref-active='active')
+							h2 Custom
 
-					.header__tile(ui-sref='app.public.designer' ui-sref-active='active')
-						h6 Designers
+						.header__button(ui-sref='app.public.designer' ui-sref-active='active')
+							h2 Designers
 
-					.header__tile(ui-sref='app.public.service.land' ui-sref-active='active')
-						h6 Services
+						.header__button(ui-sref='app.public.service.land' ui-sref-active='active')
+							h2 Services
 
-					//.header__tile(ui-sref='app.public.repair.land' ui-sref-active='active')
-						h6 Repairs
+						.header__button(ui-sref='app.public.repair.land' ui-sref-active='active')
+							h2 Repairs
 
-					.header__tile(ui-sref='app.public.studio.land' ui-sref-active='active')
-						h6 Studio
+						.header__button.hide(ui-sref='app.public.studio.land' ui-sref-active='active')
+							h2 Studio
 
-					//.header__tile(ui-sref='app.public. fct' ui-sref-active='active')
-						h6 Contact
+						.header__button.hide(ui-sref='app.public. fct' ui-sref-active='active')
+							h2 Contact
+
+.header__spacer

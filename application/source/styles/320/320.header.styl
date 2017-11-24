@@ -1,86 +1,83 @@
 header
-	float left
+	position relative
 	width 100%
 	padding 0
 	margin 0
+	z-index: 1000
+
+nav
+	display none
 
 .header
-	float: left
-	width 320px
-	background: $primary
-	border-bottom $black-border-bottom
+	position relative
+	width 300px
+	padding 0
+	margin 0 auto
+	z-index 900
 
 	&__container
-		position relative
-		float none
-		width 320px
+		float left
+		width 100%
+		width 100%
 		padding 0
-		margin 0 auto
-		z-index 900
+		margin 0
+		background $primary
+		border-bottom $primary-border-bottom
+
+	&__content
+		float left
+		width: 100%
+		padding: 10px 0 10px 0
+		margin: 0
 
 	&__logo
 		float left
-		width 200px
+		width 160px
+		height: 50px
+		padding: 0
+		margin: 0
+		background $white
 
 		img
+			float: left
 			width 100%
 			height 100%
+			padding: 0
+			margin: 0
 
-	&__navigation-icon
+	&__navigation
 		float right
 		width 36px
 		height 36px
-		margin 13px 0 0 10px
+		margin 13px 0 0 8px
 		background $accent
+		border-bottom $accent-border-bottom
 		border-radius 4px
-		text-align center
 
 		.fa-bars
-			margin 0
-			font-size 19px
-			line-height 35px
-			color $white
-
-	&__search-icon
-		float right
-		width 36px
-		height 36px
-		margin 13px 0 0 0
-		background $accent
-		border-radius 4px
-		text-align center
-
+		.fa-phone
 		.fa-search
-			margin 0
-			font-size 18px
-			line-height 35px
-			color $white
-
-	&__information
-		display none
-
-	&__secondary
-		display none
-
-	&__tertiary
-		display none
-
-	nav
-		display none
-
-	&__tile
-		float left
-		padding 0 16px
-		margin 0 12px 0 0
-		background $black
-		border-radius 4px
-		text-align center
-
-		h6
 			float left
 			width 100%
-			font-size 16px
+			padding 0
+			margin 0
+			font-size 19px
+			line-height 36px
 			color $white
+			text-align center
 
-	&__tile.active
-		background $accent
+		.fa-bars
+			font-size 20px
+			line-height 37px
+
+		.fa-phone
+			font-size 20px
+			line-height 38px
+
+	&__information
+	&__secondary
+	&__tertiary
+	&__spacer
+		display none
+.sub
+	display none

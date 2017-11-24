@@ -1,18 +1,19 @@
-.main
-	position relative
+.index
 	float left
-	width 100%
-	z-index 2
+	width 320px
+	padding: 0
+	margin 0
 
-	&__holder
-		position relative
-		width 320px
-		margin 0 auto
-
-	&__spacer
-		width 100%
-		height 569px
-		margin 0 0 70px 0
+	&__video
+		float left
+		width: 100%
+		height: 220px
+		padding: 0
+		margin: 0 0 10px 0
+		background $secondary
+		background: #ff9
+		border-bottom $secondary-border-bottom
+		overflow hidden
 
 	&__banner
 		float left
@@ -42,31 +43,34 @@
 
 	&__square
 		float left
-		width 260px
+		width 258px
 		padding 20px 20px 24px 20px
-		margin 0 0 18px 0
-		background $white
+		margin 0 0 12px 0
+		background $secondary
+		border $secondary-border
+		border-bottom $secondary-border-bottom
 		border-radius 4px
 
 		h1
-			float: left;
+			float left
 			width 100%
 			padding 0
-			margin 0 0 10px 0
-			font-family: "le-monde-livre-classic-byol",serif;
-			font-weight 700
-			font-size 26px
-			line-height 26px
+			margin 0 0 8px 0
+			font-family: "le-monde-livre-classic-byol", serif;
+			font-weight 500
+			font-size 22px
+			line-height 30px
+			color $black
 			text-align: center
 
 		p
 		li
 			float: left;
 			width: 100%
-			font-family: "halyard-micro",sans-serif;
-			font-weight 500
+			font-family: "halyard-display", sans-serif;
+			font-weight 400
 			font-size 16px
-			line-height 25px
+			line-height 24px
 			color: $paragraph
 			text-align: center
 

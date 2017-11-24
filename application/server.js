@@ -56,14 +56,14 @@ app.use('/api/product-view', require('./api/product-view/api.product.view.index'
 app.use(morgan('dev'));
 
 if ('production' === env) {
-	app.get('/*', function(req, res) {
-		res.sendFile(path.resolve('./public/html/index.html'));
+	app.get('*', function(req, res) {
+		res.sendFile(__dirname + '/public/html/index.html');
 	});
 }
 
 if ('development' === env || 'test' === env) {
-	app.get('/*', function(req, res) {
-		res.sendFile(path.resolve('./public/html/index.html'));
+	app.get('*', function(req, res) {
+		res.sendFile(__dirname + '/public/html/development.html');
 	});
 }
 
