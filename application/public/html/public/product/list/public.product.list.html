@@ -1,13 +1,32 @@
-<div class="block"><div class="block__container"><div class="container"><div class="filter"><!--.filter__titleh5 SEARCH--><div class="filter__square"><div class="filter__title"><h6>Category</h6></div><div class="filter__value"><select data-ng-model="vm.category" data-ng-options="category.title as category.title for category in vm.search.category"></select><div class="filter__mask"><h4>{{ vm.category }}</h4><span class="fa fa-caret-down"></span></div></div></div><div class="filter__square"><div class="filter__title"><h6>Type</h6></div><div class="filter__value"><select data-ng-model="vm.type" data-ng-options="type for type in vm.category.types"></select><div class="filter__mask"><h4>{{ vm.type }}</h4><span class="fa fa-caret-down"></span></div></div></div><div class="filter__square"><div class="filter__title"><h6>Material</h6></div><div class="filter__value"><select data-ng-model="vm.material" data-ng-options="material for material in vm.search.material"></select><div class="filter__mask"><h4>{{ vm.material }}</h4><span class="fa fa-caret-down"></span></div></div></div><div class="filter__square"><div class="filter__title"><h6>Input</h6></div><div class="filter__value"><input data-ng-model="vm.input"/></div></div><div class="filter__square"><div class="filter__title"><h6>Refine</h6></div><div class="filter__value"><select placeholder="Primary Stone"></select><div class="filter__mask"><h4></h4><span class="fa fa-caret-down"></span></div></div></div><div class="filter__square"><div class="filter__title"><h6>Refine</h6></div><div class="filter__value"><select placeholder="Chain Length"></select><div class="filter__mask"><h4></h4><span class="fa fa-caret-down"></span></div></div><!--.filter__filter.filter__title
-	h5 Filter
-input(placeholder='Enter Search')
---></div></div></div></div><!--.filter__tags.filter__tag(data-ng-show='!vm.state' data-ng-click='vm.changeState()')
-	h5 More Options
-	//.fa.fa-plus
+<div class="block"><div class="block__container"><div class="container"><div class="filter"><div class="filter__square"><div class="filter__title"><h6>Category</h6></div><div class="filter__value"><select data-ng-model="vm.category" data-ng-options="category.title as category.title for category in vm.search.category"></select><!--.filter__maskh4 {{ vm.category }}
+span.fa.fa-caret-down
+--></div></div><div class="filter__square"><div class="filter__title"><h6>Type</h6></div><div class="filter__value"><select data-ng-model="vm.type" data-ng-options="type for type in vm.category.types"></select><!--.filter__maskh4 {{ vm.type }}
+span.fa.fa-caret-down
+--></div></div><div class="filter__square" data-ng-show="!vm.compact"><div class="filter__title"><h6>Material</h6></div><div class="filter__value"><select data-ng-model="vm.material" data-ng-options="material for material in vm.search.material"></select><!--.filter__maskh4 {{ vm.material }}
+span.fa.fa-caret-down
+--></div></div><div class="filter__square" data-ng-show="!vm.compact"><div class="filter__title"><h6>Input</h6></div><div class="filter__value"><input data-ng-model="vm.input"/></div></div><!--.filter__square.filter__title
+	h6 Refine
+.filter__value
+	select(placeholder='Primary Stone')
+	.filter__mask
+		h4
+		span.fa.fa-caret-down
+--><!--.filter__square.filter__title
+	h6 Refine
+.filter__value
+	select(placeholder='Chain Length')
+	.filter__mask
+		h4
+		span.fa.fa-caret-down
 
-.filter__tag(data-ng-show='vm.state' data-ng-click='vm.changeState()')
-	h5 Less Options
-	//.fa.fa-minus
---><!--.filter__reset(data-ng-click='vm.reset()')h5 <span>Reset</span> <div class="fa fa-close"></div>
---></div><div class="products"><div class="products__holder"><div class="product" data-ng-repeat="product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}"><div class="product__image"><img src="public/images/product.jpg"/></div><!--.product__unnamedh6 ?
---><div class="product__detail"><div class="product__title"><h6 data-ng-bind="product.detail.title"></h6></div><div class="product__description"><p>This is where a paragraph goes. This is where a paragraph goes.</p><!--.product__jeweller--></div><div class="product__collection"><h6 data-ng-bind="product.detail.category"></h6></div><div class="product__price"><h6 data-ng-bind="product.detail.price"></h6><!--.product__specs--></div><div class="product__tags"><div class="product__tag" data-ng-repeat="tag in product.detail.sub_category"><h5 data-ng-bind="tag"></h5></div></div></div><div class="product__designer"><div class="product__picture"><img src="public/images/jeweller.jpg"/></div><div class="product__name"><h5 data-ng-bind="product.detail.designer"></h5></div><div class="product__view"><h6>$298</h6></div></div></div></div></div>
+//.filter__filter
+	.filter__title
+		h5 Filter
+	input(placeholder='Enter Search')
+--></div><div class="filter__tags"><div class="filter__tag" data-ng-show="!vm.compact" data-ng-click="vm.toggle()"><h5>More Options</h5><!--.fa.fa-plus--></div><div class="filter__tag" data-ng-show="vm.compact" data-ng-click="vm.toggle()"><h5>Less Options</h5><!--.fa.fa-minus--></div></div><!--.filter__reset(data-ng-click='vm.reset()')h5 <span>Reset</span> <div class="fa fa-close"></div>
+--></div></div></div><div class="products"><div class="products__holder"><div class="product" data-ng-repeat="product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}"><div class="product__image"><img src="public/images/product.jpg"/></div><div class="product__detail"><div class="product__title"><h6 data-ng-bind="product.detail.title"></h6></div><div class="product__description"><p>This is where a paragraph goes. This is where a paragraph goes.</p><!--.product__jeweller--></div><!--.product__collectionh6(data-ng-bind='product.detail.category')
+--><!--.product__priceh6(data-ng-bind='product.detail.price')
+//.product__specs
+--><!--.product__tags.product__tag(data-ng-repeat='tag in product.detail.sub_category')
+	h5(data-ng-bind='tag')
+--></div><div class="product__designer"><div class="product__picture"><img src="public/images/jeweller.jpg"/></div><div class="product__name"><h5 data-ng-bind="product.detail.designer"></h5></div><div class="product__view"><h6>$298</h6></div></div></div></div></div>

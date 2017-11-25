@@ -13,42 +13,61 @@
 
 .product
 	float left
-	width 298px
-	padding 0
+	width 300px
+	padding 10px 0 0 0
 	margin 0 0 12px 0
 	background $secondary
-	border 1px solid #edb95a
 	border-bottom $secondary-border-bottom
 	border-radius 4px
 
 	&__image
 		float left
-		width 198px
+		width 176px
 		padding 0 50px
-		margin 0 0 0
+		margin 0 0 0 10px
 		background $white
-		//border-bottom $secondary-border-bottom
-		border-bottom 1px solid #edb95a
-		//border-bottom 3px solid #000
-		border-radius 4px 4px 0 0
+		border $gold-border
+		border-bottom $gold-border-bottom
+		border-radius 4px
 
 		img
 			float left
-			width 168px
-			height 168px
+			width 100%
+			height 100%
 
 	&__detail
 		float left
-		width 268px
-		padding 10px 15px 8px 15px
+		width 280px
+		padding 10px 10px 20px 10px
 		margin 0
-		//background $white
-		//background #edb95a
-		background #d8d8d8
-		//border-bottom: $secondary-border-bottom
-		//border-bottom 3px solid #81590e
+		border-bottom $secondary-border-bottom
+
+	&__title
+		float left
+		width 100%
+		padding 0
+		margin 8px 0 10px 0
+		text-align center
 
 		h6
+			float: left
+			width 100%
+			padding 0
+			font-family: "le-monde-livre-classic-byol", serif;
+			font-weight 600
+			font-size 19px
+			line-height 25px
+			text-align: center
+			text-shadow $black-shadow
+
+	&__description
+		float left
+		width 100%
+		padding 0
+		margin 0
+		text-align center
+
+		p
 			float left
 			width 100%
 			padding: 0
@@ -56,22 +75,8 @@
 			font-size 15px
 			line-height 15px
 			font-weight 400
-
-	&__title
-		float left
-		width 100%
-		padding 0
-		margin 8px 0 14px 0
-		text-align center
-
-		h6
-			float: left;
-			width 100%
-			padding 0 0 4px 0
-			font-family: "le-monde-livre-classic-byol", serif;
-			font-weight 600
-			font-size 19px
-			line-height 25px
+			text-align center
+			text-shadow $black-shadow
 
 	&__collection
 		float left
@@ -131,21 +136,24 @@
 	&__designer
 		float left
 		width 100%
-		width 268px
+		width 270px
 		padding 10px 15px 8px 15px
 		margin: 0
 		background #d8d8d8
 
 	&__picture
 		float left
-		width 30px
-		height 30px
+		width 26px
+		height 26px
 		margin 0 10px 0 0
 		border none
 
 		img
+			float: left
 			width 100%
 			height 100%
+			padding: 0
+			margin: 0
 			border-radius 1000px
 
 	&__name
@@ -157,15 +165,17 @@
 		h5
 			float left
 			width 100%
+			font-family 'halyard-display', sans-serif
 			font-weight 500
 			font-size 14px
 			line-height 15px
 
 	&__view
 		float left
-		padding 0 5px
 		width 50px
-		height 30px
+		height 24px
+		padding 0
+		margin: 0
 		background $button-active
 		border-bottom $button-active-border-bottom
 		border-radius 4px

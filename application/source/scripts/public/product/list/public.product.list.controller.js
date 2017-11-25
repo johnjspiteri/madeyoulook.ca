@@ -4,6 +4,11 @@
 
 		var vm = this;
 
+		vm.compact = true;
+		vm.toggle = function() {
+			vm.compact = !vm.compact;
+		};
+
 		vm.products = productsResolve;
 		vm.search = {
 			category: [
