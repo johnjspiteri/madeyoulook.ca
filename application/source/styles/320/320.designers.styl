@@ -1,41 +1,44 @@
 .designers
 	float left
-	width 100%
-	margin 30px 0 0 0
+	width 300px
+	margin 20px 0 0 10px
 
-	&__holder
-		position relative
-		width 320px
-		height 600px
-		margin 0 auto
-		padding 0
+	//&__holder
+	//	position relative
+	//	width 320px
+	//	height 600px
+	//	margin 0 auto
+	//	padding 0
 
 	&__square
 		float left
-		width 308px
-		padding 10px 0 0 10px
-		margin 0 0 20px 0
+		width 290px
+		padding 12px 0 12px 10px
+		margin 0 0 14px 0
 		background $white
-		border $black-border
+		border-bottom $secondary-border-bottom
 		border-radius 4px
 
 	&__picture
 		float left
-		width 93px
-		padding 0 15px 0 0
-		height 128px
-		margin 0
+		width 80px
+		height 108px
+		padding: 0
+		margin 0 12px 0 0
+		border-bottom $secondary-border-bottom
+		border-radius 4px
 
 		img
 			float left
 			width 100%
-			height 126px
-			border $black-border
+			height: 100%
+			//border $black-border
 
-	&__details
+	&__detail
 		float left
-		width 200px
+		width 180px
 		padding 0
+		margin: 0
 
 	&__row
 		float left
@@ -45,46 +48,79 @@
 
 	&__name
 		float left
-		width 136px
+		width 100%
+		padding: 0
+		margin: 0 0 4px 0
+
+		h2
+			float: left
+			width: 100%
+			padding: 0
+			margin: 0
+			font-size 19px
+			line-height 22px
+			font-family 'le-monde-livre-classic-byol', sans-serif
 
 	&__socials
-		float right
+		float left
+		width: 100%
+		padding: 0
+		margin: 0 0 4px 0
 
 	&__social
 		float left
-		width 22px
-		height 22px
-		margin 0 10px 0 0
-		text-align center
+		width 24px
+		height 24px
+		margin 0 7px 0 0
+		background $button
+		border-bottom $button-border-bottom
+		border-radius 4px
 
 		.fa-facebook
-			font-size 20px
-			margin 3px 0 0 0
-
 		.fa-instagram
-			font-size 25px
-			margin 1px 0 0 0
+		.fa-envelope-o
+			float: left
+			width: 100%
+			font-size 14px
+			line-height: 27px
+			padding: 0
+			margin 0
+			color $white
+			text-align: center
+			text-shadow $white-shadow
 
 	&__school
 		float left
-		width 190px
+		width 180px
 		margin 0 0 3px 0
 
 		h5
 			float left
 			width 100%
-			text-decoration underline
+			padding: 0
+			margin: 0 0 8px 0
+			font-family 'halyard-display', sans-serif
+			font-weight 400
 			font-size 14px
 			line-height 18px
+			color $paragraph
+			text-shadow $black-shadow
 
 		h6
 			float left
-			width 187px
-			margin 0 0 0 3px
-			font-weight 400
-			font-style italic
-			font-size 12px
-			line-height 18px
+			height: 22px
+			padding: 0 10px
+			margin 0 8px 0 0
+			font-family 'le-monde-livre-classic-byol', sans-serif
+			font-weight 600
+			font-size 14px
+			line-height 23px
+			color $white
+			background $button-active
+			border-bottom $button-active-border-bottom
+			border-radius 4px
+			text-align: center
+			text-shadow $white-shadow
 
 	&__specialties
 		float left
@@ -106,11 +142,16 @@
 
 	&__description
 		float left
-		width 300px
-		margin 0 0 10px 0
+		width 280px
+		margin 8px 0 0 0
 
 		p
 			float left
+			padding: 0
+			margin: 0
+			font-family 'halyard-display', sans-serif
+			font-weight 400
 			font-size 15px
-			line-height 18px
+			line-height 20px
+			color $paragraph
 

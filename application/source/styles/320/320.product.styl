@@ -3,13 +3,7 @@
 	width 300px
 	padding 0
 	background none
-	margin 20px 0 0 10px
-
-	//&__holder
-	//	position relative
-	//	display inline-block
-	//	width 295px
-	//	padding 0 0 0 25px
+	margin 0 0 0 10px
 
 .product
 	float left
@@ -22,12 +16,12 @@
 
 	&__image
 		float left
-		width 176px
+		width 180px
 		padding 0 50px
 		margin 0 0 0 10px
 		background $white
-		border $gold-border
-		border-bottom $gold-border-bottom
+		//border $gold-border
+		border-bottom $secondary-border-bottom
 		border-radius 4px
 
 		img
@@ -46,7 +40,7 @@
 		float left
 		width 100%
 		padding 0
-		margin 8px 0 10px 0
+		margin 0 0 6px 0
 		text-align center
 
 		h6
@@ -69,12 +63,13 @@
 
 		p
 			float left
-			width 100%
-			padding: 0
+			width 240px
+			padding: 0 10px
 			margin: 0
-			font-size 15px
-			line-height 15px
+			font-size 13px
+			line-height 19px
 			font-weight 400
+			color $paragraph
 			text-align center
 			text-shadow $black-shadow
 
@@ -89,15 +84,15 @@
 			font-size 14px
 			line-height 20px
 
-	&__price
-		float right
-		width 55px
-		padding 0
-		margin 0 0 12px 0
-		text-align right
-
-		h6
-			line-height 20px
+	//&__price
+	//	float right
+	//	width 55px
+	//	padding 0
+	//	margin 0 0 12px 0
+	//	text-align right
+	//
+	//	h6
+	//		line-height 20px
 
 	&__tags
 		float left
@@ -137,15 +132,15 @@
 		float left
 		width 100%
 		width 270px
-		padding 10px 15px 8px 15px
+		padding 4px 15px 6px 15px
 		margin: 0
-		background #d8d8d8
+		background #f2f2f2
 
 	&__picture
 		float left
-		width 26px
-		height 26px
-		margin 0 10px 0 0
+		width 30px
+		height 30px
+		margin 0 12px 0 0
 		border none
 
 		img
@@ -154,36 +149,39 @@
 			height 100%
 			padding: 0
 			margin: 0
+			border 1px solid #333
 			border-radius 1000px
 
 	&__name
 		float left
-		width 118px
-		margin 0 10px 0 0
+		width 160px
+		padding: 0
+		margin 0
 		text-align left
 
 		h5
 			float left
-			width 100%
-			font-family 'halyard-display', sans-serif
+			width 80px
+			font-family 'le-monde-livre-classic-byol', sans-serif
 			font-weight 500
-			font-size 14px
+			font-size 13px
 			line-height 15px
 
-	&__view
-		float left
-		width 50px
-		height 24px
-		padding 0
-		margin: 0
-		background $button-active
-		border-bottom $button-active-border-bottom
+	&__price
+		float right
+		height 28px
+		padding 0 10px
+		margin 0
+		background $button
+		border-bottom $button-border-bottom
 		border-radius 4px
 
 		h6
 			float: left
-			text-align center
+			width: 100%
 			color $white
+			font-family 'halyard-display', sans-serif
 			font-weight 400
-			font-size 14px
-			line-height 30px
+			font-size 15px
+			line-height 29px
+			text-align center
