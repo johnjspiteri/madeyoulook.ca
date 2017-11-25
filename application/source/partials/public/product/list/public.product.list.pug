@@ -60,11 +60,11 @@
 						input(placeholder='Enter Search')
 
 			.filter__tags
-				.filter__tag(data-ng-show='!vm.compact' data-ng-click='vm.toggle()')
+				.filter__tag(data-ng-show='vm.compact' data-ng-click='vm.toggle()')
 					h5 More Options
 					//.fa.fa-plus
 
-				.filter__tag(data-ng-show='vm.compact' data-ng-click='vm.toggle()')
+				.filter__tag(data-ng-show='!vm.compact' data-ng-click='vm.toggle()')
 					h5 Less Options
 					//.fa.fa-minus
 
@@ -74,14 +74,15 @@
 .products
 	.products__holder
 		.product(data-ng-repeat='product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}')
-			.product__image
-				img(src='public/images/product.jpg')
-
 			.product__detail
+				.product__image
+					img(src='public/images/product.jpg')
+
+			//.product__detail
 				.product__title
 					h6(data-ng-bind='product.detail.title')
 
-				.product__description
+				//.product__description
 					p This is where a paragraph goes. This is where a paragraph goes. This is where a paragraph goes. This is where it goes.
 					//.product__jeweller
 				//.product__collection
@@ -102,5 +103,5 @@
 				.product__name
 					h5(data-ng-bind='product.detail.designer')
 
-				.product__price
+				//.product__price
 					h6 $298
