@@ -1,15 +1,33 @@
 (function() { "use strict";
 
-	function Internal(productsResolve) {
+	function Internal($scope, productsResolve) {
 
 		var vm = this;
-
 		vm.compact = true;
+		vm.products = productsResolve;
+
 		vm.toggle = function() {
 			vm.compact = !vm.compact;
 		};
 
-		vm.products = productsResolve;
+		vm.sliderRanges = {
+			price: {
+				min: 0,
+				max: 10000
+			}
+		};
+		vm.sliderSettings = {
+			price: {
+				min:  0,
+				max:  10000,
+				step: 1000
+			}
+		};
+
+		$scope.$watch(function () {
+			vm.filteredproducts = vm.products.slice(0, vm.products.length);
+		});
+
 		vm.search = {
 			category: [
 				{ title: 'Bracelet', types: ['Bangles', 'Cuff'] },
@@ -29,6 +47,6 @@
 		.module('app.public.product')
 		.controller('ProductListController', Internal);
 
-	Internal.$inject = ['productsResolve'];
+	Internal.$inject = ['$scope', 'productsResolve'];
 
 })();

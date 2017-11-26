@@ -2,7 +2,7 @@
 
 	angular
 		.module('app.public')
-		.controller('PanelController',['$mdSidenav', '$rootScope', function($mdSidenav, $rootScope) {
+		.controller('PanelController',['$mdSidenav', '$rootScope', '$state', function($mdSidenav, $rootScope, $state) {
 			var vm = this;
 
 			vm.state = {
@@ -10,10 +10,10 @@
 				custom: false,
 				designers: false,
 				engagement: false,
-				home: false,
+				index: false,
 				jewellery: false,
-				repairs: false,
-				services: false,
+				repair: false,
+				service: false,
 				studio: false,
 				wedding: false,
 			}
@@ -33,12 +33,14 @@
 				vm.backdrop = false;
 				$mdSidenav('panel')
 					.close()
-					.then(function () {
-					});
+					.then(function () {});
 			};
 
 			$rootScope.$on("open", function () {
 				vm.backdrop = true;
+				var state = $state.current.name.split('.');
+				console.log('params:', state);
+				vm.activate(state[2]);
 				$mdSidenav('panel')
 					.open()
 					.then(function () {

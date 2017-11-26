@@ -7,6 +7,7 @@
 			'ngMaterial',
 			'ngMessages',
 			'ngResource',
-			'ui.router'
+			'ui.router',
+			'ui-rangeSlider'
 		]);
 })();

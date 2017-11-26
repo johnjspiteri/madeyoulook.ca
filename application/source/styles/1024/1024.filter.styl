@@ -1,32 +1,62 @@
 .filter
-	width 974px
-	padding 18px 10px 0 10px
-	margin 0 0 28px 15px
+	width 968px
+	padding 18px 0 18px 20px
+	margin 20px 0 0 20px
 
 	&__square
-		width 162px
-		padding 0
+		width 164px
+		margin 0 7px 0 0
+
+	&__min
+	&__max
+		width 58px
+		margin -8px 0 0 0
+
+		span
+			height 28px
+			font-size 15px
+			line-height 26px
+
+	&__max
+		margin -8px 0 0 206px
+
+	&__slider
+		width 264px
+		padding: 0
 		margin 0
 
+		.ngrs-range-slider
+			width 264px
+			height 54px
+			padding 6px
+
+		.ngrs-range-slider .ngrs-runner
+			width 234px
+			height 18px
+
+		.ngrs-range-slider .ngrs-join
+			top 16px
+			width: 234px
+			height 10px
+
+		.ngrs-range-slider .ngrs-handle
+			width 40px
+			height 40px
+
 	&__title
-		width 100%
+		margin 0 0 10px 0
 
 		h5
-			font-size 18px
-			line-height 18px
-
-		h6
-			font-size 14px
-			line-height 14px
+			font-size 19px
+			line-height 19px
 
 	&__value
 		width 100%
 
 		select
-			width 152px
 			height 48px
-			font-size 17px
-			line-height 19px
+			font-size 19px
+			line-height 21px
 
 		input
 			width 142px
@@ -52,50 +82,37 @@
 			font-size 18px
 			line-height 18px
 
-	//&__filter
-	//	width 338px
-	//
-	//	input
-	//		width: 336px
-	//		height 46px
-	//		font-size 24px
-	//		line-height 46px
-	//
-	//&__tags
-	//	width 100px
-	//	height 20px
-	//	padding 0 0 0 90px
-	//
-	//&__tag
-	//	width 98px
-	//	padding 0 10px
-	//	margin -1px 0 0 0
-	//
-	//	h5
-	//		width 100%
-	//		font-size 17px
-	//		line-height 30px
-	//
-	//	.fa-plus
-	//		width 20px
-	//		font-size 20px
-	//		line-height 39px
-	//
-	//&__reset
-	//	width 40px
-	//	height 30px
-	//	margin -1px 0 0 31px
-	//
-	//	h5
-	//		width 100%
-	//		font-size 16px
-	//		line-height 30px
-	//
-	//		span
-	//			width: 38px
-	//			height 30px
-	//			margin -1px 0 0 -10px
-	//
-	//		.fa-close
-	//			font-size 20px
-	//			line-height 30px
+	&__tags
+		width 140px
+		margin -3px 0 0 442px
+
+	&__tag
+		height: 34px
+
+		h5
+			font-size 17px
+			line-height 35px
+
+		.fa-plus
+			width 20px
+			font-size 20px
+			line-height 39px
+
+	&__reset
+		width 40px
+		height 30px
+		margin -1px 0 0 31px
+
+		h5
+			width 100%
+			font-size 16px
+			line-height 30px
+
+			span
+				width: 38px
+				height 30px
+				margin -1px 0 0 -10px
+
+			.fa-close
+				font-size 20px
+				line-height 30px

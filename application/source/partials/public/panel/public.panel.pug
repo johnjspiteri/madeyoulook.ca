@@ -1,9 +1,9 @@
 md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 	.mobile
-		.mobile__tile(data-ng-click='vm.activate("home")' data-ng-class='{active: vm.state.home}')
+		.mobile__button(data-ng-click='vm.activate("index")' data-ng-class='{active: vm.state.index}')
 			h4 Home
 
-		.mobile__tile(data-ng-click='vm.activate("wedding")' data-ng-class='{active: vm.state.wedding}')
+		.mobile__button(data-ng-click='vm.activate("wedding")' data-ng-class='{active: vm.state.wedding}')
 			h4 Wedding
 
 		.mobile__secondary(data-ng-show='vm.state.wedding')
@@ -16,7 +16,7 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 			.mobile__link
 				p sub-link
 
-		.mobile__tile(data-ng-click='vm.activate("engagement")' data-ng-class='{active: vm.state.engagement}')
+		.mobile__button(data-ng-click='vm.activate("engagement")' data-ng-class='{active: vm.state.engagement}')
 			h4 Engagement
 
 		.mobile__secondary(data-ng-show='vm.state.engagement')
@@ -29,7 +29,7 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 			.mobile__link
 				p sub-link
 
-		.mobile__tile(data-ng-click='vm.activate("jewellery")' data-ng-class='{active: vm.state.jewellery}')
+		.mobile__button(data-ng-click='vm.activate("jewellery")' data-ng-class='{active: vm.state.jewellery}')
 			h4 Jewellery
 
 		.mobile__secondary(data-ng-show='vm.state.jewellery')
@@ -42,16 +42,16 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 			.mobile__link
 				p sub-link
 
-		.mobile__tile(data-ng-click='vm.activate("custom")' data-ng-class='{active: vm.state.custom}')
+		.mobile__button(data-ng-click='vm.activate("custom")' data-ng-class='{active: vm.state.custom}')
 			h4 Custom
 
-		.mobile__tile(data-ng-click='vm.activate("designers")' data-ng-class='{active: vm.state.designers}')
+		.mobile__button(ui-sref='app.public.designer' data-ng-click='vm.activate("designers")' data-ng-class='{active: vm.state.designers}')
 			h4 Designers
 
-		.mobile__tile(data-ng-click='vm.activate("services")' data-ng-class='{active: vm.state.services}')
+		.mobile__button(data-ng-click='vm.activate("service")' data-ng-class='{active: vm.state.service}')
 			h4 Services
 
-		.mobile__secondary(data-ng-show='vm.state.services')
+		.mobile__secondary(data-ng-show='vm.state.service')
 			.mobile__link(ui-sref='app.public.service.alteration' ui-sref-active='active' data-ng-click='vm.close()')
 				p Alteration
 
@@ -70,10 +70,10 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 			.mobile__link(ui-sref='app.public.service.engraving' ui-sref-active='active' data-ng-click='vm.close()')
 				p Engraving
 
-		.mobile__tile(data-ng-click='vm.activate("repairs")' data-ng-class='{active: vm.state.repairs}')
+		.mobile__button(data-ng-click='vm.activate("repair")' data-ng-class='{active: vm.state.repair}')
 			h4 Repairs
 
-		.mobile__secondary(data-ng-show='vm.state.repairs')
+		.mobile__secondary(data-ng-show='vm.state.repair')
 			.mobile__link(ui-sref='app.public.repair.checking' ui-sref-active='active' data-ng-click='vm.close()')
 				p Checking
 
@@ -95,7 +95,7 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 			.mobile__link(ui-sref='app.public.repair.soldering' ui-sref-active='active' data-ng-click='vm.close()')
 				p Soldering
 
-		.mobile__tile(data-ng-click='vm.activate("studio")' data-ng-class='{active: vm.state.studio}')
+		.mobile__button(data-ng-click='vm.activate("studio")' data-ng-class='{active: vm.state.studio}')
 			h4 Studio
 
 		.mobile__secondary(data-ng-show='vm.state.studio')
@@ -120,7 +120,7 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 			.mobile__link(ui-sref='app.public.studio.press' ui-sref-active='active' data-ng-click='vm.close()')
 				p Press
 
-		.mobile__tile(data-ng-click='vm.activate("contact")' data-ng-class='{active: vm.state.contact}')
+		.mobile__button(data-ng-click='vm.activate("contact")' data-ng-class='{active: vm.state.contact}')
 			h4 Contact
 
 	.mobile__close(data-ng-click='vm.close()')

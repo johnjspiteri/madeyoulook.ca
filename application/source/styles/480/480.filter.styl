@@ -1,29 +1,57 @@
 .filter
-	width 440px
-	padding 18px 10px 0 10px
-	margin 0 0 28px 10px
+	width 450px
+	padding 22px 0 18px 10px
+	margin 20px 0 0 10px
 
 	&__square
-		width 220px
-		padding 0
-		margin 0 0 10px 0
+		width 215px
+		margin 0 10px 24px 0
+
+	&__min
+	&__max
+		width 68px
+		margin -8px 0 0 0
+
+		span
+			height 28px
+			font-size 16px
+			line-height 26px
+
+	&__max
+		margin -8px 0 0 372px
+
+	&__slider
+		width 440px
+
+		.ngrs-range-slider
+			width 440px
+			height 54px
+			padding 6px
+
+		.ngrs-range-slider .ngrs-runner
+			width 410px
+			height 18px
+
+		.ngrs-range-slider .ngrs-join
+			top 16px
+			width: 410px
+			height 10px
+
+		.ngrs-range-slider .ngrs-handle
+			width 40px
+			height 40px
 
 	&__title
-		width 100%
-
-		h5
-			font-size 18px
-			line-height 18px
+		margin: 0 0 10px 0
 
 		h6
-			font-size 14px
-			line-height 14px
+			font-size 17px
+			line-height 17px
 
 	&__value
 		width 100%
 
 		select
-			width 200px
 			height 48px
 			font-size 18px
 			line-height 20px
@@ -31,9 +59,8 @@
 		input
 			width 190px
 			height 48px
-			padding 0 5px
-			font-size 18px
-			line-height 20px
+			padding 0 10px
+			font-size 16px
 
 	&__mask
 		width 200px
@@ -52,50 +79,37 @@
 			font-size 20px
 			line-height 20px
 
-	//&__filter
-	//	width 436px
-	//
-	//	input
-	//		width: 434px
-	//		height 46px
-	//		font-size 24px
-	//		line-height 46px
-	//
-	//&__tags
-	//	width 100px
-	//	height 20px
-	//	padding 0 0 0 90px
-	//
-	//&__tag
-	//	width 98px
-	//	padding 0 10px
-	//	margin -1px 0 0 0
-	//
-	//	h5
-	//		width 100%
-	//		font-size 17px
-	//		line-height 30px
-	//
-	//	.fa-plus
-	//		width 20px
-	//		font-size 20px
-	//		line-height 39px
-	//
-	//&__reset
-	//	width 40px
-	//	height 30px
-	//	margin -1px 0 0 31px
-	//
-	//	h5
-	//		width 100%
-	//		font-size 16px
-	//		line-height 30px
-	//
-	//		span
-	//			width: 38px
-	//			height 30px
-	//			margin -1px 0 0 -10px
-	//
-	//		.fa-close
-	//			font-size 20px
-	//			line-height 30px
+	&__tags
+		width 130px
+		margin -3px 0 0 170px
+
+	&__tag
+		height: 34px
+
+		h5
+			font-size 17px
+			line-height 36px
+
+		.fa-plus
+			width 20px
+			font-size 20px
+			line-height 39px
+
+	&__reset
+		width 40px
+		height 30px
+		margin -1px 0 0 31px
+
+		h5
+			width 100%
+			font-size 16px
+			line-height 30px
+
+			span
+				width: 38px
+				height 30px
+				margin -1px 0 0 -10px
+
+			.fa-close
+				font-size 20px
+				line-height 30px
