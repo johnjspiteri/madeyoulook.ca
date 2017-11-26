@@ -1,7 +1,6 @@
-(function() {
-	"use strict";
+(function() { "use strict";
 
 	angular
-		.module('app.public.repair.land.cleaning', []);
+		.module('app.public.repair.cleaning', []);
 
 })();

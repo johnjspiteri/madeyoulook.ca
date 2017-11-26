@@ -1,9 +1,15 @@
-(function() {
-	"use strict";
+(function() { "use strict";
 
 	angular
 		.module('app.public.repair', [
-			'app.public.repair.land'
+			'app.public.repair.cleaning',
+			'app.public.repair.checking',
+			// 'app.public.repair.gluing',
+			'app.public.repair.refinishing',
+			'app.public.repair.repolishing',
+			'app.public.repair.sizing',
+			'app.public.repair.soldering'
+
 		]);
 
 })();

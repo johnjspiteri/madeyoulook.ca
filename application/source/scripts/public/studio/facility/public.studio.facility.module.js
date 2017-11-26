@@ -2,6 +2,6 @@
     "use strict";
 
     angular
-        .module('app.public.studio.land.facility', []);
+        .module('app.public.studio.facility', []);
 
 })();

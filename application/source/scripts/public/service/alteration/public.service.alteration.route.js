@@ -3,7 +3,7 @@
 	function internal($stateProvider) {
 
 		$stateProvider
-			.state('app.public.service.land', {
+			.state('app.public.service.alteration', {
 				url: 'alterations/',
 				views: {
 					'content@app.public.service': {
@@ -16,7 +16,7 @@
 	}
 
 	angular
-		.module('app.public.service.land')
+		.module('app.public.service.alteration')
 		.config(internal);
 
 	internal.$inject = ['$stateProvider'];

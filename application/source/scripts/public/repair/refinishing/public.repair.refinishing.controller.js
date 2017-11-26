@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.repair.land.refinishing')
+		.module('app.public.repair.refinishing')
 		.controller('RepairRefinishingController', Internal);
 
 	Internal.$inject = [];

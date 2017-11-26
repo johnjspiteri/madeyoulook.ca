@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.studio.land.press.list')
+		.module('app.public.studio.press.list')
 		.controller('StudioPressListController', Internal);
 
 	Internal.$inject = ['articlesResolve'];

@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.service.land.costume')
+		.module('app.public.service.costume')
 		.controller('ServiceCostumeController', Internal);
 
 	Internal.$inject = [];

@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.service.land.engraving')
+		.module('app.public.service.engraving')
 		.controller('ServiceEngravingController', Internal);
 
 	Internal.$inject = [];

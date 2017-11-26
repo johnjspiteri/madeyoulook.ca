@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.service.land.appraisal')
+		.module('app.public.service.appraisal')
 		.controller('ServiceAppraisalController', Internal);
 
 	Internal.$inject = [];

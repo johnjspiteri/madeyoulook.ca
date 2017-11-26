@@ -3,8 +3,8 @@
 	function internal($stateProvider) {
 
 		$stateProvider
-			.state('app.public.repair.land', {
-				url: 'land/',
+			.state('app.public.repair.checking', {
+				url: 'checking/',
 				views: {
 					'content@app.public.repair': {
 						templateUrl: 'public/html/public/repair/checking/public.repair.checking.html',
@@ -16,7 +16,7 @@
 	}
 
 	angular
-		.module('app.public.repair.land')
+		.module('app.public.repair.checking')
 		.config(internal);
 
 	internal.$inject = ['$stateProvider'];

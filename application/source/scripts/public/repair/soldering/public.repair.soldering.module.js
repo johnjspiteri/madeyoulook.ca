@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.repair.land.soldering', []);
+		.module('app.public.repair.soldering', []);
 
 })();

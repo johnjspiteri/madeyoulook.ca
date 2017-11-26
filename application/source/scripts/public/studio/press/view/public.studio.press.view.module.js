@@ -2,6 +2,6 @@
     "use strict";
 
     angular
-        .module('app.public.studio.land.press.view', []);
+        .module('app.public.studio.press.view', []);
 
 })();

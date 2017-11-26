@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.studio.land.environment')
+		.module('app.public.studio.environment')
 		.controller('StudioEnvironmentController', Internal);
 
 	Internal.$inject = [];

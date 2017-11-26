@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.service.land.custom', []);
+		.module('app.public.service.custom', []);
 
 })();

@@ -2,6 +2,6 @@
     "use strict";
 
     angular
-        .module('app.public.studio.land.career', []);
+        .module('app.public.studio.career', []);
 
 })();

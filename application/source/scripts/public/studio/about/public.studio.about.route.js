@@ -3,9 +3,8 @@
 	function internal($stateProvider) {
 
 		$stateProvider
-			.state('app.public.studio.land', {
-				// abstract: true,
-				url: '',
+			.state('app.public.studio.about', {
+				url: 'about/',
 				views: {
 					'content@app.public.studio': {
 						templateUrl: 'public/html/public/studio/about/public.studio.about.html',
@@ -17,7 +16,7 @@
 	}
 
 	angular
-		.module('app.public.studio.land')
+		.module('app.public.studio.about')
 		.config(internal);
 
 	internal.$inject = ['$stateProvider'];

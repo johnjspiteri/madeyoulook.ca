@@ -11,7 +11,7 @@
     }
 
     angular
-        .module('app.public.studio.land.press.list')
+        .module('app.public.studio.press.list')
         .factory('articlesList', internal);
 
     internal.$inject = ['$resource'];

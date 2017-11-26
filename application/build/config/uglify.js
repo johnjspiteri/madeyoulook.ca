@@ -50,10 +50,6 @@ module.exports = {
 				'source/scripts/public/designer/view/public.designer.view.controller.js',
 				'source/scripts/public/designer/view/public.designer.view.route.js',
 
-				'source/scripts/public/about/public.about.module.js',
-				'source/scripts/public/about/public.about.controller.js',
-				'source/scripts/public/about/public.about.route.js',
-
 				'source/scripts/public/answer/public.answer.module.js',
 				'source/scripts/public/answer/public.answer.controller.js',
 				'source/scripts/public/answer/public.answer.route.js',

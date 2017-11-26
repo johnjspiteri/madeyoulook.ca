@@ -2,7 +2,6 @@
 
 	angular
 		.module('app.public', [
-			'app.public.about',
 			'app.public.answer',
 			'app.public.borrowing',
 			'app.public.certificates',

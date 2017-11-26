@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.studio.land.facility')
+		.module('app.public.studio.facility')
 		.controller('StudioFacilityController', Internal);
 
 	Internal.$inject = [];

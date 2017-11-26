@@ -2,6 +2,6 @@
 	"use strict";
 
 	angular
-		.module('app.public.repair.land.gluing', []);
+		.module('app.public.repair.gluing', []);
 
 })();

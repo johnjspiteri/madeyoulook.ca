@@ -7,7 +7,7 @@
 	}
 
 	angular
-		.module('app.public.repair.land.gluing')
+		.module('app.public.repair.gluing')
 		.controller('RepairGluingController', Internal);
 
 	Internal.$inject = [];

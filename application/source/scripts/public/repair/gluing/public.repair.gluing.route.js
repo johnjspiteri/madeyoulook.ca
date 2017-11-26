@@ -1,9 +1,9 @@
-(function() { "use content@app.public.repair";
+(function() { "use strict";
 
 	function internal($stateProvider) {
 
 		$stateProvider
-			.state('app.public.repair.land.gluing', {
+			.state('app.public.repair.gluing', {
 				url: 'gluing/',
 				views: {
 					'content@app.public.repair': {
@@ -16,7 +16,7 @@
 	}
 
 	angular
-		.module('app.public.repair.land.gluing')
+		.module('app.public.repair.gluing')
 		.config(internal);
 
 	internal.$inject = ['$stateProvider'];
