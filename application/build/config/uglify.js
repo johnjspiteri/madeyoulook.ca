@@ -12,6 +12,7 @@ module.exports = {
 	target: {
 		files: {
 			'public/script/app.min.js': [
+				'node_modules/jquery/dist/jquery.js',
 				'node_modules/angular/angular.js',
 				'node_modules/angular-animate/angular-animate.js',
 				'node_modules/angular-aria/angular-aria.js',
@@ -114,7 +115,6 @@ module.exports = {
 				'source/scripts/public/privacy/public.privacy.route.js',
 
 				'source/scripts/public/product/public.product.module.js',
-				'source/scripts/public/product/public.product.controller.js',
 				'source/scripts/public/product/public.product.route.js',
 
 				'source/scripts/public/product/list/public.product.list.module.js',

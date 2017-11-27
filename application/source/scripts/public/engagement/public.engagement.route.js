@@ -7,9 +7,7 @@
 				url: 'engagement/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/public/engagement/public.engagement.html',
-						controller: 'EngagementController',
-						controllerAs: 'vm'
+						templateUrl: 'public/html/public/engagement/public.engagement.html'
 					}
 				}
 			});

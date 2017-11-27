@@ -1,23 +1,22 @@
 .filter
 	float left
-	width 260px
-	padding 22px 20px 18px 20px
-	margin 20px 0 0 10px
+	width 310px
+	padding 18px 0 18px 10px
+	margin 20px 0 0 0
 	background $secondary
 	border-bottom $secondary-border-bottom
-	border-radius 4px
 
 	&__square
 		float left
-		width 100%
+		width 145px
 		padding 0
-		margin 0 0 28px 0
+		margin 0 10px 18px 0
 
 	&__min
 	&__max
 		position absolute
-		width 68px
-		margin -8px 0 0 0
+		width 78px
+		margin -10px 0 0 0
 		background none
 
 		span
@@ -26,28 +25,28 @@
 			height 28px
 			font-family "halyard-display", sans-serif
 			font-weight 400
-			font-size 16px
-			line-height 26px
-			color $paragraph
-			background $input
+			font-size 14px
+			line-height 28px
+			color $white
+			background $button
 			border none
-			border-bottom $input-border-bottom
+			border-bottom $button-border-bottom
 			border-radius 4px
 			text-align center
-			text-shadow $black-shadow
+			text-shadow $white-shadow
 
 	&__max
-		margin -8px 0 0 190px
+		margin -10px 0 0 222px
 
 	&__slider
 		float left
-		width 260px
+		width 300px
 		padding: 0
-		margin 0
+		margin 10px 0 0 0
 
 		.ngrs-range-slider
 			position relative
-			width 260px
+			width 100%
 			height 54px
 			padding 6px
 			margin 0
@@ -68,14 +67,13 @@
 
 		.ngrs-range-slider .ngrs-runner
 			position relative
-			width 245px
+			width 248px
 			height 54px
 			margin 0
 
 		.ngrs-range-slider .ngrs-join
 			position absolute
 			z-index 1
-			width: 245px
 			top 14px
 			left 0
 			right 100%
@@ -119,7 +117,7 @@
 		float left
 		width 100%
 		padding 0
-		margin 0 0 14px 0
+		margin 0 0 12px 0
 
 		h6
 			float left
@@ -128,10 +126,9 @@
 			margin 0
 			font-family "le-monde-livre-classic-byol", sans-serif
 			font-weight 600
-			font-size 18px
-			line-height 18px
+			font-size 17px
+			line-height 17px
 			color $paragraph
-			color #777
 			text-align center
 			text-shadow $black-shadow
 
@@ -148,7 +145,7 @@
 			margin 0
 			font-size 16px
 			line-height 18px
-			font-family "factoria", sans-serif
+			font-family "le-monde-livre-classic-byol", sans-serif
 			font-weight 400
 			background $input
 			border none
@@ -163,7 +160,7 @@
 			padding 0 10px
 			margin 0
 			font-size 16px
-			font-family "halyard-display", sans-serif
+			font-family "le-monde-livre-classic-byol", sans-serif
 			font-weight 400
 			background $input
 			border none
@@ -173,11 +170,12 @@
 
 	&__mask
 		position absolute
-		width 130px
-		height 48px
+		width 145px
+		height 45px
 		padding 0
-		margin -48px 0 0 5px
-		background: $white
+		margin 0
+		background: $input
+		border-bottom $input-border-bottom
 		border-radius 4px
 		cursor: pointer
 		outline none
@@ -189,10 +187,11 @@
 			width 100%
 			padding 0
 			margin 0
-			font-weight 400
-			font-size 16px
-			line-height 18px
-			color $black
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 600
+			font-size 18px
+			line-height 46px
+			color $paragraph
 			text-align center
 			text-shadow $black-shadow
 

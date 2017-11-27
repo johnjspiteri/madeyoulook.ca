@@ -4,13 +4,11 @@
 
 		$stateProvider
 			.state('app.public.product', {
-				// abstract: true,
+				abstract: true,
 				url: 'jewellery/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/public/product/public.product.html',
-						controller: 'ProductController',
-						controllerAs: 'vm'
+						templateUrl: 'public/html/public/product/public.product.html'
 					}
 				}
 			});

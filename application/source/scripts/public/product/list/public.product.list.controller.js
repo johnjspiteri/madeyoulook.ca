@@ -20,7 +20,7 @@
 			price: {
 				min:  0,
 				max:  10000,
-				step: 1000
+				step: 100
 			}
 		};
 
@@ -39,7 +39,7 @@
 				{ title: 'Hair Piece', types: [] }
 			],
 			material: [ "Sterling Silver", "Yellow Gold Plated", "Yellow Gold", "Rose Gold", "White Gold", "Fabric", "Rubber", "Brass", "Plexi","Leather", "Wood", "Fiber", "Plastic", "Alternative", "Glass"]
-		}
+		};
 
 	}
 

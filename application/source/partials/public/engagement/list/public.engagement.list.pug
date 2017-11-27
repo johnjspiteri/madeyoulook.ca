@@ -5,20 +5,22 @@
 				.filter__square
 					.filter__title
 						h6 Category
+
 					.filter__value
 						select(data-ng-model='vm.category' data-ng-options='category.title as category.title for category in vm.search.category')
-						//.filter__mask
-							h4 {{ vm.category }}
-							span.fa.fa-caret-down
+						.filter__mask
+							h4(data-ng-bind='vm.category')
+							//span.fa.fa-caret-down
 
 				.filter__square
 					.filter__title
 						h6 Type
+
 					.filter__value
 						select(data-ng-model='vm.type' data-ng-options='type for type in vm.category.types')
-						//.filter__mask
-							h4 {{ vm.type }}
-							span.fa.fa-caret-down
+						.filter__mask
+							h4(data-ng-bind='vm.type')
+							//span.fa.fa-caret-down
 
 				.filter__square(data-ng-show='!vm.compact')
 					.filter__title
@@ -26,40 +28,30 @@
 
 					.filter__value
 						select(data-ng-model='vm.material' data-ng-options='material for material in vm.search.material')
-						//.filter__mask
-							h4 {{ vm.material }}
-							span.fa.fa-caret-down
+						.filter__mask
+							h4(data-ng-bind='vm.material')
+							//span.fa.fa-caret-down
 
 				.filter__square(data-ng-show='!vm.compact')
 					.filter__title
 						h6 Designer
-					.filter__value
-						select
-						//.filter__mask
-							h4
-							span.fa.fa-caret-down
 
-				//.filter__square
-					.filter__title
-						h6 Refine
 					.filter__value
-						select(placeholder='Chain Length')
+						select(data-ng-model='vm.designer' data-ng-options='designer for designer in vm.search.designer')
 						.filter__mask
-							h4
-							span.fa.fa-caret-down
+							h4(data-ng-bind='vm.designer')
+							//span.fa.fa-caret-down
 
 				.filter__slider
 					.filter__title
 						.filter__min
-							span(data-ng-bind='vm.sliderRanges.price.min')
-						//span(data-ng-bind='vm.sliderRanges.price.min | currency:\'$\':0')
+							span(data-ng-bind='vm.sliderRanges.price.min | currency:"$":0')
 						h6 Price
-							//span(data-ng-bind='vm.sliderRanges.price.max | currency:\'$\':0')
 						.filter__max
-							span(data-ng-bind='vm.sliderRanges.price.max')
+							span(data-ng-bind='vm.sliderRanges.price.max | currency:"$":0')
 
 					.filter__value
-						div(range-slider, prevent-equal-min-max="true", attach-handle-values="", step="{{vm.sliderSettings.price.step}}",  min="vm.sliderSettings.price.min", max="vm.sliderSettings.price.max", model-min="vm.sliderRanges.price.min", model-max="vm.sliderRanges.price.max")
+						div(range-slider, prevent-equal-min-max="false", attach-handle-values="", step="{{vm.sliderSettings.price.step}}",  min="vm.sliderSettings.price.min", max="vm.sliderSettings.price.max", model-min="vm.sliderRanges.price.min", model-max="vm.sliderRanges.price.max")
 
 			.filter__tags
 				.filter__tag(data-ng-show='vm.compact' data-ng-click='vm.toggle()')
