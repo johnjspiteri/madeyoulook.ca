@@ -4,8 +4,7 @@
 
 		$stateProvider
 			.state('app.public.product.list', {
-				// abstract: true,
-				url: 'list/',
+				url: '',
 				views: {
 					'content@app.public.product': {
 						templateUrl: 'public/html/public/product/list/public.product.list.html',

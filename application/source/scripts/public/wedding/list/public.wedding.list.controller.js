@@ -1,21 +1,50 @@
 (function() { "use strict";
 
-	function Internal() {
+	function Internal($scope) {
 
 		var vm = this;
-		vm.search = {
-			category: ["Vintage", "Modern", "Classic", "Creative"],
-			type: ["Diamond Sapphire", "Ruby With Stones"],
-			material: ["Gold-Yellow", "Gold-White", "Gold-Rose", "Gold-Green", "Platinum", "Palladium", "Alternative", "Titanium", "Zirconium", "Carbon Fiber"],
-			color: ["Black", "Blue", "Champagne", "Chocolate", "Rough"]
+		vm.compact = false;
+
+		vm.toggle = function() {
+			vm.compact = !vm.compact;
 		};
 
+		vm.sliderRanges = {
+			price: {
+				min: 0,
+				max: 10000
+			}
+		};
+		vm.sliderSettings = {
+			price: {
+				min:  0,
+				max:  10000,
+				step: 100
+			}
+		};
+
+		// $scope.$watch(function () {
+		// 	vm.filteredproducts = vm.products.slice(0, vm.products.length);
+		// });
+
+		vm.search = {
+			category: [
+				{ title: 'Bracelet', types: ['Bangles', 'Cuff'] },
+				{ title: 'Necklace', types: ['Pendant', 'Choker', 'Lariat'] },
+				{ title: 'Ring', types: ['Sterling Silver', 'Costume'] },
+				{ title: 'Earring', types: ['Studs', 'Drops', 'Hoops'] },
+				{ title: 'Broache', types: [] },
+				{ title: 'Cufflink', types: ['Sterling Silver', 'Costume'] },
+				{ title: 'Hair Piece', types: [] }
+			],
+			material: [ "Sterling Silver", "Yellow Gold Plated", "Yellow Gold", "Rose Gold", "White Gold", "Fabric", "Rubber", "Brass", "Plexi","Leather", "Wood", "Fiber", "Plastic", "Alternative", "Glass"]
+		};
 	}
 
 	angular
 		.module('app.public.wedding.list')
 		.controller('WeddingListController', Internal);
 
-	Internal.$inject = [];
+	Internal.$inject = ['$scope'];
 
 })();
