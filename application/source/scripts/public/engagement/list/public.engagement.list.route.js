@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.engagement.list', {
-				url: 'list/',
+				url: 'rings/',
 				views: {
 					'content@app.public.engagement': {
 						templateUrl: 'public/html/public/engagement/list/public.engagement.list.html',

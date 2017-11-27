@@ -3,7 +3,7 @@
 	function Internal($scope, productsResolve) {
 
 		var vm = this;
-		vm.compact = true;
+		vm.compact = false;
 		vm.products = productsResolve;
 
 		vm.toggle = function() {

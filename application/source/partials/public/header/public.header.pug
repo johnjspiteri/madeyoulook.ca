@@ -40,8 +40,10 @@ header
 
 				nav
 					.header__buttons
-						.header__button(ui-sref='app.public.index' ui-sref-active='active')
+						//.header__button(ui-sref='app.public.index' ui-sref-active='active')
 							h2 Home
+						.header__button(ui-sref='app.public.about.story' ui-sref-active='active')
+							h2 About
 
 						.header__button(ui-sref='app.public.wedding.list' ui-sref-active='active')
 							h2 Wedding
@@ -52,9 +54,6 @@ header
 						.header__button(ui-sref='app.public.product.list' ui-sref-active='active')
 							h2 Jewellery
 
-						.header__button(ui-sref='app.public.custom' ui-sref-active='active')
-							h2 Custom
-
 						.header__button(ui-sref='app.public.designer' ui-sref-active='active')
 							h2 Designers
 
@@ -64,7 +63,7 @@ header
 						.header__button(ui-sref='app.public.repair.cleaning' ui-sref-active='active')
 							h2 Repairs
 
-						.header__button.hide(ui-sref='app.public.studio.about' ui-sref-active='active')
+						.header__button(ui-sref='app.public.studio.rent' ui-sref-active='active')
 							h2 Studio
 
 						.header__button.hide(ui-sref='app.public.contact' ui-sref-active='active')

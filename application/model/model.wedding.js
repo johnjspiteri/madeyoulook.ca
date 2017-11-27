@@ -41,6 +41,7 @@ var ProductSchema = new Schema({
 			type: String, // amethyst, opal, moonstone, topaz, peridot, tourmaline, tanzanite, aquamarine, zircon, alexandrite, citrine, morganite, spinel, pearl, synthetic
 		}],
 	},
+	related: [String],
 	images: Array
 });
 

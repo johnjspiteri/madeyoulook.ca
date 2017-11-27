@@ -11,7 +11,7 @@
 				designers: false,
 				engagement: false,
 				index: false,
-				jewellery: false,
+				product: false,
 				repair: false,
 				service: false,
 				studio: false,
@@ -35,6 +35,10 @@
 					.close()
 					.then(function () {});
 			};
+
+			var state = $state.current.name.split('.');
+			console.log('params:', state);
+			vm.activate(state[2]);
 
 			$rootScope.$on("open", function () {
 				vm.backdrop = true;

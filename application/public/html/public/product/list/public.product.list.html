@@ -14,7 +14,7 @@ span.fa.fa-caret-down
 		h4
 		span.fa.fa-caret-down
 --><div class="filter__slider"><div class="filter__title"><div class="filter__min"><span data-ng-bind="vm.sliderRanges.price.min"></span></div><!--span(data-ng-bind='vm.sliderRanges.price.min | currency:\'$\':0')--><h6>Price<!--span(data-ng-bind='vm.sliderRanges.price.max | currency:\'$\':0')--></h6><div class="filter__max"><span data-ng-bind="vm.sliderRanges.price.max"></span></div></div><div class="filter__value"><div range-slider="range-slider" prevent-equal-min-max="true" attach-handle-values="" step="{{vm.sliderSettings.price.step}}" min="vm.sliderSettings.price.min" max="vm.sliderSettings.price.max" model-min="vm.sliderRanges.price.min" model-max="vm.sliderRanges.price.max"></div></div></div></div><div class="filter__tags"><div class="filter__tag" data-ng-show="vm.compact" data-ng-click="vm.toggle()"><h5>More Options</h5><!--.fa.fa-plus--></div><div class="filter__tag" data-ng-show="!vm.compact" data-ng-click="vm.toggle()"><h5>Less Options</h5><!--.fa.fa-minus--></div></div><!--.filter__reset(data-ng-click='vm.reset()')h5 <span>Reset</span> <div class="fa fa-close"></div>
---></div></div></div><div class="products"><div class="products__holder"><div class="product" data-ng-repeat="product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}"><div class="product__detail"><div class="product__image"><img src="public/images/product.jpg"/></div></div><!--.product__detail.product__title
+--></div></div></div><div class="products"><div class="product" data-ng-repeat="product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}"><div class="product__detail"><div class="product__image"><img src="public/images/product.jpg"/></div></div><!--.product__detail.product__title
 	h6(data-ng-bind='product.detail.title')
 
 //.product__description
@@ -30,4 +30,4 @@ span.fa.fa-caret-down
 //.product__tags
 	.product__tag(data-ng-repeat='tag in product.detail.sub_category')
 		h5(data-ng-bind='tag')
---><div class="product__designer"><div class="product__picture"><img src="public/images/profile.jpg"/></div><div class="product__name"><h5 data-ng-bind="product.detail.designer"></h5></div><!--.product__priceh6 $298--></div></div></div></div>
+--><div class="product__designer"><div class="product__picture"><img src="public/images/profile.jpg"/></div><div class="product__name"><h5 data-ng-bind="product.detail.designer"></h5></div><!--.product__priceh6 $298--></div></div></div>

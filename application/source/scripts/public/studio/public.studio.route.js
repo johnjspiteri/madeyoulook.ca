@@ -8,9 +8,7 @@
 				url: 'studio/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/public/studio/public.studio.html',
-						controller: 'StudioController',
-						controllerAs: 'vm'
+						templateUrl: 'public/html/public/studio/public.studio.html'
 			}
 		}
 			});
