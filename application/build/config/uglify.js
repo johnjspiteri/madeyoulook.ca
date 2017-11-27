@@ -18,13 +18,14 @@ module.exports = {
 				'node_modules/angular-material/angular-material.js',
 				'node_modules/angular-messages/angular-messages.js',
 				'node_modules/angular-resource/angular-resource.js',
+				'node_modules/angular-rangeslider/angular.rangeSlider.js',
 				'node_modules/angular-ui-router/release/angular-ui-router.js',
 
 				'source/scripts/app/app.module.js',
 				'source/scripts/app/app.route.js',
 				'source/scripts/app/app.config.js',
 				'source/scripts/app/app.run.js',
-				'source/scripts/app/factory/app.factory.run.js',
+				'source/scripts/app/app.factory.run.js',
 
 				'source/scripts/common/common.module.js',
 				'source/scripts/common/directive/common.directive.escape.js',
@@ -49,6 +50,28 @@ module.exports = {
 				'source/scripts/public/designer/view/public.designer.view.service.js',
 				'source/scripts/public/designer/view/public.designer.view.controller.js',
 				'source/scripts/public/designer/view/public.designer.view.route.js',
+
+				'source/scripts/public/about/public.about.module.js',
+				'source/scripts/public/about/public.about.route.js',
+
+				'source/scripts/public/about/environment/public.about.environment.module.js',
+				'source/scripts/public/about/environment/public.about.environment.controller.js',
+				'source/scripts/public/about/environment/public.about.environment.route.js',
+
+				'source/scripts/public/about/press/public.about.press.module.js',
+				'source/scripts/public/about/press/public.about.press.route.js',
+
+				'source/scripts/public/about/press/list/public.about.press.list.module.js',
+				'source/scripts/public/about/press/list/public.about.press.list.controller.js',
+				'source/scripts/public/about/press/list/public.about.press.list.route.js',
+
+				'source/scripts/public/about/press/view/public.about.press.view.module.js',
+				'source/scripts/public/about/press/view/public.about.press.view.controller.js',
+				'source/scripts/public/about/press/view/public.about.press.view.route.js',
+
+				'source/scripts/public/about/story/public.about.story.module.js',
+				'source/scripts/public/about/story/public.about.story.controller.js',
+				'source/scripts/public/about/story/public.about.story.route.js',
 
 				'source/scripts/public/answer/public.answer.module.js',
 				'source/scripts/public/answer/public.answer.controller.js',
@@ -173,24 +196,19 @@ module.exports = {
 				'source/scripts/public/service/engraving/public.service.engraving.route.js',
 
 				'source/scripts/public/studio/public.studio.module.js',
-				'source/scripts/public/studio/public.studio.controller.js',
 				'source/scripts/public/studio/public.studio.route.js',
 
-				'source/scripts/public/studio/about/public.studio.about.module.js',
-				'source/scripts/public/studio/about/public.studio.about.controller.js',
-				'source/scripts/public/studio/about/public.studio.about.route.js',
+				'source/scripts/public/studio/sell/public.studio.sell.module.js',
+				'source/scripts/public/studio/sell/public.studio.sell.controller.js',
+				'source/scripts/public/studio/sell/public.studio.sell.route.js',
 
-				'source/scripts/public/studio/business/public.studio.business.module.js',
-				'source/scripts/public/studio/business/public.studio.business.controller.js',
-				'source/scripts/public/studio/business/public.studio.business.route.js',
+				'source/scripts/public/studio/award/public.studio.award.module.js',
+				'source/scripts/public/studio/award/public.studio.award.controller.js',
+				'source/scripts/public/studio/award/public.studio.award.route.js',
 
-				'source/scripts/public/studio/career/public.studio.career.module.js',
-				'source/scripts/public/studio/career/public.studio.career.controller.js',
-				'source/scripts/public/studio/career/public.studio.career.route.js',
-
-				'source/scripts/public/studio/environment/public.studio.environment.module.js',
-				'source/scripts/public/studio/environment/public.studio.environment.controller.js',
-				'source/scripts/public/studio/environment/public.studio.environment.route.js',
+				'source/scripts/public/studio/join/public.studio.join.module.js',
+				'source/scripts/public/studio/join/public.studio.join.controller.js',
+				'source/scripts/public/studio/join/public.studio.join.route.js',
 
 				'source/scripts/public/studio/equipment/public.studio.equipment.module.js',
 				'source/scripts/public/studio/equipment/public.studio.equipment.controller.js',
@@ -199,19 +217,6 @@ module.exports = {
 				'source/scripts/public/studio/facility/public.studio.facility.module.js',
 				'source/scripts/public/studio/facility/public.studio.facility.controller.js',
 				'source/scripts/public/studio/facility/public.studio.facility.route.js',
-
-				'source/scripts/public/studio/press/public.studio.press.module.js',
-				'source/scripts/public/studio/press/public.studio.press.controller.js',
-				'source/scripts/public/studio/press/public.studio.press.route.js',
-
-				'source/scripts/public/studio/press/list/public.studio.press.list.module.js',
-				'source/scripts/public/studio/press/list/public.studio.press.list.service.js',
-				'source/scripts/public/studio/press/list/public.studio.press.list.controller.js',
-				'source/scripts/public/studio/press/list/public.studio.press.list.route.js',
-
-				'source/scripts/public/studio/press/view/public.studio.press.view.module.js',
-				'source/scripts/public/studio/press/view/public.studio.press.view.controller.js',
-				'source/scripts/public/studio/press/view/public.studio.press.view.route.js',
 
 				'source/scripts/public/terms/public.terms.module.js',
 				'source/scripts/public/terms/public.terms.controller.js',

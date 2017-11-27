@@ -63,7 +63,7 @@ if ('production' === env) {
 
 if ('development' === env || 'test' === env) {
 	app.get('*', function(req, res) {
-		res.sendFile(__dirname + '/public/html/development.html');
+		res.sendFile(__dirname + '/public/html/index.html');
 	});
 }
 
