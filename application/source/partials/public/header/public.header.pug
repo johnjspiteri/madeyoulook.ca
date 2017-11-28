@@ -3,7 +3,19 @@ header
 		.header
 			.header__content
 				.header__logo(ui-sref='app.public.index')
+					h6 LOGO
 					//img(src='public/images/logo.png')
+				.header__hours
+					h6 HOURS
+					//h4 M - F: 10 - 8PM
+					//h4 Sat: 10 - 6PM
+					//h4 Sun: 12 - 5PM
+
+				.header__information
+					h6 INFO
+
+				.header__map
+					h6 MAP
 
 				.header__navigation(data-ng-click='vm.open()')
 					span.fa.fa-bars
@@ -12,20 +24,13 @@ header
 					span.fa.fa-phone
 
 				.header__navigation
+					span.fa.fa-instagram
+
+				.header__navigation
+					span.fa.fa-twitter
+
+				.header__navigation
 					span.fa.fa-search
-
-				//.header__information
-					.header__column
-						.header__phone
-							h4 #[span.fa.fa-phone] 416-463-2136
-
-						.header__address
-							h4 #[span.fa.fa-map-marker] 1338 Queen Street W
-
-				//.header__hours
-					//h4 M - F: 10 - 8PM
-					//h4 Sat: 10 - 6PM
-					//h4 Sun: 12 - 5PM
 
 				//.header__contact
 					h4 Contact

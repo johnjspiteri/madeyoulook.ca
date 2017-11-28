@@ -6,7 +6,7 @@ nav
 	float left
 	width 100%
 	padding 0
-	margin 20px 0 0 0
+	margin 14px 0 0 0
 
 .header
 	width 768px
@@ -15,21 +15,32 @@ nav
 		margin 0
 
 	&__content
-		padding 10px 0 6px 0
+		padding 0 0 6px 0
+
+	&__map
+		width 210px
+		height 80px
+		margin 0
 
 	&__navigation
 		display none
 
 	&__logo
 		width 240px
-		height 60px
-		margin 0 0 0 10px
+		height 70px
+		margin 10px 20px 0 10px
+		border-radius 0
 
 	&__information
 		display block
 		float left
-		width 511px
-		height 80px
+		width 110px
+		height: 80px
+		padding: 0
+		margin: 0 10px 0 0
+		background $secondary
+		border-bottom $button-border-bottom
+		border-radius 0 0 4px 4px
 
 		h4
 			float left
@@ -42,46 +53,27 @@ nav
 			line-height 26px
 			color $white
 
-	&__column
-		float left
-		width 200px
-		height 80px
-		margin 10px 0 0 0
-		text-align center
-
-	&__phone
-		float left
-		width 100%
-
-		.fa-phone
-			margin 1px 8px 0 0
-			font-size 15px
-			color $white
-
-	&__address
-		float left
-		width 100%
-
-		.fa-map-marker
-			margin 1px 8px 0 0
-			font-size 15px
-			color $white
-
 	&__hours
+		display block
 		float left
-		width 130px
-		height 80px
-		margin 10px 10px 0 0
-		text-align center
-
-	&__contact
-		float left
-		width 171px
-		height 80px
-		background $white
+		width 144px
+		height: 80px
+		padding: 0
+		margin 0 10px 0 0
+		background $secondary
+		border-bottom $button-border-bottom
+		border-radius 0 0 4px 4px
 
 		h4
-			color $black
+			float left
+			width 100%
+			padding: 0
+			margin 0
+			font-family "le-monde-livre-classic-byol", sans-serif
+			font-weight 400
+			font-size 14px
+			line-height 26px
+			color $white
 
 	&__buttons
 		text-align center
@@ -99,12 +91,12 @@ nav
 
 		h2
 			float left
-			padding 0 11px
+			padding 0 12px
 			margin: 0
 			font-size 16px
 			line-height 33px
 			font-family 'le-monde-livre-classic-byol', sans-serif
-			font-weight 400
+			font-weight 500
 			color: $white
 			text-shadow $white-shadow
 
@@ -124,44 +116,35 @@ nav
 
 .sub
 	display block
-	position relative
+	position fixed
 	width 100%
 	padding 0
-	margin -2px 0 0 0
+	margin 0
 	z-index: 100
 
 	&__container
 		float left
 		width 100%
-		height: 40px
+		height 36px
 		padding 0
 		margin 0
-		background #655558
 		background $button
 		border-bottom $button-border-bottom
 
-	&__content
-		position relative
-		width: 728px
-		padding: 10px 0 10px 38px
-		margin: 0
+	&__buttons
+		text-align center
+		margin 0
 
-	&__links
-		display inline-block
-		width: 100%
-		padding 0
-
-	&__link
-		float left
-		margin 0 16px 0 16px
+	&__button
+		display inline-block;
+		margin 0 12px
 
 		h6
 			float left
-			width 100%
 			font-family "le-monde-livre-classic-byol", sans-serif
 			font-weight 500
-			font-size 15px
-			line-height 25px
+			font-size 16px
+			line-height 37px
 			color $white
 			text-shadow $white-shadow
 

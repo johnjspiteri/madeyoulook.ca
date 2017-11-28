@@ -11,6 +11,7 @@
 	"files": [
 		"api",
 		"build",
+		"development.json",
 		"node_modules",
 		"public",
 		"server.js",

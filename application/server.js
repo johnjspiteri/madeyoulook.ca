@@ -7,7 +7,6 @@ var connection = '';
 var express = require('express'),
 	mongoose = require('mongoose'),
 	morgan = require('morgan'),
-	path = require('path'),
 	methodOverride = require('method-override'),
 	compression = require('compression'),
 	bodyParser = require('body-parser'),
@@ -21,12 +20,12 @@ var express = require('express'),
 if(process.env.NODE_ENV === 'development') {
 	connection = '127.0.0.1:27017/madeyoulook';
 	var location = require('./development.json');
-	server = app.listen(location.port, location.ip);
+	server.listen(location.port, location.ip);
 }
 
 if(process.env.NODE_ENV === 'production') {
 	connection = 'database:27017/madeyoulook';
-	server = app.listen(80, '0.0.0.0');
+	server.listen(80, '0.0.0.0');
 }
 
 

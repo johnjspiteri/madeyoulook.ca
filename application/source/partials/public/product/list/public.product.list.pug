@@ -65,36 +65,39 @@
 			//.filter__reset(data-ng-click='vm.reset()')
 				h5 #[span Reset] #[.fa.fa-close]
 
-.products
-	.product(data-ng-repeat='product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}')
-		.product__detail
-			.product__image
-				img(src='public/images/product.jpg')
+.block
+	.block__container
+		.container
+			.products
+				.product(data-ng-repeat='product in vm.products | filter: { detail: { category: vm.category }} | filter: { detail: { title: vm.input }}')
+					.product__image
+						img(src='public/images/product.jpg')
 
-		.product__detail
-			.product__title
-				h6(data-ng-bind='product.detail.title')
+					.product__detail
+						.product__title
+							h6(data-ng-bind='product.detail.title')
 
-			.product__description
-				p This is where a paragraph goes. This is where a paragraph goes. This is where a paragraph goes. This is where it goes.
-				//.product__jeweller
-			//.product__collection
-				h6(data-ng-bind='product.detail.category')
+						//.product__description
+							p This is where a paragraph goes. This is where a paragraph goes. This is where a paragraph goes. This is where it goes.
 
-			//.product__price
-				h6(data-ng-bind='product.detail.price')
-				//.product__specs
+							//.product__jeweller
+						//.product__collection
+							h6(data-ng-bind='product.detail.category')
 
-			//.product__tags
-				.product__tag(data-ng-repeat='tag in product.detail.sub_category')
-					h5(data-ng-bind='tag')
+						//.product__price
+							h6(data-ng-bind='product.detail.price')
+							//.product__specs
 
-		.product__designer
-			.product__picture
-				img(src='public/images/profile.jpg')
+						//.product__tags
+							.product__tag(data-ng-repeat='tag in product.detail.sub_category')
+								h5(data-ng-bind='tag')
 
-			.product__name
-				//h5(data-ng-bind='product.detail.designer')
+					.product__designer
+						.product__picture
+							img(src='public/images/profile.jpg')
 
-			.product__price
-				h6 $298
+						.product__name
+							//h5(data-ng-bind='product.detail.designer')
+
+						.product__price
+							h6 $298

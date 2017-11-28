@@ -7,9 +7,7 @@
 				url: 'wedding/',
 				views: {
 					'page@': {
-						templateUrl: 'public/html/public/wedding/public.wedding.html',
-						controller: 'WeddingController',
-						controllerAs: 'vm'
+						templateUrl: 'public/html/public/wedding/public.wedding.html'
 					}
 				}
 			});

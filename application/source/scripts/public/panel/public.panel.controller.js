@@ -8,7 +8,7 @@
 			vm.state = {
 				contact: false,
 				custom: false,
-				designers: false,
+				designer: false,
 				engagement: false,
 				index: false,
 				product: false,
@@ -36,14 +36,9 @@
 					.then(function () {});
 			};
 
-			var state = $state.current.name.split('.');
-			console.log('params:', state);
-			vm.activate(state[2]);
-
 			$rootScope.$on("open", function () {
 				vm.backdrop = true;
 				var state = $state.current.name.split('.');
-				console.log('params:', state);
 				vm.activate(state[2]);
 				$mdSidenav('panel')
 					.open()
