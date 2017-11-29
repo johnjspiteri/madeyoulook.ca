@@ -36,6 +36,8 @@ module.exports = {
 
 				'source/scripts/public/footer/public.footer.controller.js',
 				'source/scripts/public/header/public.header.controller.js',
+
+				'source/scripts/public/panel/public.panel.module.js',
 				'source/scripts/public/panel/public.panel.controller.js',
 
 				'source/scripts/public/index/public.index.module.js',
@@ -43,9 +45,12 @@ module.exports = {
 				'source/scripts/public/index/public.index.route.js',
 
 				'source/scripts/public/designer/public.designer.module.js',
-				'source/scripts/public/designer/public.designer.service.js',
-				'source/scripts/public/designer/public.designer.controller.js',
 				'source/scripts/public/designer/public.designer.route.js',
+
+				'source/scripts/public/designer/list/public.designer.list.module.js',
+				'source/scripts/public/designer/list/public.designer.list.service.js',
+				'source/scripts/public/designer/list/public.designer.list.controller.js',
+				'source/scripts/public/designer/list/public.designer.list.route.js',
 
 				'source/scripts/public/designer/view/public.designer.view.module.js',
 				'source/scripts/public/designer/view/public.designer.view.service.js',
@@ -64,10 +69,12 @@ module.exports = {
 
 				'source/scripts/public/about/press/list/public.about.press.list.module.js',
 				'source/scripts/public/about/press/list/public.about.press.list.controller.js',
+				'source/scripts/public/about/press/list/public.about.press.list.service.js',
 				'source/scripts/public/about/press/list/public.about.press.list.route.js',
 
 				'source/scripts/public/about/press/view/public.about.press.view.module.js',
 				'source/scripts/public/about/press/view/public.about.press.view.controller.js',
+				'source/scripts/public/about/press/view/public.about.press.view.service.js',
 				'source/scripts/public/about/press/view/public.about.press.view.route.js',
 
 				'source/scripts/public/about/story/public.about.story.module.js',
@@ -82,21 +89,16 @@ module.exports = {
 				'source/scripts/public/borrowing/public.borrowing.controller.js',
 				'source/scripts/public/borrowing/public.borrowing.route.js',
 
-				'source/scripts/public/certificates/public.certificates.module.js',
-				'source/scripts/public/certificates/public.certificates.controller.js',
-				'source/scripts/public/certificates/public.certificates.route.js',
-
 				'source/scripts/public/contact/public.contact.module.js',
 				'source/scripts/public/contact/public.contact.controller.js',
 				'source/scripts/public/contact/public.contact.route.js',
 
-				'source/scripts/public/custom/public.custom.module.js',
-				'source/scripts/public/custom/public.custom.controller.js',
-				'source/scripts/public/custom/public.custom.route.js',
-
 				'source/scripts/public/engagement/public.engagement.module.js',
-				'source/scripts/public/engagement/public.engagement.controller.js',
 				'source/scripts/public/engagement/public.engagement.route.js',
+
+				'source/scripts/public/engagement/custom/public.engagement.custom.module.js',
+				'source/scripts/public/engagement/custom/public.engagement.custom.controller.js',
+				'source/scripts/public/engagement/custom/public.engagement.custom.route.js',
 
 				'source/scripts/public/engagement/list/public.engagement.list.module.js',
 				'source/scripts/public/engagement/list/public.engagement.list.controller.js',
@@ -117,15 +119,27 @@ module.exports = {
 				'source/scripts/public/product/public.product.module.js',
 				'source/scripts/public/product/public.product.route.js',
 
+				'source/scripts/public/product/certificate/public.product.certificate.module.js',
+				'source/scripts/public/product/certificate/public.product.certificate.controller.js',
+				'source/scripts/public/product/certificate/public.product.certificate.route.js',
+
+				'source/scripts/public/product/care/public.product.care.module.js',
+				'source/scripts/public/product/care/public.product.care.controller.js',
+				'source/scripts/public/product/care/public.product.care.route.js',
+
+				'source/scripts/public/product/custom/public.product.custom.module.js',
+				'source/scripts/public/product/custom/public.product.custom.controller.js',
+				'source/scripts/public/product/custom/public.product.custom.route.js',
+
 				'source/scripts/public/product/list/public.product.list.module.js',
 				'source/scripts/public/product/list/public.product.list.service.js',
 				'source/scripts/public/product/list/public.product.list.controller.js',
 				'source/scripts/public/product/list/public.product.list.route.js',
 
-				'source/scripts/public/product/view/public.product.view.module.js',
-				'source/scripts/public/product/view/public.product.view.service.js',
-				'source/scripts/public/product/view/public.product.view.controller.js',
-				'source/scripts/public/product/view/public.product.view.route.js',
+				'source/scripts/public/product/list/view/public.product.list.view.module.js',
+				'source/scripts/public/product/list/view/public.product.list.view.service.js',
+				'source/scripts/public/product/list/view/public.product.list.view.controller.js',
+				'source/scripts/public/product/list/view/public.product.list.view.route.js',
 
 				'source/scripts/public/questions/public.questions.module.js',
 				'source/scripts/public/questions/public.questions.controller.js',
@@ -223,8 +237,11 @@ module.exports = {
 				'source/scripts/public/terms/public.terms.route.js',
 
 				'source/scripts/public/wedding/public.wedding.module.js',
-				'source/scripts/public/wedding/public.wedding.controller.js',
 				'source/scripts/public/wedding/public.wedding.route.js',
+
+				'source/scripts/public/wedding/custom/public.wedding.custom.module.js',
+				'source/scripts/public/wedding/custom/public.wedding.custom.controller.js',
+				'source/scripts/public/wedding/custom/public.wedding.custom.route.js',
 
 				'source/scripts/public/wedding/list/public.wedding.list.module.js',
 				'source/scripts/public/wedding/list/public.wedding.list.controller.js',
