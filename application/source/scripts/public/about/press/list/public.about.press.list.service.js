@@ -3,7 +3,7 @@
     function internal($resource) {
 
         return $resource("/api/article-list/:_id", { _id: "@_id" }, {
-            'query': {
+            'get': {
 				method: 'GET',
 				isArray: true
             }

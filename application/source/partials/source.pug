@@ -52,6 +52,8 @@ script(src='/source/scripts/public/public.route.js')
 
 script(src='/source/scripts/public/footer/public.footer.controller.js')
 script(src='/source/scripts/public/header/public.header.controller.js')
+
+script(src='/source/scripts/public/panel/public.panel.module.js')
 script(src='/source/scripts/public/panel/public.panel.controller.js')
 
 script(src='/source/scripts/public/index/public.index.module.js')
@@ -59,9 +61,12 @@ script(src='/source/scripts/public/index/public.index.controller.js')
 script(src='/source/scripts/public/index/public.index.route.js')
 
 script(src='/source/scripts/public/designer/public.designer.module.js')
-script(src='/source/scripts/public/designer/public.designer.service.js')
-script(src='/source/scripts/public/designer/public.designer.controller.js')
 script(src='/source/scripts/public/designer/public.designer.route.js')
+
+script(src='/source/scripts/public/designer/list/public.designer.list.module.js')
+script(src='/source/scripts/public/designer/list/public.designer.list.service.js')
+script(src='/source/scripts/public/designer/list/public.designer.list.controller.js')
+script(src='/source/scripts/public/designer/list/public.designer.list.route.js')
 
 script(src='/source/scripts/public/designer/view/public.designer.view.module.js')
 script(src='/source/scripts/public/designer/view/public.designer.view.service.js')
@@ -80,10 +85,12 @@ script(src='/source/scripts/public/about/press/public.about.press.route.js')
 
 script(src='/source/scripts/public/about/press/list/public.about.press.list.module.js')
 script(src='/source/scripts/public/about/press/list/public.about.press.list.controller.js')
+script(src='/source/scripts/public/about/press/list/public.about.press.list.service.js')
 script(src='/source/scripts/public/about/press/list/public.about.press.list.route.js')
 
 script(src='/source/scripts/public/about/press/view/public.about.press.view.module.js')
 script(src='/source/scripts/public/about/press/view/public.about.press.view.controller.js')
+script(src='/source/scripts/public/about/press/view/public.about.press.view.service.js')
 script(src='/source/scripts/public/about/press/view/public.about.press.view.route.js')
 
 script(src='/source/scripts/public/about/story/public.about.story.module.js')
@@ -98,20 +105,16 @@ script(src='/source/scripts/public/borrowing/public.borrowing.module.js')
 script(src='/source/scripts/public/borrowing/public.borrowing.controller.js')
 script(src='/source/scripts/public/borrowing/public.borrowing.route.js')
 
-script(src='/source/scripts/public/certificates/public.certificates.module.js')
-script(src='/source/scripts/public/certificates/public.certificates.controller.js')
-script(src='/source/scripts/public/certificates/public.certificates.route.js')
-
 script(src='/source/scripts/public/contact/public.contact.module.js')
 script(src='/source/scripts/public/contact/public.contact.controller.js')
 script(src='/source/scripts/public/contact/public.contact.route.js')
 
-script(src='/source/scripts/public/custom/public.custom.module.js')
-script(src='/source/scripts/public/custom/public.custom.controller.js')
-script(src='/source/scripts/public/custom/public.custom.route.js')
-
 script(src='/source/scripts/public/engagement/public.engagement.module.js')
 script(src='/source/scripts/public/engagement/public.engagement.route.js')
+
+script(src='/source/scripts/public/engagement/custom/public.engagement.custom.module.js')
+script(src='/source/scripts/public/engagement/custom/public.engagement.custom.controller.js')
+script(src='/source/scripts/public/engagement/custom/public.engagement.custom.route.js')
 
 script(src='/source/scripts/public/engagement/list/public.engagement.list.module.js')
 script(src='/source/scripts/public/engagement/list/public.engagement.list.controller.js')
@@ -132,15 +135,27 @@ script(src='/source/scripts/public/privacy/public.privacy.route.js')
 script(src='/source/scripts/public/product/public.product.module.js')
 script(src='/source/scripts/public/product/public.product.route.js')
 
+script(src='/source/scripts/public/product/certificate/public.product.certificate.module.js')
+script(src='/source/scripts/public/product/certificate/public.product.certificate.controller.js')
+script(src='/source/scripts/public/product/certificate/public.product.certificate.route.js')
+
+script(src='/source/scripts/public/product/care/public.product.care.module.js')
+script(src='/source/scripts/public/product/care/public.product.care.controller.js')
+script(src='/source/scripts/public/product/care/public.product.care.route.js')
+
+script(src='/source/scripts/public/product/custom/public.product.custom.module.js')
+script(src='/source/scripts/public/product/custom/public.product.custom.controller.js')
+script(src='/source/scripts/public/product/custom/public.product.custom.route.js')
+
 script(src='/source/scripts/public/product/list/public.product.list.module.js')
 script(src='/source/scripts/public/product/list/public.product.list.service.js')
 script(src='/source/scripts/public/product/list/public.product.list.controller.js')
 script(src='/source/scripts/public/product/list/public.product.list.route.js')
 
-script(src='/source/scripts/public/product/view/public.product.view.module.js')
-script(src='/source/scripts/public/product/view/public.product.view.service.js')
-script(src='/source/scripts/public/product/view/public.product.view.controller.js')
-script(src='/source/scripts/public/product/view/public.product.view.route.js')
+script(src='/source/scripts/public/product/list/view/public.product.list.view.module.js')
+script(src='/source/scripts/public/product/list/view/public.product.list.view.service.js')
+script(src='/source/scripts/public/product/list/view/public.product.list.view.controller.js')
+script(src='/source/scripts/public/product/list/view/public.product.list.view.route.js')
 
 script(src='/source/scripts/public/questions/public.questions.module.js')
 script(src='/source/scripts/public/questions/public.questions.controller.js')
@@ -239,6 +254,10 @@ script(src='/source/scripts/public/terms/public.terms.route.js')
 
 script(src='/source/scripts/public/wedding/public.wedding.module.js')
 script(src='/source/scripts/public/wedding/public.wedding.route.js')
+
+script(src='/source/scripts/public/wedding/custom/public.wedding.custom.module.js')
+script(src='/source/scripts/public/wedding/custom/public.wedding.custom.controller.js')
+script(src='/source/scripts/public/wedding/custom/public.wedding.custom.route.js')
 
 script(src='/source/scripts/public/wedding/list/public.wedding.list.module.js')
 script(src='/source/scripts/public/wedding/list/public.wedding.list.controller.js')

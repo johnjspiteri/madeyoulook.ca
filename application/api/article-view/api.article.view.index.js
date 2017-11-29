@@ -4,6 +4,6 @@ var express = require('express'),
 	controller = require('./api.article.view.controller.js'),
 	router = express.Router();
 
-router.get('/', controller.index);
+router.get('/:clean', controller);
 
 module.exports = router;

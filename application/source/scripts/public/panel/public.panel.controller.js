@@ -1,7 +1,7 @@
 (function() { "use strict";
 
 	angular
-		.module('app.public')
+		.module('app.public.panel')
 		.controller('PanelController',['$mdSidenav', '$rootScope', '$state', function($mdSidenav, $rootScope, $state) {
 			var vm = this;
 

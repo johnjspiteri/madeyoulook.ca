@@ -4,7 +4,7 @@
 
 		$stateProvider
 			.state('app.public.about.press.list', {
-				url: 'list/',
+				url: '',
 				views: {
 					'content@app.public.about': {
 						templateUrl: 'public/html/public/about/press/list/public.about.press.list.html',
@@ -14,7 +14,7 @@
 				},
 				resolve: {
 					articlesResolve: ['articlesList', function(articlesList) {
-						return articlesList.query().$promise;
+						return articlesList.get().$promise;
 					}]
 				}
 			});

@@ -4,19 +4,9 @@
 
 		$stateProvider
 			.state('app.public.designer', {
+				abstract: true,
 				url: 'designers/',
-				views: {
-					'page@': {
-						templateUrl: 'public/html/public/designer/public.designer.html',
-						controller: 'DesignerController',
-						controllerAs: 'vm'
-					}
-				},
-				resolve:  {
-					designersResolve: ['designersList', function(designersList) {
-						return designersList.query().$promise;
-					}]
-				}
+				views: null
 			});
 	}
 

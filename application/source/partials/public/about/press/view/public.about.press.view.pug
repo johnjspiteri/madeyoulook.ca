@@ -1,7 +1,7 @@
 .press-view__container
 	.press-view
 		.press-view__heading
-			h1 MadeYouLook Press Heading
+			h1(data-ng-bind='vm.article.title')
 
 		.press-view__video
 			h1 video
@@ -17,7 +17,7 @@
 								h6 Publication
 
 						.press-view__value
-							h6 Now Magazine
+							h1(data-ng-bind='vm.article.publisher')
 
 					.press-view__square
 						.press-view__title
@@ -25,7 +25,7 @@
 								h6 Author
 
 						.press-view__value
-							h6 Nov. 7th. 2017
+							h6(data-ng-bind='vm.article.author')
 
 				.press-view__row-mobile
 					.press-view__square

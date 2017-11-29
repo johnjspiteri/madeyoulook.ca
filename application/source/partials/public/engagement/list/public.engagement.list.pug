@@ -4,7 +4,9 @@
 			.filter
 				.filter__square
 					.filter__title
-						h6 Category
+						.filter__container
+							.filter__center
+								h6 Category
 
 					.filter__value
 						select(data-ng-model='vm.category' data-ng-options='category.title as category.title for category in vm.search.category')
@@ -14,7 +16,9 @@
 
 				.filter__square
 					.filter__title
-						h6 Type
+						.filter__container
+							.filter__center
+								h6 Type
 
 					.filter__value
 						select(data-ng-model='vm.type' data-ng-options='type for type in vm.category.types')
@@ -24,7 +28,9 @@
 
 				.filter__square(data-ng-show='!vm.compact')
 					.filter__title
-						h6 Material
+						.filter__container
+							.filter__center
+								h6 Material
 
 					.filter__value
 						select(data-ng-model='vm.material' data-ng-options='material for material in vm.search.material')
@@ -34,7 +40,33 @@
 
 				.filter__square(data-ng-show='!vm.compact')
 					.filter__title
-						h6 Designer
+						.filter__container
+							.filter__center
+								h6 Designer
+
+					.filter__value
+						select(data-ng-model='vm.designer' data-ng-options='designer for designer in vm.search.designer')
+						.filter__mask
+							h4(data-ng-bind='vm.designer')
+							//span.fa.fa-caret-down
+
+				.filter__square(data-ng-show='!vm.compact')
+					.filter__title
+						.filter__container
+							.filter__center
+								h6 Style
+
+					.filter__value
+						select(data-ng-model='vm.designer' data-ng-options='designer for designer in vm.search.designer')
+						.filter__mask
+							h4(data-ng-bind='vm.designer')
+							//span.fa.fa-caret-down
+
+				.filter__square(data-ng-show='!vm.compact')
+					.filter__title
+						.filter__container
+							.filter__center
+								h6 Style
 
 					.filter__value
 						select(data-ng-model='vm.designer' data-ng-options='designer for designer in vm.search.designer')
@@ -43,12 +75,14 @@
 							//span.fa.fa-caret-down
 
 				.filter__slider
+					.filter__min
+						span(data-ng-bind='vm.sliderRanges.price.min | currency:"$":0')
 					.filter__title
-						.filter__min
-							span(data-ng-bind='vm.sliderRanges.price.min | currency:"$":0')
-						h6 Price
-						.filter__max
-							span(data-ng-bind='vm.sliderRanges.price.max | currency:"$":0')
+						.filter__container
+							.filter__center
+								h6 Price
+					.filter__max
+						span(data-ng-bind='vm.sliderRanges.price.max | currency:"$":0')
 
 					.filter__value
 						div(range-slider, prevent-equal-min-max="false", attach-handle-values="", step="{{vm.sliderSettings.price.step}}",  min="vm.sliderSettings.price.min", max="vm.sliderSettings.price.max", model-min="vm.sliderRanges.price.min", model-max="vm.sliderRanges.price.max")
@@ -62,40 +96,43 @@
 					h5 Less Options
 					//.fa.fa-minus
 
-			//.filter__reset(data-ng-click='vm.reset()')
-				h5 #[span Reset] #[.fa.fa-close]
+				.filter__reset(data-ng-click='vm.reset()')
+					span.fa.fa-close
 
-.products
-	.products__holder
-		.product(data-ng-repeat='product in [{}, {}, {}, {}]')
-			.product__image
-				img(src='public/images/product.jpg')
+.block
+	.block__container
+		.container
+			.products
+				.products__holder
+					.product(data-ng-repeat='product in [{}, {}, {}, {}]')
+						.product__image
+							img(src='public/images/product.jpg')
 
-			.product__unnamed
-				h6 ?
+						.product__unnamed
+							h6 ?
 
-			.product__detail
-				.product__title
-					h6 Title
+						.product__detail
+							.product__title
+								h6 Title
 
-					//.product__jeweller
-				.product__collection
-					h6 Category
+								//.product__jeweller
+							.product__collection
+								h6 Category
 
-				.product__price
-					h6 Price
-					//.product__specs
+							.product__price
+								h6 Price
+								//.product__specs
 
-				.product__tags
-					.product__tag(data-ng-repeat='tag in [{}, {}, {}]')
-						h5 Tag
+							.product__tags
+								.product__tag(data-ng-repeat='tag in [{}, {}, {}]')
+									h5 Tag
 
-				.product__designer
-					.product__picture
-						img(src='public/images/jeweller.jpg')
+							.product__designer
+								.product__picture
+									img(src='public/images/jeweller.jpg')
 
-					.product__name
-						h5 Designer Name
+								.product__name
+									h5 Designer Name
 
-					.product__view
-						h6 View
+								.product__view
+									h6 View

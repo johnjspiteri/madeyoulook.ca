@@ -45,21 +45,19 @@ header
 
 				nav
 					.header__buttons
-						//.header__button(ui-sref='app.public.index' ui-sref-active='active')
-							h2 Home
-						.header__button(ui-sref='app.public.about.story' ui-sref-active='active')
+						//.header__button(ui-sref='app.public.about.story' data-ng-class='{active: $state.includes("app.public.about")}')
 							h2 About
 
-						.header__button(ui-sref='app.public.wedding.list' ui-sref-active='active')
+						.header__button(ui-sref='app.public.wedding.list'  data-ng-class='{active: $state.includes("app.public.wedding")}')
 							h2 Wedding
 
-						.header__button(ui-sref='app.public.engagement.list' ui-sref-active='active')
+						.header__button(ui-sref='app.public.engagement.list'  data-ng-class='{active: $state.includes("app.public.engagement")}')
 							h2 Engagement
 
-						.header__button(ui-sref='app.public.product.list' ui-sref-active='active')
+						.header__button(ui-sref='app.public.product.list'  data-ng-class='{active: $state.includes("app.public.product")}')
 							h2 Jewellery
 
-						.header__button(ui-sref='app.public.designer' ui-sref-active='active')
+						.header__button(ui-sref='app.public.designer.list'  data-ng-class='{active: $state.includes("app.public.designer")}')
 							h2 Designers
 
 						.header__button(ui-sref='app.public.service.alteration' ui-sref-active='active')
@@ -71,7 +69,5 @@ header
 						.header__button(ui-sref='app.public.studio.rent' ui-sref-active='active')
 							h2 Studio
 
-						.header__button.hide(ui-sref='app.public.contact' ui-sref-active='active')
+						//.header__button.hide(ui-sref='app.public.contact' ui-sref-active='active')
 							h2 Contact
-
-.header__spacer

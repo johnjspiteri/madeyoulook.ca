@@ -12,123 +12,28 @@
 		padding 0
 		margin 0 10px 18px 0
 
-	&__min
-	&__max
-		position absolute
-		width 78px
-		margin -10px 0 0 0
-		background none
-
-		span
-			float left
-			width 100%
-			height 28px
-			font-family "halyard-display", sans-serif
-			font-weight 400
-			font-size 14px
-			line-height 28px
-			color $white
-			background $button
-			border none
-			border-bottom $button-border-bottom
-			border-radius 4px
-			text-align center
-			text-shadow $white-shadow
-
-	&__max
-		margin -10px 0 0 222px
-
-	&__slider
-		float left
-		width 300px
-		padding: 0
-		margin 10px 0 0 0
-
-		.ngrs-range-slider
-			position relative
-			width 100%
-			height 54px
-			padding 6px
-			margin 0
-			background $input
-			border-bottom $input-border-bottom
-			border-radius 4px
-
-		.ngrs-range-slider
-		.ngrs-range-slider *
-			display block
-			cursor default
-			-webkit-box-sizing border-box
-			-moz-box-sizing border-box
-			box-sizing border-box
-			-webkit-user-select none
-			-moz-user-select none
-			user-select none
-
-		.ngrs-range-slider .ngrs-runner
-			position relative
-			width 248px
-			height 54px
-			margin 0
-
-		.ngrs-range-slider .ngrs-join
-			position absolute
-			height 12px
-			top 15px
-			left 0
-			right 100%
-			margin 0
-			background $background
-			z-index 1
-
-		.ngrs-range-slider .ngrs-handle
-			position absolute
-			z-index 2
-			width 40px
-			height 40px
-			margin 0
-			padding 0
-			background $button-active
-			border-bottom $button-active-border-bottom
-			border-radius 4px
-			cursor pointer
-
-		.ngrs-range-slider .ngrs-value
-			position absolute
-			top 100%
-			left 0
-			padding 0
-			font-size 1px
-			color #999
-
-		.ngrs-range-slider .ngrs-value.ngrs-value-max
-			left auto
-			right 0
-			text-align right
-
-		.ngrs-range-slider.ngrs-handle-min-down .ngrs-value-min
-		.ngrs-range-slider.ngrs-handle-max-down .ngrs-value-max
-			color: #333
-
-		body.ngrs-touching
-			-ms-touch-action: none
-
 	&__title
 		float left
 		width 100%
 		padding 0
-		margin 0 0 12px 0
+		margin 0 0 10px 0
+
+	&__container
+		text-align center
+		margin 0
+
+	&__center
+		display inline-block
 
 		h6
-			float left
-			width: 100%
-			padding: 0
+			padding: 0 4px 5px 4px
 			margin 0
 			font-family "le-monde-livre-classic-byol", sans-serif
 			font-weight 600
 			font-size 17px
 			line-height 17px
 			color $paragraph
+			border-bottom 3px solid $button-active
 			text-align center
 			text-shadow $black-shadow
 
@@ -204,16 +109,15 @@
 
 	&__tags
 		float left
-		width 130px
-		padding: 0
+		width 210px
 		margin -3px 0 0 95px
 
 	&__tag
 		float left
-		width 100%
+		width 130px
 		height: 34px
 		padding 0
-		margin 0
+		margin 0 10px 0 0
 		color $white
 		background $button
 		border-bottom $button-border-bottom
@@ -232,33 +136,124 @@
 
 	&__reset
 		float left
-		width 40px
-		height 30px
+		width 38px
+		height 34px
 		padding 0
-		margin -1px 0 0 31px
+		margin 0
 		color $white
-		background $black
-		border $input-border
+		background $button
+		border-bottom $button-border-bottom
 		border-top none
 		border-radius 0 0 4px 4px
 		text-align center
 		text-shadow $white-shadow
 
-		h5
+		.fa-close
+			float left
+			width: 100%
+			font-size 19px
+			line-height 37px
+			color $white
+			text-align: center
+			text-shadow $white-shadow
+
+	&__min
+	&__max
+		position absolute
+		width 78px
+		margin -2px 0 0 0
+		background none
+
+		span
 			float left
 			width 100%
-			font-family: "le-monde-livre-classic-byol",serif;
-			font-size 16px
-			line-height 30px
+			height 28px
+			font-family "halyard-display", sans-serif
+			font-weight 400
+			font-size 14px
+			line-height 28px
+			color $white
+			background $button
+			border none
+			border-bottom $button-border-bottom
+			border-radius 4px
+			text-align center
+			text-shadow $white-shadow
 
-			span
-				display none
-				float right
-				width: 38px
-				height 30px
-				padding 0
-				margin -1px 0 0 -10px
+	&__max
+		margin -2px 0 0 222px
 
-			.fa-close
-				font-size 20px
-				line-height 30px
+	&__slider
+		float left
+		width 300px
+		padding: 0
+		margin 10px 0 0 0
+
+		.ngrs-range-slider
+			position relative
+			width 100%
+			height 54px
+			padding 6px
+			margin 0
+			background $input
+			border-bottom $input-border-bottom
+			border-radius 4px
+
+		.ngrs-range-slider
+		.ngrs-range-slider *
+			display block
+			cursor default
+			-webkit-box-sizing border-box
+			-moz-box-sizing border-box
+			box-sizing border-box
+			-webkit-user-select none
+			-moz-user-select none
+			user-select none
+
+		.ngrs-range-slider .ngrs-runner
+			position relative
+			width 248px
+			height 54px
+			margin 0
+
+		.ngrs-range-slider .ngrs-join
+			position absolute
+			height 12px
+			top 15px
+			left 0
+			right 100%
+			margin 0
+			background $background
+			z-index 1
+
+		.ngrs-range-slider .ngrs-handle
+			position absolute
+			z-index 2
+			width 40px
+			height 40px
+			margin 0
+			padding 0
+			background $button-active
+			border-bottom $button-active-border-bottom
+			border-radius 4px
+			cursor pointer
+
+		.ngrs-range-slider .ngrs-value
+			position absolute
+			top 100%
+			left 0
+			padding 0
+			font-size 1px
+			color #999
+
+		.ngrs-range-slider .ngrs-value.ngrs-value-max
+			left auto
+			right 0
+			text-align right
+
+		.ngrs-range-slider.ngrs-handle-min-down .ngrs-value-min
+		.ngrs-range-slider.ngrs-handle-max-down .ngrs-value-max
+			color: #333
+
+		body.ngrs-touching
+			-ms-touch-action: none

@@ -2,15 +2,15 @@
 	.sub__container
 		.sub__buttons
 			.sub__button
-				h6 Product List
+				h6(ui-sref='app.public.product.list', ui-sref-active='active') Product List
 
 			.sub__button
-				h6 Custom Order
+				h6(ui-sref='app.public.product.custom', ui-sref-active='active') Custom Order
 
 			.sub__button
-				h6 Jewellery Care
+				h6(ui-sref='app.public.product.care', ui-sref-active='active') Jewellery Care
 
 			.sub__button
-				h6 Gift Certificates
+				h6(ui-sref='app.public.product.certificate', ui-sref-active='active') Gift Certificates
 
 div(data-ui-view='content')

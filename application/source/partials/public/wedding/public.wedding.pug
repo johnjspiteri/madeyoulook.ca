@@ -1,22 +1,25 @@
 .sub
 	.sub__container
 		.sub__buttons
-			.sub__button.active
-				h6 Choosing A Ring
+			.sub__button
+				h6(data-ng-class='{active: $state.includes("app.public.wedding.list")}') Rings
 
 			.sub__button
-				h6 Custom Order
+				h6(data-ng-class='{active: $state.includes("app.public.wedding.choose")}') Choosing A Ring
+
+			.sub__button
+				h6(data-ng-class='{active: $state.includes("app.public.wedding.custom")}') Custom
 
 			//.sub__button
 				h6 Diamonds &amp; Gemstones
 
 			.sub__button
-				h6 Ethical Choices
+				h6(data-ng-class='{active: $state.includes("app.public.wedding.jewellery")}') Wedding Jewellery
 
 			.sub__button
-				h6 Wedding Jewellery
+				h6(data-ng-class='{active: $state.includes("app.public.wedding.ethical")}') Ethical Choices
 
 			.sub__button
-				h6 Jewellery Care
+				h6(data-ng-class='{active: $state.includes("app.public.wedding.care")}') Jewellery Care
 
 div(data-ui-view='content')

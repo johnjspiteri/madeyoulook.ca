@@ -12,6 +12,7 @@
 		"api",
 		"build",
 		"development.json",
+		"model",
 		"node_modules",
 		"public",
 		"server.js",

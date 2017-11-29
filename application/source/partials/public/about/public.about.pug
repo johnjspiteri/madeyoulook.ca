@@ -1,14 +1,13 @@
 .sub
 	.sub__container
-		.sub__content
-			.sub__links
-				.sub__link(ui-sref='app.public.about.story' ui-sref-active='active')
-					h6 Our Story
+		.sub__buttons
+			.sub__button(ui-sref='app.public.about.story' ui-sref-active='active')
+				h6 Our Story
 
-				.sub__link(ui-sref='app.public.about.environment' ui-sref-active='active')
-					h6 Environment
+			.sub__button(ui-sref='app.public.about.environment' ui-sref-active='active')
+				h6 Environment
 
-				.sub__link(ui-sref='app.public.about.press.list' data-ng-class='{active: $state.includes("app.public.about.press")}')
-					h6 Press
+			.sub__button(ui-sref='app.public.about.press.list' data-ng-class='{active: $state.includes("app.public.about.press")}')
+				h6 Press
 
 div(data-ui-view='content')
