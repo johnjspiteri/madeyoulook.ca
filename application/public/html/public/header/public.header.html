@@ -1,9 +1,46 @@
-<header><div class="header__container"><div class="header"><div class="header__content"><div class="header__logo" ui-sref="app.public.index"><h6>LOGO</h6><!--img(src='public/images/logo.png')--></div><div class="header__hours"><h6>HOURS</h6><!--h4 M - F: 10 - 8PM--><!--h4 Sat: 10 - 6PM--><!--h4 Sun: 12 - 5PM--></div><div class="header__information"><h6>INFO</h6></div><div class="header__map"><h6>MAP</h6></div><div class="header__navigation" data-ng-click="vm.open()"><span class="fa fa-bars"></span></div><div class="header__navigation"><span class="fa fa-phone"></span></div><div class="header__navigation"><span class="fa fa-instagram"></span></div><div class="header__navigation"><span class="fa fa-twitter"></span></div><div class="header__navigation"><span class="fa fa-search"></span></div><!--.header__contacth4 Contact
+<header><div class="header__container"><div class="header"><div class="header__content"><div class="header__logo" ui-sref="app.public.index"><img src="public/images/logo.png"/></div><!--.header__hoursh6 HOURS
+//h4 M - F: 10 - 8PM
+//h4 Sat: 10 - 6PM
+//h4 Sun: 12 - 5PM
+--><!--.header__informationh6 INFO
+--><!--.header__map(map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWr8_Ujg3InL8NLe65T4mHmu4lwD_6x_k")ng-map(center="{{vm.map.center.latitude}},{{vm.map.center.longitude}}" zoom="12" pan-control="false" map-type-control="false" zoom-control="false" disable-default-u-i="true")
+	marker(position="{{vm.map.center.latitude}},{{vm.map.center.longitude}}" title="Made You Look")
+--><!--.header__navigation(data-ng-click='vm.open()')span.fa.fa-bars
+--><!--.header__navigationspan.fa.fa-phone
+--><!--.header__navigationspan.fa.fa-instagram
+--><!--.header__navigationspan.fa.fa-twitter
+--><!--.header__navigationspan.fa.fa-search
+--><!--.header__contacth4 Contact
 --><!--.header__search.header__input
 	input(placeholder="Search...")
 
 .header__submit
 	button
 		span.fa.fa-search
---><nav><div class="header__buttons"><!--.header__button(ui-sref='app.public.about.story' data-ng-class='{active: $state.includes("app.public.about")}')h2 About
---><div class="header__button" ui-sref="app.public.wedding.list" data-ng-class="{active: $state.includes(&quot;app.public.wedding&quot;)}"><h2>Wedding</h2></div><div class="header__button" ui-sref="app.public.engagement.list" data-ng-class="{active: $state.includes(&quot;app.public.engagement&quot;)}"><h2>Engagement</h2></div><div class="header__button" ui-sref="app.public.product.list" data-ng-class="{active: $state.includes(&quot;app.public.product&quot;)}"><h2>Jewellery</h2></div><div class="header__button" ui-sref="app.public.designer.list" data-ng-class="{active: $state.includes(&quot;app.public.designer&quot;)}"><h2>Designers</h2></div><div class="header__button" ui-sref="app.public.service.alteration" ui-sref-active="active"><h2>Services</h2></div><div class="header__button" ui-sref="app.public.repair.cleaning" ui-sref-active="active"><h2>Repairs</h2></div><div class="header__button" ui-sref="app.public.studio.rent" ui-sref-active="active"><h2>Studio</h2></div><!--.header__button.hide(ui-sref='app.public.contact' ui-sref-active='active')h2 Contact--></div></nav></div></div></div></header>
+--><!--nav.header__buttons
+	//.header__button(ui-sref='app.public.about.story' data-ng-class='{active: $state.includes("app.public.about")}')
+		h2 About
+
+	.header__button(ui-sref='app.public.wedding.list'  data-ng-class='{active: $state.includes("app.public.wedding")}')
+		h2 Wedding
+
+	.header__button(ui-sref='app.public.engagement.list'  data-ng-class='{active: $state.includes("app.public.engagement")}')
+		h2 Engagement
+
+	.header__button(ui-sref='app.public.product.list'  data-ng-class='{active: $state.includes("app.public.product")}')
+		h2 Jewellery
+
+	.header__button(ui-sref='app.public.designer.list'  data-ng-class='{active: $state.includes("app.public.designer")}')
+		h2 Designers
+
+	.header__button(ui-sref='app.public.service.alteration' ui-sref-active='active')
+		h2 Services
+
+	.header__button(ui-sref='app.public.repair.cleaning' ui-sref-active='active')
+		h2 Repairs
+
+	.header__button(ui-sref='app.public.studio.rent' ui-sref-active='active')
+		h2 Studio
+
+	//.header__button.hide(ui-sref='app.public.contact' ui-sref-active='active')
+		h2 Contact--></div></div></div></header>

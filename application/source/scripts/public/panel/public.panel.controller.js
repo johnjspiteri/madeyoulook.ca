@@ -36,10 +36,14 @@
 					.then(function () {});
 			};
 
+			var state = $state.current.name.split('.');
+			console.log('state:', state);
+			vm.activate(state[2]);
+
 			$rootScope.$on("open", function () {
 				vm.backdrop = true;
 				var state = $state.current.name.split('.');
-				vm.activate(state[2]);
+				console.log('state:', state);
 				$mdSidenav('panel')
 					.open()
 					.then(function () {

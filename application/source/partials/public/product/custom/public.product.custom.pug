@@ -1,43 +1,44 @@
 .custom
-	.custom__holder
-		.custom__header
-			h1 Do you need help?
-		.custom__detail
-			p We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything.
-.products
+	.custom__title
+		h1 Looking For Something Special?
+
+	.custom__detail
+		p We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything. We can do anything.
+
+//.products
 	.products__holder
-		.product(data-ng-repeat='product in vm.products | limitTo: 4')
-			.product__image
-				img(src='public/images/product.jpg')
-
-			.product__unnamed
-				h6 ?
-
-			.product__detail
-				.product__title
-					h6(data-ng-bind='product.title')
-
-					//.product__jeweller
-				.product__collection
-					h6 COLLECTION
-
-				.product__price
-					h6 $10,999
-					//.product__specs
-
-				.product__tags
-					.product__tag(data-ng-repeat='tag in product.tags')
-						h5(data-ng-bind='tag')
-
-				.product__designer
-					.product__picture
-						img(src='public/images/jeweller.jpg')
-
-					.product__name
-						h5 Designer Name
-
-					.product__view
-						h6 View
+		//.product(data-ng-repeat='product in vm.products | limitTo: 4')
+		//	.product__image
+		//		img(src='public/images/product.jpg')
+		//
+		//	.product__unnamed
+		//		h6 ?
+		//
+		//	.product__detail
+		//		.product__title
+		//			h6(data-ng-bind='product.title')
+		//
+		//			//.product__jeweller
+		//		.product__collection
+		//			h6 COLLECTION
+		//
+		//		.product__price
+		//			h6 $10,999
+		//			//.product__specs
+		//
+		//		.product__tags
+		//			.product__tag(data-ng-repeat='tag in product.tags')
+		//				h5(data-ng-bind='tag')
+		//
+		//		.product__designer
+		//			.product__picture
+		//				img(src='public/images/jeweller.jpg')
+		//
+		//			.product__name
+		//				h5 Designer Name
+		//
+		//			.product__view
+		//				h6 View
 
 .custom
 	.custom__holder

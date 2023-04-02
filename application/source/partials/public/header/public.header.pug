@@ -3,8 +3,8 @@ header
 		.header
 			.header__content
 				.header__logo(ui-sref='app.public.index')
-					h6 LOGO
 					//img(src='public/images/logo.png')
+
 				.header__hours
 					h6 HOURS
 					//h4 M - F: 10 - 8PM
@@ -14,8 +14,10 @@ header
 				.header__information
 					h6 INFO
 
-				.header__map
-					h6 MAP
+				//.header__map(map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWr8_Ujg3InL8NLe65T4mHmu4lwD_6x_k")
+				.header__map(map-lazy-load="https://maps.google.com/maps/api/js")
+					ng-map(center="{{vm.map.center.latitude}},{{vm.map.center.longitude}}" zoom="12" pan-control="false" map-type-control="false" zoom-control="false" disable-default-u-i="true")
+						//marker(position="{{vm.map.center.latitude}},{{vm.map.center.longitude}}" title="Made You Look")
 
 				.header__navigation(data-ng-click='vm.open()')
 					span.fa.fa-bars

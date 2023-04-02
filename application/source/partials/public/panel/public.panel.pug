@@ -8,44 +8,62 @@ md-sidenav.md-sidenav.md-closed(md-component-id='panel' md-disable-backdrop)
 
 		.mobile__secondary(data-ng-show='vm.state.wedding')
 			.mobile__link
-				p sub-link
+				p Rings
 
 			.mobile__link
-				p sub-link
+				p Choosing A Ring
 
 			.mobile__link
-				p sub-link
+				p Custom
+
+			.mobile__link
+				p Wedding Jewellery
+
+			.mobile__link
+				p Ethical Choices
+
+			.mobile__link
+				p Jewellery Care
 
 		.mobile__button(data-ng-click='vm.activate("engagement")' data-ng-class='{active: vm.state.engagement}')
 			h4 Engagement
 
 		.mobile__secondary(data-ng-show='vm.state.engagement')
 			.mobile__link
-				p sub-link
+				p Rings
 
 			.mobile__link
-				p sub-link
+				p Choosing A Ring
 
 			.mobile__link
-				p sub-link
+				p Custom
+
+			.mobile__link
+				p Ethical Choices
+
+			.mobile__link
+				p Jewellery Care
 
 		.mobile__button(data-ng-click='vm.activate("product")' data-ng-class='{active: vm.state.product}')
 			h4 Jewellery
 
 		.mobile__secondary(data-ng-show='vm.state.product')
-			.mobile__link
-				p sub-link
+			.mobile__link(ui-sref='app.public.product.list' ui-sref-active='active')
+				p Products
 
-			.mobile__link
-				p sub-link
+			.mobile__link(ui-sref='app.public.product.custom' ui-sref-active='active')
+				p Custom
 
-			.mobile__link
-				p sub-link
+			.mobile__link(ui-sref='app.public.product.certificate' ui-sref-active='active')
+				p Gift Certificates
+
+			.mobile__link(ui-sref='app.public.product.care' ui-sref-active='active')
+				p Jewellery Care
 
 		.mobile__button(data-ng-click='vm.activate("custom")' data-ng-class='{active: vm.state.custom}')
 			h4 Custom
 
-		.mobile__button(ui-sref='app.public.designer' data-ng-click='vm.activate("designer")' data-ng-class='{active: vm.state.designer}')
+		.mobile__button(ui-sref='app.public.designer.list' data-ng-click='vm.activate("designer")' data-ng-class='{active: vm.state.designer}')
 			h4 Designers
 
 		.mobile__button(data-ng-click='vm.activate("service")' data-ng-class='{active: vm.state.service}')

@@ -8,16 +8,19 @@
 				.designers__detail
 					.designers__row
 						.designers__name
-							h2 Jillian Maddin
+							h2(data-ng-bind='designer.name.first + " " + designer.name.last')
 
 					.designers__row
 						.designers__categories
 							h5 Categories
+
+						.designers__category
 							h6 Vintage
 							h6 Modern
 
 			.designers__description
-				p This is a description about the jeweller. This is a description about the jeweller. This is a description about the jeweller...
+				p(data-ng-bind='designer.bio | words:23')
+
 			.designers__products
 				h5 Products
 				.designers__product
